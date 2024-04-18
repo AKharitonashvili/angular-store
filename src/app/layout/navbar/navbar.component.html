@@ -1,0 +1,49 @@
+<header
+  class="relative flex flex-col justify-between border-b px-4 py-8 lg:flex-row"
+>
+  <div class="flex w-full items-center justify-between lg:w-auto">
+    <img src="assets/icons/logo.svg" alt="logo" />
+    <mat-icon class="lg:!hidden" (click)="toggleShowMenu()">menu</mat-icon>
+  </div>
+  <nav
+    class="absolute left-0 right-0 top-[5.5rem] hidden w-full lg:static lg:flex lg:w-auto"
+    [ngClass]="{ '!flex ': showMenu() }"
+  >
+    <ul
+      class="flex w-full flex-col items-center gap-14 border-b p-4 lg:flex-row lg:border-b-0 lg:p-0"
+    >
+      <li>
+        <app-search-input />
+      </li>
+      <li><a href="" class="font-semibold">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact Us</a></li>
+      <li><a href="">Blog</a></li>
+      <li>
+        <ul class="flex items-center gap-6">
+          <li>
+            <img
+              class="cursor-pointer"
+              src="assets/icons/favorites.svg"
+              alt="favorites"
+            />
+          </li>
+          <li>
+            <img
+              class="cursor-pointer"
+              src="assets/icons/cart.svg"
+              alt="cart"
+            />
+          </li>
+          <li>
+            <img
+              class="cursor-pointer"
+              src="assets/icons/account.svg"
+              alt="account"
+            />
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>

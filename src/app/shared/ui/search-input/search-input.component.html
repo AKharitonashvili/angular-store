@@ -1,0 +1,10 @@
+<div
+  class="p-input-icon-left flex items-center gap-4 px-4 text-secondary rounded-md h-14"
+  [ngClass]="{ 'bg-light-1': expanded() }">
+  <button (click)="handleExpandedToggle()" class="cursor-pointer">
+    <i class="pi pi-search"></i>
+  </button>
+  @if (expanded()) {
+    <input type="text" class="bg-transparent p-2" placeholder="Search" />
+  }
+</div>
