@@ -6,11 +6,11 @@
     <mat-icon class="lg:!hidden" (click)="toggleShowMenu()">menu</mat-icon>
   </div>
   <nav
-    class="absolute left-0 right-0 top-[5.5rem] hidden w-full lg:static lg:flex lg:w-auto"
+    class="absolute left-0 right-0 top-[5.5rem] hidden w-full bg-white lg:static lg:flex lg:w-auto lg:bg-transparent"
     [ngClass]="{ '!flex ': showMenu() }"
   >
     <ul
-      class="flex w-full flex-col items-center gap-14 border-b p-4 lg:flex-row lg:border-b-0 lg:p-0"
+      class="flex w-full flex-col items-center gap-14 border-b border-t p-4 lg:flex-row lg:border-0 lg:p-0"
     >
       <li>
         <app-search-input />
