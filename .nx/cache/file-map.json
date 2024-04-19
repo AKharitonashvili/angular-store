@@ -100,7 +100,7 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "856757414215368634"
+        "hash": "8846667201156213641"
       },
       {
         "file": "src/app/app.component.scss",
@@ -112,7 +112,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "9540136769393501201"
+        "hash": "1472557897260102065"
       },
       {
         "file": "src/app/app.config.ts",
@@ -123,8 +123,24 @@
         "hash": "12397496131277534773"
       },
       {
+        "file": "src/app/featured-products/featured-products.component.html",
+        "hash": "408111492120052241"
+      },
+      {
+        "file": "src/app/featured-products/featured-products.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/featured-products/featured-products.component.spec.ts",
+        "hash": "4064672323575409953"
+      },
+      {
+        "file": "src/app/featured-products/featured-products.component.ts",
+        "hash": "12760081891165465477"
+      },
+      {
         "file": "src/app/layout/navbar/navbar.component.html",
-        "hash": "11369615373345863920"
+        "hash": "1401657173584874962"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.scss",
@@ -140,7 +156,7 @@
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.html",
-        "hash": "5699295681168021608"
+        "hash": "11163695129380395502"
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.scss",
@@ -157,6 +173,14 @@
       {
         "file": "src/assets/.gitkeep",
         "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/assets/banners/airpods_max.svg",
+        "hash": "13681054056635243207"
+      },
+      {
+        "file": "src/assets/banners/iphone.svg",
+        "hash": "16342768521766390740"
       },
       {
         "file": "src/assets/icons/account.svg",
@@ -192,7 +216,7 @@
       },
       {
         "file": "tailwind.config.js",
-        "hash": "7581214153510475422"
+        "hash": "15072297204699575985"
       },
       {
         "file": "tsconfig.app.json",
