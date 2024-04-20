@@ -68,7 +68,7 @@
       },
       {
         "file": ".prettierrc.json",
-        "hash": "14798409502291820225"
+        "hash": "14563970590899974711"
       },
       {
         "file": ".vscode/extensions.json",
@@ -124,7 +124,7 @@
       },
       {
         "file": "src/app/featured-products/featured-products.component.html",
-        "hash": "408111492120052241"
+        "hash": "6703426655292846708"
       },
       {
         "file": "src/app/featured-products/featured-products.component.scss",
@@ -179,8 +179,20 @@
         "hash": "13681054056635243207"
       },
       {
+        "file": "src/assets/banners/apple_vision_pro.svg",
+        "hash": "17800421124285276543"
+      },
+      {
         "file": "src/assets/banners/iphone.svg",
         "hash": "16342768521766390740"
+      },
+      {
+        "file": "src/assets/banners/macbook.svg",
+        "hash": "7098718765639124450"
+      },
+      {
+        "file": "src/assets/banners/playstation.svg",
+        "hash": "10349040092015880897"
       },
       {
         "file": "src/assets/icons/account.svg",
@@ -216,7 +228,7 @@
       },
       {
         "file": "tailwind.config.js",
-        "hash": "15072297204699575985"
+        "hash": "5774626354902923332"
       },
       {
         "file": "tsconfig.app.json",
