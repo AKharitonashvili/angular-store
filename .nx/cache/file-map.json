@@ -63,12 +63,8 @@
         "hash": "4689145951703824387"
       },
       {
-        "file": ".prettierrc",
-        "hash": "15214992193477857198"
-      },
-      {
         "file": ".prettierrc.json",
-        "hash": "14563970590899974711"
+        "hash": "5166429970605386733"
       },
       {
         "file": ".vscode/extensions.json",
@@ -100,7 +96,7 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "8846667201156213641"
+        "hash": "2779997315337630246"
       },
       {
         "file": "src/app/app.component.scss",
@@ -112,7 +108,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "1472557897260102065"
+        "hash": "18047774313827874518"
       },
       {
         "file": "src/app/app.config.ts",
@@ -123,8 +119,24 @@
         "hash": "12397496131277534773"
       },
       {
+        "file": "src/app/browse-by-category/browse-by-category.component.html",
+        "hash": "5361994872176054771"
+      },
+      {
+        "file": "src/app/browse-by-category/browse-by-category.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/browse-by-category/browse-by-category.component.spec.ts",
+        "hash": "12195557423294503130"
+      },
+      {
+        "file": "src/app/browse-by-category/browse-by-category.component.ts",
+        "hash": "17613750684353931223"
+      },
+      {
         "file": "src/app/featured-products/featured-products.component.html",
-        "hash": "6703426655292846708"
+        "hash": "3561500241100227494"
       },
       {
         "file": "src/app/featured-products/featured-products.component.scss",
@@ -228,7 +240,7 @@
       },
       {
         "file": "tailwind.config.js",
-        "hash": "5774626354902923332"
+        "hash": "2766717349041666342"
       },
       {
         "file": "tsconfig.app.json",

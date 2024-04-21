@@ -1,6 +1,6 @@
 <div class="grid grid-cols-1 lg:grid-cols-4">
   <section
-    class="flex h-[48.125rem] w-full flex-col items-center justify-between bg-primary bg-[url('assets/banners/iphone.svg')] bg-auto-290 bg-bottom bg-no-repeat px-4 py-24 text-white md:px-[10rem] lg:col-span-4 lg:h-[40rem] lg:flex-row lg:justify-start lg:bg-auto-600 lg:bg-bottom-right"
+    class="flex h-[48.125rem] w-full flex-col items-center justify-between bg-primary bg-[url('assets/banners/iphone.svg')] bg-auto-290 bg-bottom bg-no-repeat px-4 py-24 text-white lg:col-span-4 lg:h-[40rem] lg:flex-row lg:justify-start lg:bg-auto-600 lg:bg-bottom-right lg:px-[10rem]"
   >
     <div
       class="flex max-h-[21.5rem] flex-col items-center justify-between gap-8 text-center lg:items-start"
@@ -20,30 +20,36 @@
   </section>
 
   <section
-    class="flex h-[23.5rem] flex-col items-center justify-end gap-6 bg-[url('assets/banners/airpods_max.svg')] bg-auto-200 bg-center-top bg-no-repeat p-10 lg:row-start-3 lg:h-[17rem]"
+    class="flex h-[23.5rem] flex-col items-center justify-end gap-6 bg-optional-2 bg-[url('assets/banners/airpods_max.svg')] bg-auto-200 bg-center-top bg-no-repeat p-10 lg:row-start-3 lg:h-[17rem] lg:items-end lg:justify-center lg:bg-top-left-half lg:px-0 lg:py-2"
   >
-    <div class="flex h-[4.5rem] flex-col justify-center gap-4 text-center">
+    <div
+      class="flex h-[4.5rem] flex-col justify-center gap-4 text-center lg:h-[8.9375rem] lg:w-[10rem] lg:text-start"
+    >
       <h3 class="text-3xl">Apple AirPods Max</h3>
-      <h6 class="text-optional">Computational audio. Listen, it's powerful</h6>
+      <h6 class="text-optional lg:text-sm">
+        Computational audio. Listen, it's powerful
+      </h6>
     </div>
   </section>
 
   <section
-    class="flex h-[23.125rem] flex-col items-center justify-end bg-priamary-2 bg-[url('assets/banners/apple_vision_pro.svg')] bg-auto-200 bg-center-top bg-no-repeat pb-10 text-white lg:row-start-3 lg:h-auto"
+    class="lg:bg-top-left-1000 flex h-[23.125rem] flex-col items-center justify-end bg-priamary-2 bg-[url('assets/banners/apple_vision_pro.svg')] bg-auto-200 bg-center-top bg-no-repeat pb-10 text-white lg:row-start-3 lg:h-auto lg:items-end lg:justify-center lg:px-0 lg:py-2"
   >
-    <div class="flex flex-col justify-center gap-4 text-center">
-      <h3 class="text-4xl">Apple Vision Pro</h3>
-      <h6 class="text-optional">
+    <div
+      class="flex flex-col justify-center gap-4 text-center lg:h-[8.9375rem] lg:w-[10rem] lg:text-left"
+    >
+      <h3 class="text-4xl font-normal lg:text-3xl">Apple Vision Pro</h3>
+      <h6 class="text-optional lg:text-sm">
         An immersive way to experience entertainment
       </h6>
     </div>
   </section>
 
   <section
-    class="md:bg-center-left md:bg-240-340 flex h-[27.1875rem] flex-col items-center justify-end bg-[url('assets/banners/playstation.svg')] bg-auto-200 bg-center-top bg-no-repeat pb-10 md:items-end md:justify-center md:text-start lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:h-[20.5rem]"
+    class="flex h-[27.1875rem] flex-col items-center justify-end bg-[url('assets/banners/playstation.svg')] bg-auto-200 bg-center-top bg-no-repeat pb-10 lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:h-[20.5rem] lg:items-end lg:justify-center lg:bg-240-340 lg:bg-center-left lg:text-start"
   >
     <div
-      class="flex h-[7.5rem] flex-col justify-center gap-4 text-center md:w-[50%]"
+      class="flex h-[7.5rem] flex-col justify-center gap-4 text-center lg:w-[50%]"
     >
       <h3 class="text-4xl">Playstation 5</h3>
       <h6 class="text-optional">
@@ -54,16 +60,20 @@
   </section>
 
   <section
-    class="flex h-[32.25rem] flex-col items-center justify-end bg-optional-2 bg-[url('assets/banners/macbook.svg')] bg-auto-200 bg-center-top bg-no-repeat px-4 pb-10 lg:col-span-2 lg:col-start-3 lg:row-start-2 lg:row-end-4 lg:h-auto"
+    class="lg:bg-auto-500 lg:bg-center-left-150 flex h-[32.25rem] flex-col items-center justify-end bg-optional-2 bg-[url('assets/banners/macbook.svg')] bg-auto-200 bg-center-top bg-no-repeat px-4 pb-10 lg:col-span-2 lg:col-start-3 lg:row-start-2 lg:row-end-4 lg:h-auto lg:items-start lg:justify-center lg:px-12"
   >
-    <div class="flex h-[12.5rem] flex-col justify-center gap-4 text-center">
-      <h3 class="text-4xl">Macbook <span class="font-thin">Air</span></h3>
-      <h6 class="text-optional">
+    <div
+      class="flex h-[12.5rem] flex-col justify-center gap-4 text-center lg:max-w-[22.5rem] lg:text-left"
+    >
+      <h3 class="text-4xl lg:text-3xl">
+        Macbook <span class="font-thin">Air</span>
+      </h3>
+      <h6 class="text-optional lg:text-sm">
         The new 15‑inch MacBook Air makes room for more of what you love with a
         spacious Liquid Retina display.
       </h6>
       <button
-        class="flex items-center justify-center rounded-md border border-primary p-4"
+        class="flex items-center justify-center rounded-md border border-primary p-4 lg:max-w-[11.25rem]"
       >
         Shop Now
       </button>
