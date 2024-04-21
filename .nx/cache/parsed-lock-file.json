@@ -4140,6 +4140,15 @@
         "hash": "sha512-xUXwsxNjwTQ8K3GnT4pCJm+xq3RUPQbmkYJTP5aFIfNIvbcc/4MUxgBaaRSZJ6yGJZiGSyYlM6MzwTsRk8SYCg=="
       }
     },
+    "npm:picomatch@3.0.1": {
+      "type": "npm",
+      "name": "npm:picomatch@3.0.1",
+      "data": {
+        "version": "3.0.1",
+        "packageName": "picomatch",
+        "hash": "sha512-I3EurrIQMlRc9IaAZnqRR044Phh2DXY+55o7uJ0V+hYZAcQYSuFWsc9q5PvyDHUSCe1Qxn/iBz+78s86zWnGag=="
+      }
+    },
     "npm:arg": {
       "type": "npm",
       "name": "npm:arg",
@@ -6489,6 +6498,15 @@
         "hash": "sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw=="
       }
     },
+    "npm:husky": {
+      "type": "npm",
+      "name": "npm:husky",
+      "data": {
+        "version": "8.0.3",
+        "packageName": "husky",
+        "hash": "sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg=="
+      }
+    },
     "npm:icss-utils": {
       "type": "npm",
       "name": "npm:icss-utils",
@@ -7686,6 +7704,15 @@
         "hash": "sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw=="
       }
     },
+    "npm:mri": {
+      "type": "npm",
+      "name": "npm:mri",
+      "data": {
+        "version": "1.2.0",
+        "packageName": "mri",
+        "hash": "sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA=="
+      }
+    },
     "npm:mrmime": {
       "type": "npm",
       "name": "npm:mrmime",
@@ -8446,6 +8473,15 @@
       "type": "npm",
       "name": "npm:prettier",
       "data": {
+        "version": "2.8.0",
+        "packageName": "prettier",
+        "hash": "sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA=="
+      }
+    },
+    "npm:prettier@3.2.5": {
+      "type": "npm",
+      "name": "npm:prettier@3.2.5",
+      "data": {
         "version": "3.2.5",
         "packageName": "prettier",
         "hash": "sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A=="
@@ -8485,6 +8521,15 @@
         "version": "29.7.0",
         "packageName": "pretty-format",
         "hash": "sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ=="
+      }
+    },
+    "npm:pretty-quick": {
+      "type": "npm",
+      "name": "npm:pretty-quick",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "pretty-quick",
+        "hash": "sha512-M+2MmeufXb/M7Xw3Afh1gxcYpj+sK0AxEfnfF958ktFeAyi5MsKY5brymVURQLgPLV1QaF5P4pb2oFJ54H3yzQ=="
       }
     },
     "npm:primeicons": {
@@ -17948,11 +17993,6 @@
     },
     {
       "source": "npm:eslint-plugin-prettier",
-      "target": "npm:prettier",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint-plugin-prettier",
       "target": "npm:prettier-linter-helpers",
       "type": "static"
     },
@@ -20968,7 +21008,7 @@
     },
     {
       "source": "npm:prettier-eslint",
-      "target": "npm:prettier",
+      "target": "npm:prettier@3.2.5",
       "type": "static"
     },
     {
@@ -21127,11 +21167,6 @@
       "type": "static"
     },
     {
-      "source": "npm:prettier-plugin-tailwindcss",
-      "target": "npm:prettier",
-      "type": "static"
-    },
-    {
       "source": "npm:pretty-format",
       "target": "npm:@jest/schemas",
       "type": "static"
@@ -21144,6 +21179,66 @@
     {
       "source": "npm:pretty-format",
       "target": "npm:react-is",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:execa",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:find-up@5.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:ignore",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:mri",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:picocolors",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:picomatch@3.0.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:tslib",
+      "type": "static"
+    },
+    {
+      "source": "npm:find-up@5.0.0",
+      "target": "npm:locate-path@6.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:find-up@5.0.0",
+      "target": "npm:path-exists",
+      "type": "static"
+    },
+    {
+      "source": "npm:locate-path@6.0.0",
+      "target": "npm:p-locate@5.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:p-limit@3.1.0",
+      "target": "npm:yocto-queue@0.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:p-locate@5.0.0",
+      "target": "npm:p-limit@3.1.0",
       "type": "static"
     },
     {

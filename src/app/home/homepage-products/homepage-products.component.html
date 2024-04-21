@@ -1,0 +1,31 @@
+<section class="flex flex-col gap-8">
+  <section class="flex justify-start gap-4 text-secondary">
+    <div class="font-semibold text-black">New Arrival</div>
+    <div>Bestseller</div>
+    <div>Featured Products</div>
+  </section>
+
+  <section class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+    @for (item of products; track $index) {
+      <div
+        class="flex h-[25.5rem] flex-col items-center justify-center gap-4 bg-optional-2 p-4 text-center"
+      >
+        <div class="flex h-[2rem] w-full items-center justify-end">
+          <mat-icon>favorite_border</mat-icon>
+        </div>
+        <div class="h-[6.375rem] min-w-[6.375rem] bg-white"></div>
+        <div class="h-[2.5rem] overflow-ellipsis text-sm font-semibold">
+          {{ item.header | minimizeText: 30 }}
+        </div>
+        <div class="h-[1.5rem] font-semibold">$ {{ item.price }} </div>
+        <button
+          class="flex h-[3rem] w-full items-center justify-center rounded-md bg-black text-white"
+        >
+          Buy Now
+        </button>
+      </div>
+    }
+  </section>
+
+  <section></section>
+</section>

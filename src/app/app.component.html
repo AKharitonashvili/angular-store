@@ -1,8 +1,12 @@
 <div class="flex justify-center">
   <div class="container flex flex-col">
     <app-navbar />
-    <app-featured-products />
-    <app-browse-by-category />
+    <!-- <app-featured-products /> -->
+    <div class="px-4">
+      <app-browse-by-category />
+      <app-homepage-products />
+    </div>
+
     <main>
       <router-outlet />
     </main>
