@@ -2,19 +2,19 @@
   <div class="flex items-center justify-between">
     <div class="text-2xl">Browse By Category</div>
     <div>
-      <mat-icon>chevron_left</mat-icon><mat-icon>chevron_right</mat-icon>
+      <button><mat-icon>chevron_left</mat-icon></button>
+      <button><mat-icon>chevron_right</mat-icon></button>
     </div>
   </div>
   <div class="grid grid-cols-2 gap-4 lg:grid-cols-6">
     @for (item of categories; track $index) {
-      <div
-        class="flex h-[8rem] flex-col items-center justify-center rounded-md bg-optional-2"
-      >
+      <button
+        class="flex h-[8rem] flex-col items-center justify-center rounded-md bg-optional-2">
         <div>
           <mat-icon>{{ item.icon }}</mat-icon>
         </div>
         <div>{{ item.name }}</div>
-      </div>
+      </button>
     }
   </div>
 </section>

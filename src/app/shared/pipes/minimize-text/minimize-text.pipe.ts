@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core'
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'minimizeText',
@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core'
 })
 export class MinimizeTextPipe implements PipeTransform {
   transform(value: string, size: number): string {
-    if (value.length >= size) return `${value.slice(0, size)}...`
-    return value
+    if (value.length >= size) return `${value.slice(0, size)}...`;
+    return value;
   }
 }

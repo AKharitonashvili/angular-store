@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core'
-import { Products } from '../../fake-api/fake-api'
-import { CommonModule } from '@angular/common'
-import { MatIconModule } from '@angular/material/icon'
-import { MinimizeTextPipe } from '../../shared/pipes/minimize-text/minimize-text.pipe'
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
+import { MinimizeTextPipe } from '../../shared/pipes/minimize-text/minimize-text.pipe';
+import { Products } from '../../shared/fake-api/fake-api';
 
 @Component({
   selector: 'app-homepage-products',
@@ -13,5 +13,5 @@ import { MinimizeTextPipe } from '../../shared/pipes/minimize-text/minimize-text
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomepageProductsComponent {
-  products = Products
+  products = Products;
 }

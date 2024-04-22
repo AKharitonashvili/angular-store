@@ -2992,117 +2992,117 @@
       "type": "npm",
       "name": "npm:@nrwl/devkit",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nrwl/devkit",
-        "hash": "sha512-srguS6WNE/sP99OTfPqUdI22CNEocvxyz4TOB6Uj5zcFiKIFOlWn0NFwathdWVKwvsszY1Zvt/YiVjzYNUDqWw=="
+        "hash": "sha512-3zZLE1vfwsNie7qjVUt9lqaM1slU0RTr/dW+Yt/2lxe8Peu6f8bnCM1Pf3kSlzoxQroctfocRtVHFXJsAuAt4g=="
       }
     },
     "npm:@nrwl/tao": {
       "type": "npm",
       "name": "npm:@nrwl/tao",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nrwl/tao",
-        "hash": "sha512-TQmaUMEIlKcytBpaHVG3VMPhfoJl09u3KaE6F1eJcFi7+za8rivH+HM+jlhwCAOlaC9bmnvJy0GvnFa5WtScsg=="
+        "hash": "sha512-f/PUDLpSMEObiLQ5sIDySJM+5DxSCNunkxxbY1R9rmQ1cFcgrHaXIHQqbSj91mMa3mmtbKACk8u1LbI+oQV0Tg=="
       }
     },
     "npm:@nx/devkit": {
       "type": "npm",
       "name": "npm:@nx/devkit",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/devkit",
-        "hash": "sha512-H55m7R6zKteZ5DE0o2IOwpwo8RQXiH4RkBELWn9YkSQPvps8K7psyMzPQofP37qD5S0u7pYjGIWiJDzij+OeEQ=="
+        "hash": "sha512-FtkZ6mA5//vEA5lcbT80m080ROVacHYV5F1peztTRA+IY2JZGJoqx425kn5ylDO8aCSAIAwcn2qIdhI8BnpG3Q=="
       }
     },
     "npm:@nx/nx-darwin-arm64": {
       "type": "npm",
       "name": "npm:@nx/nx-darwin-arm64",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-darwin-arm64",
-        "hash": "sha512-x+C4a+DMGxHks/aKtyYa5+muF5BrJcDwxSPazRmrI9c80vo3J8TYjryXPHyZ/L3/3oNp72FtyPR46z3qf8NpQQ=="
+        "hash": "sha512-NpA2/7o1uUuaocMYopX9muxKif9HlGfWaXo2UeiR918usF6xri4aUqweZbaXVc9iqCAEbVMWUsjaLYGKPXHAjw=="
       }
     },
     "npm:@nx/nx-darwin-x64": {
       "type": "npm",
       "name": "npm:@nx/nx-darwin-x64",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-darwin-x64",
-        "hash": "sha512-5krmqFbsaeDLpSRaonEqlAiL4MBIWVguE9vs0/lp6vlnyIXT3TRftk4B4Tpi+PqIN6tC/Ll8gGoHzSdwHboAcg=="
+        "hash": "sha512-aydPLbc7DeceJ6szRf6DLT4ERoPvwfWyFiGXdAlEZYWhjEuNZLeG8K6jA3yHeWltKfX/qJqhnyKbnubBNzBKlQ=="
       }
     },
     "npm:@nx/nx-freebsd-x64": {
       "type": "npm",
       "name": "npm:@nx/nx-freebsd-x64",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-freebsd-x64",
-        "hash": "sha512-FenZBqJ5FK/QoExmngolq3q5NsOmJgrhy1Q3NiG0yOTcXnwIZO9pHmRDTZ33niTxuXSRvCgvJE4uBAM9YvptYw=="
+        "hash": "sha512-sEYEWsK/fwC1l7wzls7RNOjhmrooH0lK0mpgj1vDXesLBSZ7k+pddAqaHFECN4QXBSbHZI2PWOEhbnIH+Errsg=="
       }
     },
     "npm:@nx/nx-linux-arm-gnueabihf": {
       "type": "npm",
       "name": "npm:@nx/nx-linux-arm-gnueabihf",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-linux-arm-gnueabihf",
-        "hash": "sha512-xjh4WvRIN1vZpsL4tFlaAoZ15R/R4a7e+4Ai8h8evRA7Mz31k/iUEpfcF+6EJfwFX0IjI59QnWzZ19Z5XFfl0Q=="
+        "hash": "sha512-B9GGMkrrzwiAfvew22x85ITO9TiNxbgRbKJQWQaoopNpXrnSWpY8WTNxpDT24fwV1qdQfsPKcY3F4O0NOUgPRA=="
       }
     },
     "npm:@nx/nx-linux-arm64-gnu": {
       "type": "npm",
       "name": "npm:@nx/nx-linux-arm64-gnu",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-linux-arm64-gnu",
-        "hash": "sha512-Y82fDCuIjirdsS1tKfqC91qLdVhYS6NcU310fzMP4HI4A4WwdcMqHnn6E/O2glYW9CTYRQANo89fB44Zqbg7Cg=="
+        "hash": "sha512-1EucHf5/0JeqZmhritqkpEdOcdo9Dl32gpFvhNfS6kCAYmaDlEl4zqedz3VIoj4C7+C0pV3mcRO9qB9H7GM5bQ=="
       }
     },
     "npm:@nx/nx-linux-arm64-musl": {
       "type": "npm",
       "name": "npm:@nx/nx-linux-arm64-musl",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-linux-arm64-musl",
-        "hash": "sha512-iaGfejem22yJI707jlWMDwlUFStT3zzm+hUJOWcTH/owREVDDcX9SrYOcNoqecipGFttwEow7jtgg2E/9mb20A=="
+        "hash": "sha512-HPgOgnYYLPVCBEaAkSEGPGzZqTDCiyCAF/qtvx5z0f1U/hZYb1ubgxw70ogY82Cafr7X4gQBz5k4/ZCnoCXlOQ=="
       }
     },
     "npm:@nx/nx-linux-x64-gnu": {
       "type": "npm",
       "name": "npm:@nx/nx-linux-x64-gnu",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-linux-x64-gnu",
-        "hash": "sha512-VV6T/tXURZ0r2N6VArI0JW4+Lf6Zq4UssCn6GS3cj75q7OhsQDqgcVIjET7zjqRhrc6ndZdi7d4YdEndOEMU+Q=="
+        "hash": "sha512-FgYTQ3VEE6EUOGtJT9riRK8IBwPGFjKS+N2mudQJn2bB/9IumUvVRYQUIX08gqGLlqZPO6uUUhUjwZY8SnjRLQ=="
       }
     },
     "npm:@nx/nx-linux-x64-musl": {
       "type": "npm",
       "name": "npm:@nx/nx-linux-x64-musl",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-linux-x64-musl",
-        "hash": "sha512-Pg3/HmNbCTd5Hm/EXHu+FRl4OInbqX44qh0pMpSuCSIjVPbyCXlKCQRsQWo6d3KQIUOvYsBZRAKjHVhhywcScg=="
+        "hash": "sha512-QnWjGViR1Wj9gJXa1RJ9mXyy2/JzQ7NF2C4ulTYSH5St1HoxhkfnLsV0+uNLFEV9PSZq+2BfxmQuT8Appefv1A=="
       }
     },
     "npm:@nx/nx-win32-arm64-msvc": {
       "type": "npm",
       "name": "npm:@nx/nx-win32-arm64-msvc",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-win32-arm64-msvc",
-        "hash": "sha512-c1aOj27HjQPDrGwHm2ytQfHQNMFJ8AyKLtWOEGMhUwDsRRqHd61Pg8kqSac1A9sdrSq4jRfVYsbzaGl1bE+gcw=="
+        "hash": "sha512-Xn3LUaPsF8QkEYUVV3lc693NTCMWrfZBFXTy1cQpvLzQ+idsXQ/EGWoq93cIM3Nc2YWyblT2hHHelb8dHCZAlw=="
       }
     },
     "npm:@nx/nx-win32-x64-msvc": {
       "type": "npm",
       "name": "npm:@nx/nx-win32-x64-msvc",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "@nx/nx-win32-x64-msvc",
-        "hash": "sha512-yDSYZch5RUQKFeGBloAbIKIeYNg8862ZX/lT54GeSYnI/32KqFABwuCV+tGjvPoTgA4Q0sI/F8i0NPhYwsC1Ww=="
+        "hash": "sha512-t8HvOnQEiaaoTFOOIrql30NPhIwDFO7jg0Jtz3Tbneulh7ceswJp71yFHsRGGrYZ23Tgg+Sna6M9qLRGzlRGkg=="
       }
     },
     "npm:@pkgjs/parseargs": {
@@ -6498,15 +6498,6 @@
         "hash": "sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw=="
       }
     },
-    "npm:husky": {
-      "type": "npm",
-      "name": "npm:husky",
-      "data": {
-        "version": "8.0.3",
-        "packageName": "husky",
-        "hash": "sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg=="
-      }
-    },
     "npm:icss-utils": {
       "type": "npm",
       "name": "npm:icss-utils",
@@ -7978,9 +7969,9 @@
       "type": "npm",
       "name": "npm:nx",
       "data": {
-        "version": "18.3.2",
+        "version": "18.3.3",
         "packageName": "nx",
-        "hash": "sha512-kgkfmkwJQQ8Fp5AkvoZlnRaUrdJhckte8RyFhy86VeYjUcWYzV6shrbasKxTB0ZvCikHYjbI7QnmVYmZujEjhQ=="
+        "hash": "sha512-GqC5ANfTWV6SFbgquZwuRMI2Z2nO0c0Yx4JzM3x32aJOgXsmRml3WcV0a5648bIXSen34gylHYl2EHaxVWkzNQ=="
       }
     },
     "npm:ora@5.3.0": {
@@ -8473,15 +8464,6 @@
       "type": "npm",
       "name": "npm:prettier",
       "data": {
-        "version": "2.8.0",
-        "packageName": "prettier",
-        "hash": "sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA=="
-      }
-    },
-    "npm:prettier@3.2.5": {
-      "type": "npm",
-      "name": "npm:prettier@3.2.5",
-      "data": {
         "version": "3.2.5",
         "packageName": "prettier",
         "hash": "sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A=="
@@ -8503,15 +8485,6 @@
         "version": "1.0.0",
         "packageName": "prettier-linter-helpers",
         "hash": "sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w=="
-      }
-    },
-    "npm:prettier-plugin-tailwindcss": {
-      "type": "npm",
-      "name": "npm:prettier-plugin-tailwindcss",
-      "data": {
-        "version": "0.5.14",
-        "packageName": "prettier-plugin-tailwindcss",
-        "hash": "sha512-Puaz+wPUAhFp8Lo9HuciYKM2Y2XExESjeT+9NQoVFXZsPPnc9VYss2SpxdQ6vbatmt8/4+SN0oe0I1cPDABg9Q=="
       }
     },
     "npm:pretty-format": {
@@ -17993,6 +17966,11 @@
     },
     {
       "source": "npm:eslint-plugin-prettier",
+      "target": "npm:prettier",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-prettier",
       "target": "npm:prettier-linter-helpers",
       "type": "static"
     },
@@ -21008,7 +20986,7 @@
     },
     {
       "source": "npm:prettier-eslint",
-      "target": "npm:prettier@3.2.5",
+      "target": "npm:prettier",
       "type": "static"
     },
     {
@@ -21179,6 +21157,11 @@
     {
       "source": "npm:pretty-format",
       "target": "npm:react-is",
+      "type": "static"
+    },
+    {
+      "source": "npm:pretty-quick",
+      "target": "npm:prettier",
       "type": "static"
     },
     {

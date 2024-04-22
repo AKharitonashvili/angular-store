@@ -1,8 +1,8 @@
-import { CommonModule } from '@angular/common'
-import { ChangeDetectionStrategy, Component } from '@angular/core'
-import { MatIconModule } from '@angular/material/icon'
-import { CategoryInterface } from '../../interfaces/interfaces'
-import { Categories } from '../../fake-api/fake-api'
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { Categories } from '../../shared/fake-api/fake-api';
+import { CategoryInterface } from '../../shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-browse-by-category',
@@ -13,5 +13,5 @@ import { Categories } from '../../fake-api/fake-api'
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BrowseByCategoryComponent {
-  categories: CategoryInterface[] = Categories
+  categories: CategoryInterface[] = Categories;
 }

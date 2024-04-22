@@ -1,22 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BrowseByCategoryComponent } from './browse-by-category.component'
+import { BrowseByCategoryComponent } from './browse-by-category.component';
 
 describe('BrowseByCategoryComponent', () => {
-  let component: BrowseByCategoryComponent
-  let fixture: ComponentFixture<BrowseByCategoryComponent>
+  let component: BrowseByCategoryComponent;
+  let fixture: ComponentFixture<BrowseByCategoryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [BrowseByCategoryComponent],
-    }).compileComponents()
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(BrowseByCategoryComponent)
-    component = fixture.componentInstance
-    fixture.detectChanges()
-  })
+    fixture = TestBed.createComponent(BrowseByCategoryComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
-    expect(component).toBeTruthy()
-  })
-})
+    expect(component).toBeTruthy();
+  });
+});

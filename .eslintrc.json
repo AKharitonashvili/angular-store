@@ -29,12 +29,17 @@
             "style": "kebab-case"
           }
         ]
-      }
+      },
+      "plugins": ["prettier"]
     },
     {
       "files": ["*.html"],
       "extends": ["plugin:@angular-eslint/template/recommended"],
-      "rules": {}
+      "excludedFiles": ["*inline-template-*.component.html"],
+      "plugins": ["prettier"],
+      "rules": {
+        "prettier/prettier": ["error", { "parser": "angular" }]
+      }
     }
   ]
 }

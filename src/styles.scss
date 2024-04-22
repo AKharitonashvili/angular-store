@@ -25,3 +25,8 @@ body {
     /* CSS to Reset */
   }
 }
+
+button,
+a {
+  @apply cursor-pointer;
+}
