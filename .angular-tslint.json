@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/@angular-eslint/schematics/migrations/.angular-tslint-migrations.json",
+  "rules": {
+    "@angular-eslint/template/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 1,
+        "multiline": {
+          "max": 1,
+          "allowFirstLine": true
+        }
+      }
+    ]
+  }
+}

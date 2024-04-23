@@ -20,9 +20,9 @@
     "@angular-devkit/build-angular": "^17.1.3",
     "@angular-eslint/builder": "17.3.0",
     "@angular-eslint/eslint-plugin": "17.3.0",
-    "@angular-eslint/eslint-plugin-template": "17.3.0",
+    "@angular-eslint/eslint-plugin-template": "^17.3.0",
     "@angular-eslint/schematics": "17.3.0",
-    "@angular-eslint/template-parser": "17.3.0",
+    "@angular-eslint/template-parser": "^17.3.0",
     "@angular/cli": "^17.1.3",
     "@angular/compiler-cli": "^17.1.0",
     "@types/jasmine": "~5.1.0",
@@ -51,12 +51,16 @@
     "projectFileMap": {},
     "nonProjectFiles": [
       {
+        "file": ".angular-tslint.json",
+        "hash": "9276639284672539979"
+      },
+      {
         "file": ".editorconfig",
         "hash": "5630286878671138257"
       },
       {
         "file": ".eslintrc.json",
-        "hash": "10010461390523515735"
+        "hash": "18233835120254935265"
       },
       {
         "file": ".gitignore",
@@ -88,11 +92,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "17287369559680305953"
+        "hash": "15324209375015257805"
       },
       {
         "file": "package.json",
-        "hash": "1376601989379821380"
+        "hash": "10811641822465300266"
       },
       {
         "file": "src/app/app.component.html",
@@ -120,7 +124,7 @@
       },
       {
         "file": "src/app/home/browse-by-category/browse-by-category.component.html",
-        "hash": "8975492991886827926"
+        "hash": "7017373860333058700"
       },
       {
         "file": "src/app/home/browse-by-category/browse-by-category.component.scss",
@@ -136,7 +140,7 @@
       },
       {
         "file": "src/app/home/featured-products/featured-products.component.html",
-        "hash": "18138302984983965149"
+        "hash": "15368646183017005934"
       },
       {
         "file": "src/app/home/featured-products/featured-products.component.scss",
@@ -152,7 +156,7 @@
       },
       {
         "file": "src/app/home/homepage-products/homepage-products.component.html",
-        "hash": "14903607702612453865"
+        "hash": "14865094266122954666"
       },
       {
         "file": "src/app/home/homepage-products/homepage-products.component.scss",
@@ -168,7 +172,7 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.html",
-        "hash": "17025774755471900741"
+        "hash": "265506476479920452"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.scss",
@@ -200,7 +204,7 @@
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.html",
-        "hash": "8313709680985607734"
+        "hash": "13370854101490087499"
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.scss",
