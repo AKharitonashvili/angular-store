@@ -15,24 +15,28 @@ export const Products: ProductInterface[] = [
     price: '900',
     isFavorite: false,
     image: '',
+    id: '1',
   },
   {
     header: 'Blackmagic Pocket Cinema Camera 6k',
     price: '2535',
     isFavorite: false,
     image: '',
+    id: '2',
   },
   {
     header: 'Apple Watch Series 9 GPS 41mm Starlight Aluminium Case',
     price: '399',
     isFavorite: false,
     image: '',
+    id: '3',
   },
   {
     header: 'AirPods Max Silver',
     price: '549',
     isFavorite: false,
     image: '',
+    id: '4',
   },
 
   {
@@ -40,23 +44,27 @@ export const Products: ProductInterface[] = [
     price: '369',
     isFavorite: false,
     image: '',
+    id: '5',
   },
   {
     header: 'Galaxy Z Fold5 Unlocked | 256GB | Phantom Black',
     price: '1799',
     isFavorite: false,
     image: '',
+    id: '6',
   },
   {
     header: 'Galaxy Buds FE Graphite',
     price: '99.99',
     isFavorite: false,
     image: '',
+    id: '7',
   },
   {
     header: 'Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021',
     price: '398',
     isFavorite: false,
     image: '',
+    id: '8',
   },
 ];

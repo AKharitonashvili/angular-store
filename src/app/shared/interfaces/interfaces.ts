@@ -8,4 +8,5 @@ export interface ProductInterface {
   price: string;
   isFavorite: boolean;
   image: string;
+  id: string;
 }

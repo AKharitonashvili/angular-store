@@ -8488,6 +8488,15 @@
         "hash": "sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w=="
       }
     },
+    "npm:prettier-plugin-tailwindcss": {
+      "type": "npm",
+      "name": "npm:prettier-plugin-tailwindcss",
+      "data": {
+        "version": "0.5.14",
+        "packageName": "prettier-plugin-tailwindcss",
+        "hash": "sha512-Puaz+wPUAhFp8Lo9HuciYKM2Y2XExESjeT+9NQoVFXZsPPnc9VYss2SpxdQ6vbatmt8/4+SN0oe0I1cPDABg9Q=="
+      }
+    },
     "npm:pretty-format": {
       "type": "npm",
       "name": "npm:pretty-format",
@@ -21688,6 +21697,13 @@
       {
         "source": "npm:prettier-linter-helpers",
         "target": "npm:fast-diff",
+        "type": "static"
+      }
+    ],
+    "npm:prettier-plugin-tailwindcss": [
+      {
+        "source": "npm:prettier-plugin-tailwindcss",
+        "target": "npm:prettier",
         "type": "static"
       }
     ],

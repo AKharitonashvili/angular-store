@@ -1,0 +1,9 @@
+<section
+  class="flex flex-col items-center justify-center gap-12 bg-gray-100 py-4">
+  @if (products$ | async; as products) {
+    @if (currentProduct(); as currentProduct) {
+      <div>{{ currentProduct.header }}</div>
+    }
+    <app-radio-group [products]="products" [form]="form"></app-radio-group>
+  }
+</section>

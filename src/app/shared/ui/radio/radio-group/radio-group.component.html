@@ -1,0 +1,15 @@
+<form [formGroup]="form" class="flex gap-4">
+  @for (item of products; track $index) {
+    <div class="flex items-center">
+      <div
+        class="dark:bg-black dark:bg-opacity-10 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
+        <input
+          type="radio"
+          [formControl]="form.controls.selectedOption"
+          [value]="item.id"
+          class="checkbox appearance-none focus:opacity-100 focus:outline-none rounded-full border-0 absolute cursor-pointer w-full h-full checked:border-none" />
+        <div class="check-icon rounded-full w-full h-full z-1 hidden"></div>
+      </div>
+    </div>
+  }
+</form>

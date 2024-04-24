@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MinimizeTextPipe } from '../../shared/pipes/minimize-text/minimize-text.pipe';
 import { Products } from '../../shared/fake-api/fake-api';
+import { ProductInterface } from '../../shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-homepage-products',
@@ -13,5 +14,5 @@ import { Products } from '../../shared/fake-api/fake-api';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomepageProductsComponent {
-  products = Products;
+  products: ProductInterface[] = Products;
 }
