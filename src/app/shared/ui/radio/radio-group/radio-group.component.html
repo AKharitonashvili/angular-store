@@ -2,13 +2,13 @@
   @for (item of products; track $index) {
     <div class="flex items-center">
       <div
-        class="dark:bg-black dark:bg-opacity-10 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
+        class="relative flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full dark:bg-black dark:bg-opacity-10">
         <input
           type="radio"
           [formControl]="form.controls.selectedOption"
           [value]="item.id"
-          class="checkbox appearance-none focus:opacity-100 focus:outline-none rounded-full border-0 absolute cursor-pointer w-full h-full checked:border-none" />
-        <div class="check-icon rounded-full w-full h-full z-1 hidden"></div>
+          class="checkbox absolute h-full w-full cursor-pointer appearance-none rounded-full border-0 checked:border-none focus:opacity-100 focus:outline-none" />
+        <div class="check-icon z-1 hidden h-full w-full rounded-full"></div>
       </div>
     </div>
   }

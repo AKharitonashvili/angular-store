@@ -5,26 +5,27 @@ import {
   Inject,
   signal,
 } from '@angular/core';
-import { Products } from '../../shared/fake-api/fake-api';
-import { ProductInterface } from '../../shared/interfaces/interfaces';
+import { Products, bigBannerProducts } from '../../shared/fake-api/fake-api';
+import { BigBannerProductsInterface } from '../../shared/interfaces/interfaces';
 import { RadioGroupComponent } from '../../shared/ui/radio/radio-group/radio-group.component';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Observable, of, tap } from 'rxjs';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { SafeHtmlPipe } from '../../shared/pipes/safe-html/safe-html.pipe';
 
 @Component({
   selector: 'app-big-banner',
   standalone: true,
-  imports: [CommonModule, RadioGroupComponent],
+  imports: [CommonModule, RadioGroupComponent, SafeHtmlPipe],
   templateUrl: './big-banner.component.html',
   styleUrl: './big-banner.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BigBannerComponent {
-  products$: Observable<ProductInterface[]> = of(Products.slice(0, 4)).pipe(
-    tap(products => this.form.controls.selectedOption.setValue(products[0].id))
-  );
+  products$!: Observable<BigBannerProductsInterface[]>;
 
-  currentProduct = signal<ProductInterface | undefined>(undefined);
+  currentProduct = signal<BigBannerProductsInterface | undefined>(undefined);
+  products = signal<BigBannerProductsInterface[] | undefined>(undefined);
 
   form: FormGroup<{ selectedOption: FormControl<string> }> =
     this.fb.nonNullable.group({
@@ -32,8 +33,22 @@ export class BigBannerComponent {
     });
 
   constructor(private fb: FormBuilder) {
-    this.form.controls.selectedOption.valueChanges.subscribe(value => {
-      this.currentProduct.set(Products.find(product => product.id === value));
-    });
+    this.form.controls.selectedOption.valueChanges
+      .pipe(takeUntilDestroyed())
+      .subscribe(value => {
+        this.currentProduct.set(
+          this.products()?.find(product => product.id === value)
+        );
+      });
+
+    this.products$ = of(bigBannerProducts).pipe(
+      tap(products => {
+        this.products.set(products);
+        this.products()?.find(
+          product => product.id === this.form.controls.selectedOption.value
+        );
+        this.form.controls.selectedOption.patchValue(products[0].id);
+      })
+    );
   }
 }

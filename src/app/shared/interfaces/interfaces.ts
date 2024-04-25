@@ -10,3 +10,7 @@ export interface ProductInterface {
   image: string;
   id: string;
 }
+
+export interface BigBannerProductsInterface extends ProductInterface {
+  description: string;
+}

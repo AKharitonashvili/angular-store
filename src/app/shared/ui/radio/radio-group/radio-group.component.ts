@@ -6,7 +6,7 @@ import {
   ReactiveFormsModule,
   FormControl,
 } from '@angular/forms';
-import { ProductInterface } from '../../../interfaces/interfaces';
+import { BigBannerProductsInterface } from '../../../interfaces/interfaces';
 
 @Component({
   selector: 'app-radio-group',
@@ -17,6 +17,6 @@ import { ProductInterface } from '../../../interfaces/interfaces';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RadioGroupComponent {
-  @Input() products!: ProductInterface[] | null;
+  @Input() products!: BigBannerProductsInterface[] | null;
   @Input() form!: FormGroup<{ selectedOption: FormControl<string> }>;
 }

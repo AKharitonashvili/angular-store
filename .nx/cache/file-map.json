@@ -69,7 +69,7 @@
       },
       {
         "file": ".prettierrc",
-        "hash": "17872221407742934679"
+        "hash": "16867273136920010520"
       },
       {
         "file": ".vscode/extensions.json",
@@ -93,11 +93,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "15324209375015257805"
+        "hash": "4835805282320962637"
       },
       {
         "file": "package.json",
-        "hash": "10811641822465300266"
+        "hash": "14553130611145714063"
       },
       {
         "file": "src/app/app.component.html",
@@ -125,7 +125,7 @@
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.html",
-        "hash": "7798287826479170235"
+        "hash": "3003601375820084446"
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.scss",
@@ -137,7 +137,7 @@
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.ts",
-        "hash": "1767592060714106846"
+        "hash": "16463092036198413081"
       },
       {
         "file": "src/app/home/browse-by-category/browse-by-category.component.html",
@@ -189,11 +189,11 @@
       },
       {
         "file": "src/app/shared/fake-api/fake-api.ts",
-        "hash": "1413877509883403848"
+        "hash": "5617802729440534839"
       },
       {
         "file": "src/app/shared/interfaces/interfaces.ts",
-        "hash": "1262585267276168069"
+        "hash": "18177695665573573559"
       },
       {
         "file": "src/app/shared/pipes/minimize-text/minimize-text.pipe.spec.ts",
@@ -204,20 +204,20 @@
         "hash": "16192598723987229109"
       },
       {
-        "file": "src/app/shared/ui/radio-group/radio-group.component.html",
-        "hash": "774788887107043070"
+        "file": "src/app/shared/ui/radio/radio-group/radio-group.component.html",
+        "hash": "7973549605195832811"
       },
       {
-        "file": "src/app/shared/ui/radio-group/radio-group.component.scss",
-        "hash": "4243304198688470549"
+        "file": "src/app/shared/ui/radio/radio-group/radio-group.component.scss",
+        "hash": "13196750271194226578"
       },
       {
-        "file": "src/app/shared/ui/radio-group/radio-group.component.spec.ts",
+        "file": "src/app/shared/ui/radio/radio-group/radio-group.component.spec.ts",
         "hash": "4950065438954257785"
       },
       {
-        "file": "src/app/shared/ui/radio-group/radio-group.component.ts",
-        "hash": "14991603516957978017"
+        "file": "src/app/shared/ui/radio/radio-group/radio-group.component.ts",
+        "hash": "5311985233975781503"
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.html",

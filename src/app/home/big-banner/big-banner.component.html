@@ -1,8 +1,15 @@
 <section
-  class="flex flex-col items-center justify-center gap-12 bg-gray-100 py-4">
+  class="flex flex-col items-center justify-center gap-12 bg-gray-100 p-8">
   @if (products$ | async; as products) {
     @if (currentProduct(); as currentProduct) {
-      <div>{{ currentProduct.header }}</div>
+      <div
+        class="flex w-full max-w-[30rem] flex-col items-center justify-center gap-4 text-center">
+        <div class="h-[22.5rem] w-full bg-white"></div>
+        <div>{{ currentProduct.header }}</div>
+        <div
+          class="max-w-[25rem]"
+          [innerHTML]="currentProduct.description | safeHtml"></div>
+      </div>
     }
     <app-radio-group [products]="products" [form]="form"></app-radio-group>
   }
