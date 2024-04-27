@@ -1,15 +1,15 @@
-<div class="flex justify-center">
-  <div class="container flex flex-col">
-    <app-navbar />
-    <!-- <app-featured-products /> -->
-    <div class="p-4">
+<div class="flex flex-col justify-center">
+  <app-navbar />
+  <main class="container flex flex-col self-center">
+    <div class="px-4 py-20">
       <app-browse-by-category />
       <app-homepage-products />
       <app-big-banner />
     </div>
 
-    <main>
-      <router-outlet />
-    </main>
-  </div>
+    <!-- <main>
+        <router-outlet />
+      </main> -->
+  </main>
+  <app-footer />
 </div>

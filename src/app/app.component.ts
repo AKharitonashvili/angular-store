@@ -4,6 +4,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { BrowseByCategoryComponent } from './home/browse-by-category/browse-by-category.component';
 import { HomepageProductsComponent } from './home/homepage-products/homepage-products.component';
 import { BigBannerComponent } from './home/big-banner/big-banner.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { BigBannerComponent } from './home/big-banner/big-banner.component';
     BrowseByCategoryComponent,
     HomepageProductsComponent,
     BigBannerComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

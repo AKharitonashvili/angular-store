@@ -101,7 +101,7 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "3787368066213446001"
+        "hash": "16570000138662664050"
       },
       {
         "file": "src/app/app.component.scss",
@@ -125,7 +125,7 @@
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.html",
-        "hash": "3003601375820084446"
+        "hash": "277620292911247726"
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.scss",
@@ -137,7 +137,7 @@
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.ts",
-        "hash": "16463092036198413081"
+        "hash": "16500163909517234446"
       },
       {
         "file": "src/app/home/browse-by-category/browse-by-category.component.html",
@@ -173,7 +173,7 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.html",
-        "hash": "265506476479920452"
+        "hash": "14323955390501804026"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.scss",
@@ -189,11 +189,11 @@
       },
       {
         "file": "src/app/shared/fake-api/fake-api.ts",
-        "hash": "5617802729440534839"
+        "hash": "10554617441941170404"
       },
       {
         "file": "src/app/shared/interfaces/interfaces.ts",
-        "hash": "18177695665573573559"
+        "hash": "8826777321540467834"
       },
       {
         "file": "src/app/shared/pipes/minimize-text/minimize-text.pipe.spec.ts",
@@ -204,8 +204,16 @@
         "hash": "16192598723987229109"
       },
       {
+        "file": "src/app/shared/pipes/safe-html/safe-html.pipe.spec.ts",
+        "hash": "7893256134237555779"
+      },
+      {
+        "file": "src/app/shared/pipes/safe-html/safe-html.pipe.ts",
+        "hash": "17978124300470640686"
+      },
+      {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.html",
-        "hash": "7973549605195832811"
+        "hash": "12976750110425052177"
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.scss",
@@ -217,7 +225,7 @@
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.ts",
-        "hash": "5311985233975781503"
+        "hash": "8189003330442725813"
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.html",

@@ -3,11 +3,11 @@
   @if (products$ | async; as products) {
     @if (currentProduct(); as currentProduct) {
       <div
-        class="flex w-full max-w-[30rem] flex-col items-center justify-center gap-4 text-center">
+        class="flex w-full flex-col items-center justify-center gap-4 text-center">
         <div class="h-[22.5rem] w-full bg-white"></div>
-        <div>{{ currentProduct.header }}</div>
+        <div class="h-[3.125rem]">{{ currentProduct.header }}</div>
         <div
-          class="max-w-[25rem]"
+          class="h-[12.5rem] max-w-[15rem] lg:max-w-[35rem]"
           [innerHTML]="currentProduct.description | safeHtml"></div>
       </div>
     }
