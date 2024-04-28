@@ -397,6 +397,15 @@
         "hash": "sha512-KuS4j3Gh1h/CEj+bIOc/IcZIdiCB/DNbtUvz1eNp1o23aM8QutqelI3A4WBnQuR4yq8Z/8M3FH9F1OVwwhn2QQ=="
       }
     },
+    "npm:@angular/platform-server": {
+      "type": "npm",
+      "name": "npm:@angular/platform-server",
+      "data": {
+        "version": "17.3.6",
+        "packageName": "@angular/platform-server",
+        "hash": "sha512-6pRhf5QAaPKHtvfC3tMMhXZgarWRlLJUOlpUpysy4L2n7fYyYHfL0Ku3czUNU59IcvOkD7sCgA4BC0Y4wWETmA=="
+      }
+    },
     "npm:@angular/router": {
       "type": "npm",
       "name": "npm:@angular/router",
@@ -404,6 +413,15 @@
         "version": "17.3.5",
         "packageName": "@angular/router",
         "hash": "sha512-KsIIs3t9IpxsdMSrJDZzO5WgIWkVE6Ep5WWiSyPIgEfA+ndGpJLmyv0d/r1yKKlYUJxz7Hde55o4thgT2n2x/A=="
+      }
+    },
+    "npm:@angular/ssr": {
+      "type": "npm",
+      "name": "npm:@angular/ssr",
+      "data": {
+        "version": "17.3.6",
+        "packageName": "@angular/ssr",
+        "hash": "sha512-qn+DPjZCmM0e9mKWv/Tq9n+eEIgTvmdbTOm5/t7ugsCAYDfqK9Oip3++6NymXiVkS92i6QVjXZoE1wx3/SWcYA=="
       }
     },
     "npm:@babel/code-frame": {
@@ -3533,9 +3551,9 @@
       "type": "npm",
       "name": "npm:@types/node",
       "data": {
-        "version": "20.12.7",
+        "version": "18.19.31",
         "packageName": "@types/node",
-        "hash": "sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg=="
+        "hash": "sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA=="
       }
     },
     "npm:@types/node-forge": {
@@ -10783,6 +10801,15 @@
         "hash": "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ=="
       }
     },
+    "npm:xhr2": {
+      "type": "npm",
+      "name": "npm:xhr2",
+      "data": {
+        "version": "0.2.1",
+        "packageName": "xhr2",
+        "hash": "sha512-sID0rrVCqkVNUn8t6xuv9+6FViXjUVXq8H5rWOH2rz9fDNQEd4g0EA2XlcEdJXRz5BMEn4O1pJFdT+z4YHhoWw=="
+      }
+    },
     "npm:xtend": {
       "type": "npm",
       "name": "npm:xtend",
@@ -10849,6 +10876,11 @@
       {
         "source": "npm:@angular-devkit/build-angular",
         "target": "npm:@angular/compiler-cli",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular-devkit/build-angular",
+        "target": "npm:@angular/platform-server",
         "type": "static"
       },
       {
@@ -12170,6 +12202,18 @@
         "type": "static"
       }
     ],
+    "npm:@angular/platform-server": [
+      {
+        "source": "npm:@angular/platform-server",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/platform-server",
+        "target": "npm:xhr2",
+        "type": "static"
+      }
+    ],
     "npm:@angular/router": [
       {
         "source": "npm:@angular/router",
@@ -12193,6 +12237,28 @@
       },
       {
         "source": "npm:@angular/router",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "npm:@angular/ssr": [
+      {
+        "source": "npm:@angular/ssr",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/ssr",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/ssr",
+        "target": "npm:critters",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/ssr",
         "target": "npm:tslib",
         "type": "static"
       }
