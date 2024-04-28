@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import moment from 'moment';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,10 @@ import { FooterComponent } from './layout/footer/footer.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor() {
+    moment.locale('en-gb');
+    const currTimeFR = moment().format('LLL');
+    console.log(currTimeFR);
+  }
+}
