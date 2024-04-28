@@ -12,6 +12,7 @@
     "@angular/platform-browser": "^17.1.0",
     "@angular/platform-browser-dynamic": "^17.1.0",
     "@angular/router": "^17.1.0",
+    "express-minify": "^1.0.0",
     "primeicons": "^7.0.0",
     "primeng": "^17.13.0",
     "rxjs": "~7.8.0",
@@ -32,6 +33,8 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
+    "gulp": "^5.0.0",
+    "gulp-gzip": "^1.4.2",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -101,7 +104,7 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "16570000138662664050"
+        "hash": "9038570859094749157"
       },
       {
         "file": "src/app/app.component.scss",
@@ -113,7 +116,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "15284004731960147539"
+        "hash": "1730668506490736097"
       },
       {
         "file": "src/app/app.config.ts",
@@ -125,7 +128,7 @@
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.html",
-        "hash": "277620292911247726"
+        "hash": "18142039450917284422"
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.scss",
@@ -170,6 +173,22 @@
       {
         "file": "src/app/home/homepage-products/homepage-products.component.ts",
         "hash": "7469253932877253907"
+      },
+      {
+        "file": "src/app/layout/footer/footer.component.html",
+        "hash": "6521127025980078721"
+      },
+      {
+        "file": "src/app/layout/footer/footer.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/layout/footer/footer.component.spec.ts",
+        "hash": "17110653851772412011"
+      },
+      {
+        "file": "src/app/layout/footer/footer.component.ts",
+        "hash": "9792007040397206763"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.html",
@@ -284,6 +303,26 @@
         "hash": "2157265993498156471"
       },
       {
+        "file": "src/assets/icons/logo_light.svg",
+        "hash": "14933971280564121703"
+      },
+      {
+        "file": "src/assets/icons/social/Facebook.svg",
+        "hash": "13110464810319176730"
+      },
+      {
+        "file": "src/assets/icons/social/Instagram.svg",
+        "hash": "6686918441046146510"
+      },
+      {
+        "file": "src/assets/icons/social/Tiktok.svg",
+        "hash": "3766544494152583415"
+      },
+      {
+        "file": "src/assets/icons/social/Twitter.svg",
+        "hash": "6612788379709618989"
+      },
+      {
         "file": "src/favicon.ico",
         "hash": "3988961587069885523"
       },
@@ -301,7 +340,7 @@
       },
       {
         "file": "tailwind.config.js",
-        "hash": "17504635893795720222"
+        "hash": "7401640137410060182"
       },
       {
         "file": "tsconfig.app.json",

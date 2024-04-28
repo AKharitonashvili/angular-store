@@ -5,9 +5,11 @@
       <div
         class="flex w-full flex-col items-center justify-center gap-4 text-center">
         <div class="h-[22.5rem] w-full bg-white"></div>
-        <div class="h-[3.125rem]">{{ currentProduct.header }}</div>
+        <div class="h-[3.125rem] text-lg font-bold">
+          {{ currentProduct.header }}
+        </div>
         <div
-          class="h-[12.5rem] max-w-[15rem] lg:max-w-[35rem]"
+          class="h-[12.5rem] lg:max-w-[35rem]"
           [innerHTML]="currentProduct.description | safeHtml"></div>
       </div>
     }

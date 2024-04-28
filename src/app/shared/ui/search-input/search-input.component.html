@@ -1,7 +1,7 @@
 <div
   class="p-input-icon-left flex h-14 items-center gap-4 rounded-md px-4 text-secondary"
   [ngClass]="{ 'bg-light-1': expanded() }">
-  <button (click)="handleExpandedToggle()">
+  <button aria-label="Expand Search" (click)="handleExpandedToggle()">
     <i class="pi pi-search"></i>
   </button>
   @if (expanded()) {

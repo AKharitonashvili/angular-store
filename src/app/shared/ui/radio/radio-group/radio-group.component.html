@@ -7,6 +7,7 @@
           type="radio"
           [formControl]="form.controls.selectedOption"
           [value]="item.id"
+          [attr.aria-label]="item.header"
           class="checkbox absolute h-full w-full cursor-pointer appearance-none rounded-full border-0 checked:border-none focus:opacity-100 focus:outline-none" />
         <div class="check-icon z-1 hidden h-full w-full rounded-full"></div>
       </div>

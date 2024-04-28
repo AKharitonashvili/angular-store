@@ -1,42 +1,55 @@
-<header
-  class="relative flex flex-col justify-between border-b px-4 py-8 lg:flex-row">
-  <div class="flex w-full items-center justify-between lg:w-auto">
-    <button><img src="assets/icons/logo.svg" alt="logo" /></button>
-    <button>
-      <mat-icon class="lg:!hidden" (click)="toggleShowMenu()">menu</mat-icon>
-    </button>
-  </div>
-  <nav
-    class="absolute left-0 right-0 top-[5.5rem] hidden w-full bg-white lg:static lg:flex lg:w-auto lg:bg-transparent"
-    [ngClass]="{ '!flex ': showMenu() }">
-    <ul
-      class="flex w-full flex-col items-center gap-14 border-b border-t p-4 lg:flex-row lg:border-0 lg:p-0">
-      <li>
-        <app-search-input />
-      </li>
-      <li><a class="font-semibold">Home</a></li>
-      <li><a>About</a></li>
-      <li><a>Contact Us</a></li>
-      <li><a>Blog</a></li>
-      <li>
-        <ul class="flex items-center gap-6">
-          <li>
-            <a>
-              <img src="assets/icons/favorites.svg" alt="favorites" />
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="assets/icons/cart.svg" alt="cart" />
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="assets/icons/account.svg" alt="account" />
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<header class="relative flex justify-center border-b">
+  <section
+    class="container flex flex-col justify-between px-4 py-8 lg:flex-row">
+    <div class="flex w-full items-center justify-between lg:w-auto">
+      <button aria-label="logo">
+        <img
+          src="assets/icons/logo.svg"
+          alt="logo"
+          class="h-[1.5rem] w-[4.125rem]" />
+      </button>
+      <button aria-label="menu">
+        <mat-icon class="lg:!hidden" (click)="toggleShowMenu()">menu</mat-icon>
+      </button>
+    </div>
+    <nav
+      class="absolute left-0 right-0 top-[5.5rem] hidden w-full bg-white lg:static lg:flex lg:w-auto lg:bg-transparent"
+      [ngClass]="{ '!flex ': showMenu() }">
+      <ul
+        class="flex w-full flex-col items-center gap-14 border-b border-t p-4 lg:flex-row lg:border-0 lg:p-0">
+        <li>
+          <app-search-input />
+        </li>
+        <li><a href="" class="font-semibold">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Blog</a></li>
+        <li>
+          <ul class="flex items-center gap-6">
+            <li>
+              <a href="">
+                <img
+                  src="assets/icons/favorites.svg"
+                  alt="favorites"
+                  class="size-8" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="assets/icons/cart.svg" alt="cart" class="size-8" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="assets/icons/account.svg"
+                  alt="account"
+                  class="size-8" />
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </section>
 </header>
