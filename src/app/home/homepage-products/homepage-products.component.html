@@ -8,7 +8,7 @@
   </section>
 
   <section class="grid grid-cols-2 gap-4 lg:grid-cols-4">
-    @for (item of products; track $index) {
+    @for (item of products$ | async; track $index) {
       <div
         class="flex h-[25.5rem] flex-col items-center justify-center gap-4 bg-optional-2 p-4 text-center">
         <button

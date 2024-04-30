@@ -4,6 +4,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MinimizeTextPipe } from '../../shared/pipes/minimize-text/minimize-text.pipe';
 import { Products } from '../../fake-api/fake-api';
 import { ProductInterface } from '../../shared/interfaces/interfaces';
+import { Store } from '@ngrx/store';
+import { Observable, tap } from 'rxjs';
+import * as ProductsSelectors from '../../stores/home/products/products.selectors';
 
 @Component({
   selector: 'app-homepage-products',
@@ -14,5 +17,8 @@ import { ProductInterface } from '../../shared/interfaces/interfaces';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomepageProductsComponent {
-  products: ProductInterface[] = Products;
+  products$: Observable<ProductInterface[] | undefined> = this.store.select(
+    ProductsSelectors.selectProducts
+  );
+  constructor(private store: Store) {}
 }

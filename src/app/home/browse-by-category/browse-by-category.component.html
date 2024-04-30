@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="grid grid-cols-2 gap-4 lg:grid-cols-6">
-    @for (item of categories; track $index) {
+    @for (item of categories$ | async; track $index) {
       <button
         class="flex h-[8rem] flex-col items-center justify-center rounded-md bg-optional-2">
         <div>

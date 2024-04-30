@@ -1,7 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import { BigBannerComponent } from './big-banner/big-banner.component';
 import { BrowseByCategoryComponent } from './browse-by-category/browse-by-category.component';
 import { HomepageProductsComponent } from './homepage-products/homepage-products.component';
+import { Store } from '@ngrx/store';
+import * as HomeActions from '../stores/home/home.actions';
 
 @Component({
   selector: 'app-home',
@@ -15,4 +17,8 @@ import { HomepageProductsComponent } from './homepage-products/homepage-products
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  constructor(private store: Store) {
+    this.store.dispatch(HomeActions.loadHomePage());
+  }
+}

@@ -18,5 +18,5 @@ import { BigBannerProductsInterface } from '../../../interfaces/interfaces';
 })
 export class RadioGroupComponent {
   @Input() products!: BigBannerProductsInterface[] | null;
-  @Input() form!: FormGroup<{ selectedOption: FormControl<string> }>;
+  @Input() form!: FormGroup<{ selectedOption: FormControl<string | null> }>;
 }

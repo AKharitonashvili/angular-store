@@ -1,6 +1,6 @@
 <section
   class="flex flex-col items-center justify-center gap-12 bg-gray-100 p-8">
-  @if (products$ | async; as products) {
+  @if (bigBannerProducts$ | async; as products) {
     @if (currentProduct(); as currentProduct) {
       <div
         class="flex w-full flex-col items-center justify-center gap-4 text-center">
