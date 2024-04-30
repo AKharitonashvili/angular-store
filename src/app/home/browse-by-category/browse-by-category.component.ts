@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { Categories } from '../../shared/fake-api/fake-api';
+import { Categories } from '../../fake-api/fake-api';
 import { CategoryInterface } from '../../shared/interfaces/interfaces';
 
 @Component({

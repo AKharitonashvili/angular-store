@@ -1,6 +1,6 @@
 {
   "version": "6.0",
-  "nxVersion": "18.3.3",
+  "nxVersion": "18.3.4",
   "deps": {
     "@angular/animations": "^17.1.0",
     "@angular/cdk": "^17.3.5",
@@ -16,7 +16,6 @@
     "@angular/ssr": "^17.3.5",
     "express": "^4.18.2",
     "express-minify": "^1.0.0",
-    "moment": "^2.30.1",
     "primeicons": "^7.0.0",
     "primeng": "^17.13.0",
     "rxjs": "~7.8.0",
@@ -77,7 +76,7 @@
       },
       {
         "file": ".eslintrc.json",
-        "hash": "18233835120254935265"
+        "hash": "7277647699693977783"
       },
       {
         "file": ".gitignore",
@@ -105,19 +104,35 @@
       },
       {
         "file": "angular.json",
-        "hash": "15061520668818482021"
+        "hash": "11319173028142237306"
+      },
+      {
+        "file": "build.css",
+        "hash": "9845634580720826082"
+      },
+      {
+        "file": "custom-webpack.config.js",
+        "hash": "18019155913410528130"
+      },
+      {
+        "file": "gulpfile.js",
+        "hash": "9469080897600650286"
       },
       {
         "file": "package-lock.json",
-        "hash": "4835805282320962637"
+        "hash": "10420294361378991547"
       },
       {
         "file": "package.json",
-        "hash": "14553130611145714063"
+        "hash": "13780494835685271280"
+      },
+      {
+        "file": "server.ts",
+        "hash": "17556996765790181515"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "9038570859094749157"
+        "hash": "6508057946751654449"
       },
       {
         "file": "src/app/app.component.scss",
@@ -129,19 +144,23 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "1730668506490736097"
+        "hash": "632091514703365705"
+      },
+      {
+        "file": "src/app/app.config.server.ts",
+        "hash": "9913780908210103544"
       },
       {
         "file": "src/app/app.config.ts",
-        "hash": "12491768001147930830"
+        "hash": "16633033544860698824"
       },
       {
         "file": "src/app/app.routes.ts",
-        "hash": "12397496131277534773"
+        "hash": "1588458359998425615"
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.html",
-        "hash": "18142039450917284422"
+        "hash": "8149266455994981363"
       },
       {
         "file": "src/app/home/big-banner/big-banner.component.scss",
@@ -157,7 +176,7 @@
       },
       {
         "file": "src/app/home/browse-by-category/browse-by-category.component.html",
-        "hash": "7017373860333058700"
+        "hash": "6419344877313901781"
       },
       {
         "file": "src/app/home/browse-by-category/browse-by-category.component.scss",
@@ -172,8 +191,24 @@
         "hash": "3805005888717225759"
       },
       {
+        "file": "src/app/home/home.component.html",
+        "hash": "9050055283007883748"
+      },
+      {
+        "file": "src/app/home/home.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/home/home.component.spec.ts",
+        "hash": "15313914607240537942"
+      },
+      {
+        "file": "src/app/home/home.component.ts",
+        "hash": "2561346100588429230"
+      },
+      {
         "file": "src/app/home/homepage-products/homepage-products.component.html",
-        "hash": "14865094266122954666"
+        "hash": "7425277666268485086"
       },
       {
         "file": "src/app/home/homepage-products/homepage-products.component.scss",
@@ -189,7 +224,7 @@
       },
       {
         "file": "src/app/layout/footer/footer.component.html",
-        "hash": "6521127025980078721"
+        "hash": "4290948467201369159"
       },
       {
         "file": "src/app/layout/footer/footer.component.scss",
@@ -205,7 +240,7 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.html",
-        "hash": "14323955390501804026"
+        "hash": "2905836573380633139"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.scss",
@@ -221,7 +256,7 @@
       },
       {
         "file": "src/app/shared/fake-api/fake-api.ts",
-        "hash": "10554617441941170404"
+        "hash": "10866866292485442295"
       },
       {
         "file": "src/app/shared/interfaces/interfaces.ts",
@@ -245,7 +280,7 @@
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.html",
-        "hash": "12976750110425052177"
+        "hash": "9428002010629074449"
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.scss",
@@ -261,7 +296,7 @@
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.html",
-        "hash": "13370854101490087499"
+        "hash": "252604833318016736"
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.scss",
@@ -341,7 +376,11 @@
       },
       {
         "file": "src/index.html",
-        "hash": "426845317101028545"
+        "hash": "9975203625071045875"
+      },
+      {
+        "file": "src/main.server.ts",
+        "hash": "9257623809215978365"
       },
       {
         "file": "src/main.ts",
@@ -357,7 +396,7 @@
       },
       {
         "file": "tsconfig.app.json",
-        "hash": "11674506502668556549"
+        "hash": "10356897248347649750"
       },
       {
         "file": "tsconfig.json",

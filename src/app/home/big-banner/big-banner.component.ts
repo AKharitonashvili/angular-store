@@ -5,7 +5,7 @@ import {
   Inject,
   signal,
 } from '@angular/core';
-import { Products, bigBannerProducts } from '../../shared/fake-api/fake-api';
+import { Products, bigBannerProducts } from '../../fake-api/fake-api';
 import { BigBannerProductsInterface } from '../../shared/interfaces/interfaces';
 import { RadioGroupComponent } from '../../shared/ui/radio/radio-group/radio-group.component';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
