@@ -10,7 +10,11 @@ import * as HomeActions from '../home.actions';
 export class CategoriesEffects {
   loadCategories$ = createEffect(() => {
     return this.actions$.pipe(
-      ofType(CategoryActions.loadCategories, HomeActions.loadHomePage),
+      ofType(
+        CategoryActions.loadCategories,
+        HomeActions.loadHomePage,
+        HomeActions.loadProductsPage
+      ),
       switchMap(() =>
         of(Categories).pipe(
           map(categories =>

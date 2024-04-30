@@ -1,12 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MinimizeTextPipe } from '../../shared/pipes/minimize-text/minimize-text.pipe';
-import { Products } from '../../fake-api/fake-api';
-import { ProductInterface } from '../../shared/interfaces/interfaces';
+import {
+  ProductInterface,
+  ProductType,
+} from '../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
-import { Observable, tap } from 'rxjs';
+import { Observable, map, switchMap, tap } from 'rxjs';
 import * as ProductsSelectors from '../../stores/home/products/products.selectors';
+import { toObservable } from '@angular/core/rxjs-interop';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage-products',
@@ -17,8 +21,24 @@ import * as ProductsSelectors from '../../stores/home/products/products.selector
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomepageProductsComponent {
-  products$: Observable<ProductInterface[] | undefined> = this.store.select(
-    ProductsSelectors.selectProducts
+  filter = signal<ProductType>('newArrival');
+  products$: Observable<ProductInterface[] | undefined> = toObservable(
+    this.filter
+  ).pipe(
+    switchMap(() => this.store.select(ProductsSelectors.selectProducts)),
+    map(products => products?.filter(p => p.type?.includes(this.filter())))
   );
-  constructor(private store: Store) {}
+
+  constructor(
+    private store: Store,
+    private router: Router
+  ) {}
+
+  filterByType(type: ProductType) {
+    this.filter.set(type);
+  }
+
+  navigateTo(id: string) {
+    this.router.navigateByUrl(`home/product/${id}`);
+  }
 }

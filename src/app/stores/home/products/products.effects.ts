@@ -10,7 +10,11 @@ import * as HomeActions from '../home.actions';
 export class ProductsEffects {
   loadProducts$ = createEffect(() => {
     return this.actions$.pipe(
-      ofType(ProductsActions.loadProducts, HomeActions.loadHomePage),
+      ofType(
+        ProductsActions.loadProducts,
+        HomeActions.loadHomePage,
+        HomeActions.loadProductsPage
+      ),
       switchMap(() =>
         of(Products).pipe(
           map(products => ProductsActions.loadProductsSuccess({ products })),

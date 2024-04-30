@@ -1,10 +1,17 @@
 <section class="flex flex-col gap-8">
   <section class="flex justify-start gap-4 text-secondary">
-    <button aria-label="New Arrival" class="font-semibold text-black">
+    <button
+      aria-label="New Arrival"
+      class="font-semibold text-black"
+      (click)="filterByType('newArrival')">
       New Arrival
     </button>
-    <button aria-label="Bestseller">Bestseller</button>
-    <button aria-label="Featured Products">Featured Products</button>
+    <button aria-label="Bestseller" (click)="filterByType('bestSeller')">
+      Bestseller
+    </button>
+    <button aria-label="Featured Products" (click)="filterByType('featured')">
+      Featured Products
+    </button>
   </section>
 
   <section class="grid grid-cols-2 gap-4 lg:grid-cols-4">
@@ -22,7 +29,8 @@
         </div>
         <div class="h-[1.5rem] font-semibold">$ {{ item.price }}</div>
         <button
-          class="flex h-[3rem] w-full items-center justify-center rounded-md border-2 border-black bg-black text-white hover:bg-white hover:text-black">
+          class="flex h-[3rem] w-full items-center justify-center rounded-md border-2 border-black bg-black text-white hover:bg-white hover:text-black"
+          (click)="navigateTo(item.id)">
           Buy Now
         </button>
       </div>

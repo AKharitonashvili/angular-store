@@ -12,7 +12,8 @@ export class BannerProductsEffects {
     return this.actions$.pipe(
       ofType(
         BannerProductsActions.loadBannerProducts,
-        HomeActions.loadHomePage
+        HomeActions.loadHomePage,
+        HomeActions.loadProductsPage
       ),
       switchMap(() =>
         of(bigBannerProducts).pipe(

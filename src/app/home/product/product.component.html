@@ -1,0 +1,68 @@
+<section class="flex flex-col gap-14">
+  <div class="flex flex-col items-center justify-center gap-7">
+    <div class="h-[22.5rem] w-[16.25rem] bg-optional-2"></div>
+    <div class="grid grid-cols-4 gap-4">
+      <div class="size-16 bg-optional-2"></div>
+      <div class="size-16 bg-optional-2"></div>
+      <div class="size-16 bg-optional-2"></div>
+      <div class="size-16 bg-optional-2"></div>
+    </div>
+  </div>
+  @if (product$ | async; as product) {
+    <div class="flex flex-col gap-6">
+      <h1 class="text-3xl font-bold">{{ product.header }}</h1>
+      <p class="text-2xl">
+        ${{ product.price }}
+
+        @if (product.oldPrice; as oldPrice) {
+          <span class="mx-4 text-optional-3">
+            <del>${{ oldPrice }}</del>
+          </span>
+        }
+      </p>
+
+      @if (product.options) {
+        <section class="grid grid-cols-4 gap-2 text-center">
+          @for (option of product.options; track $index) {
+            <button
+              class="rounded-md border border-primary p-4 text-sm opacity-50"
+              [ngClass]="{ 'opacity-100': selectedOption() === $index }"
+              (click)="changeSelectedOption($index)">
+              {{ option }}
+            </button>
+          }
+        </section>
+      }
+
+      @if (product.parameters) {
+        <section class="grid grid-cols-2 gap-2">
+          @for (option of product.parameters; track $index) {
+            <div
+              class="flex items-center justify-center gap-2 rounded-md bg-light-1 p-4 text-xs">
+              <mat-icon>{{ option.icon }}</mat-icon>
+              <div class="flex flex-1 flex-col leading-4">
+                <p class="text-optional-3">{{ option.name }}</p>
+                <p class="text-primary-3 font-semibold">{{ option.value }}</p>
+              </div>
+            </div>
+          }
+        </section>
+      }
+
+      <section>
+        <div class="text-sm text-optional">{{ product.details }}</div>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <button
+          class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white">
+          Add to Wishlist
+        </button>
+        <button
+          class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white">
+          Add to Card
+        </button>
+      </section>
+    </div>
+  }
+</section>
