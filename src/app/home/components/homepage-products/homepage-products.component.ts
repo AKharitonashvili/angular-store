@@ -1,14 +1,14 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { MinimizeTextPipe } from '../../shared/pipes/minimize-text/minimize-text.pipe';
+import { MinimizeTextPipe } from '../../../shared/pipes/minimize-text/minimize-text.pipe';
 import {
   ProductInterface,
   ProductType,
-} from '../../shared/interfaces/interfaces';
+} from '../../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
 import { Observable, map, switchMap, tap } from 'rxjs';
-import * as ProductsSelectors from '../../stores/home/products/products.selectors';
+import * as ProductsSelectors from '../../../stores/home/products/products.selectors';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 

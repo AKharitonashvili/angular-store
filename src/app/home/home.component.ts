@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
-import { BigBannerComponent } from './big-banner/big-banner.component';
-import { BrowseByCategoryComponent } from './browse-by-category/browse-by-category.component';
-import { HomepageProductsComponent } from './homepage-products/homepage-products.component';
+import { BigBannerComponent } from './components/big-banner/big-banner.component';
+import { BrowseByCategoryComponent } from './components/browse-by-category/browse-by-category.component';
+import { HomepageProductsComponent } from './components/homepage-products/homepage-products.component';
 import { Store } from '@ngrx/store';
 import * as HomeActions from '../stores/home/home.actions';
 

@@ -1,11 +1,22 @@
 <section class="flex flex-col gap-14">
   <div class="flex flex-col items-center justify-center gap-7">
-    <div class="h-[22.5rem] w-[16.25rem] bg-optional-2"></div>
+    <div
+      class="flex h-[22.5rem] w-[16.25rem] items-center justify-center bg-optional-2">
+      <mat-icon>image_not_supported</mat-icon>
+    </div>
     <div class="grid grid-cols-4 gap-4">
-      <div class="size-16 bg-optional-2"></div>
-      <div class="size-16 bg-optional-2"></div>
-      <div class="size-16 bg-optional-2"></div>
-      <div class="size-16 bg-optional-2"></div>
+      <button class="flex size-16 items-center justify-center bg-optional-2">
+        <mat-icon>image_not_supported</mat-icon>
+      </button>
+      <button class="flex size-16 items-center justify-center bg-optional-2">
+        <mat-icon>image_not_supported</mat-icon>
+      </button>
+      <button class="flex size-16 items-center justify-center bg-optional-2">
+        <mat-icon>image_not_supported</mat-icon>
+      </button>
+      <button class="flex size-16 items-center justify-center bg-optional-2">
+        <mat-icon>image_not_supported</mat-icon>
+      </button>
     </div>
   </div>
   @if (product$ | async; as product) {
@@ -26,7 +37,7 @@
           @for (option of product.options; track $index) {
             <button
               class="rounded-md border border-primary p-4 text-sm opacity-50"
-              [ngClass]="{ 'opacity-100': selectedOption() === $index }"
+              [ngClass]="{ '!opacity-100': selectedOption() === $index }"
               (click)="changeSelectedOption($index)">
               {{ option }}
             </button>

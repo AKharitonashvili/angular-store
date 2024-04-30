@@ -6,7 +6,8 @@
         <img
           src="assets/icons/logo.svg"
           alt="logo"
-          class="h-[1.5rem] w-[4.125rem]" />
+          class="h-[1.5rem] w-[4.125rem]"
+          routerLink="home" />
       </button>
       <button aria-label="menu">
         <mat-icon class="lg:!hidden" (click)="toggleShowMenu()">menu</mat-icon>
@@ -20,10 +21,11 @@
         <li>
           <app-search-input />
         </li>
-        <li><a href="" class="font-semibold">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Blog</a></li>
+        <li>
+          <a routerLink="home"> Home </a>
+        </li>
+        <li><a routerLink="about">About</a></li>
+        <li><a routerLink="contact">Contact</a></li>
         <li>
           <ul class="flex items-center gap-6">
             <li>

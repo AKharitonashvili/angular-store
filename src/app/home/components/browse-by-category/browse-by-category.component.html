@@ -2,16 +2,25 @@
   <div class="flex items-center justify-between">
     <div class="text-2xl">Browse By Category</div>
     <div>
-      <button [attr.aria-label]="'Slider Left'">
+      <button
+        [attr.aria-label]="'Slider Left'"
+        (click)="changeIndex(true)"
+        [ngClass]="{ 'cursor-auto opacity-50': index() === minIndex() }">
         <mat-icon>chevron_left</mat-icon>
       </button>
-      <button [attr.aria-label]="'Slider Right'">
+      <button
+        [attr.aria-label]="'Slider Right'"
+        (click)="changeIndex()"
+        [ngClass]="{ 'cursor-auto opacity-50': index() === maxIndex() }">
         <mat-icon>chevron_right</mat-icon>
       </button>
     </div>
   </div>
   <div class="grid grid-cols-2 gap-4 lg:grid-cols-6">
-    @for (item of categories$ | async; track $index) {
+    @for (
+      item of (categories$ | async) ?? undefined | sliceByIndex: index();
+      track $index
+    ) {
       <button
         class="flex h-[8rem] flex-col items-center justify-center rounded-md bg-optional-2">
         <div>

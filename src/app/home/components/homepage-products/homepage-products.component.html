@@ -2,14 +2,20 @@
   <section class="flex justify-start gap-4 text-secondary">
     <button
       aria-label="New Arrival"
-      class="font-semibold text-black"
+      [ngClass]="{ 'font-semibold text-black': filter() === 'newArrival' }"
       (click)="filterByType('newArrival')">
       New Arrival
     </button>
-    <button aria-label="Bestseller" (click)="filterByType('bestSeller')">
+    <button
+      aria-label="Bestseller"
+      [ngClass]="{ 'font-semibold text-black': filter() === 'bestSeller' }"
+      (click)="filterByType('bestSeller')">
       Bestseller
     </button>
-    <button aria-label="Featured Products" (click)="filterByType('featured')">
+    <button
+      aria-label="Featured Products"
+      [ngClass]="{ 'font-semibold text-black': filter() === 'featured' }"
+      (click)="filterByType('featured')">
       Featured Products
     </button>
   </section>
@@ -23,7 +29,10 @@
           class="flex h-[2rem] w-full items-center justify-end">
           <mat-icon>favorite_border</mat-icon>
         </button>
-        <div class="h-[6.375rem] min-w-[6.375rem] bg-white"></div>
+        <div
+          class="flex h-[6.375rem] min-w-[6.375rem] items-center justify-center bg-white">
+          <mat-icon>image_not_supported</mat-icon>
+        </div>
         <div class="h-[2.5rem] overflow-ellipsis text-sm font-semibold">
           {{ item.header | minimizeText: 30 }}
         </div>

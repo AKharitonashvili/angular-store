@@ -9,7 +9,9 @@ export const routes: Routes = [
   {
     path: 'home/product/:id',
     loadComponent: () =>
-      import('./home/product/product.component').then(m => m.ProductComponent),
+      import('./home/pages/product/product.component').then(
+        m => m.ProductComponent
+      ),
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' },
