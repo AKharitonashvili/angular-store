@@ -8,14 +8,14 @@ import {
   SelectedProductInterface,
 } from '../../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
-import { Observable, combineLatest, map, switchMap, tap } from 'rxjs';
+import { Observable, combineLatest, map, switchMap } from 'rxjs';
 import * as ProductsSelectors from '../../../stores/home/products/products.selectors';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 import * as FavoritesSelector from '../../../stores/favorites/favorites.selectors';
 import * as FavoritesActions from '../../../stores/favorites/favorites.actions';
-import { IsFavoritePipe } from '../../../shared/pipes/is-favorite/isFavorite.pipe';
 import { FavoriteIconComponent } from '../../../shared/ui/buttons/favorite-icon/favorite-icon.component';
+import { IsInItemsPipe } from '../../../shared/pipes/is-favorite/is-in-items.pipe';
 
 @Component({
   selector: 'app-homepage-products',
@@ -24,7 +24,7 @@ import { FavoriteIconComponent } from '../../../shared/ui/buttons/favorite-icon/
     CommonModule,
     MatIconModule,
     MinimizeTextPipe,
-    IsFavoritePipe,
+    IsInItemsPipe,
     FavoriteIconComponent,
   ],
   templateUrl: './homepage-products.component.html',

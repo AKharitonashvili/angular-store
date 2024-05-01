@@ -13,7 +13,7 @@ export const selectFavoriteItemsCount = createSelector(
   (state: CartState) => state.cart?.length ?? 0
 );
 
-export const selectIsSelectedAsFavorite = (id: string) =>
+export const selectIsInTheCart = (id: string) =>
   createSelector(
     selectCartFeature,
     (state: CartState) => !!state.cart?.find(favorite => favorite.id === id)

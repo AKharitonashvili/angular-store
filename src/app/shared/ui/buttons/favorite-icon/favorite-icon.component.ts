@@ -5,14 +5,14 @@ import {
   Input,
   Output,
 } from '@angular/core';
-import { IsFavoritePipe } from '../../../pipes/is-favorite/isFavorite.pipe';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { IsInItemsPipe } from '../../../pipes/is-favorite/is-in-items.pipe';
 
 @Component({
   selector: 'app-favorite-icon',
   standalone: true,
-  imports: [IsFavoritePipe, MatIconModule, CommonModule],
+  imports: [IsInItemsPipe, MatIconModule, CommonModule],
   templateUrl: './favorite-icon.component.html',
   styleUrl: './favorite-icon.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

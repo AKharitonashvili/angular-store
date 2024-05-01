@@ -27,7 +27,7 @@
           class="flex h-[25.5rem] flex-col items-center justify-center gap-4 bg-optional-2 p-4 text-center">
           <app-favorite-icon
             class="w-full"
-            [isFavorite]="vm.favorites | isFavorite: item.id"
+            [isFavorite]="vm.favorites | isInItems: item.id"
             (favoriteClick)="toggleFavorite($event, item)"></app-favorite-icon>
           <div
             class="flex h-[6.375rem] min-w-[6.375rem] items-center justify-center bg-white">

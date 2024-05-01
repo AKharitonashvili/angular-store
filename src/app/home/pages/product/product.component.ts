@@ -12,11 +12,11 @@ import * as HomeActions from '../../../stores/home/home.actions';
 import { ObjectToArrayPipe } from '../../../shared/pipes/object-to-array/object-to-array.pipe';
 import { MatIconModule } from '@angular/material/icon';
 import { FavoriteIconComponent } from '../../../shared/ui/buttons/favorite-icon/favorite-icon.component';
-import { IsFavoritePipe } from '../../../shared/pipes/is-favorite/isFavorite.pipe';
 import * as FavoritesSelectors from '../../../stores/favorites/favorites.selectors';
 import * as FavoritesActions from '../../../stores/favorites/favorites.actions';
 import * as CartSelectors from '../../../stores/cart/cart.selectors';
 import * as CartActions from '../../../stores/cart/cart.actions';
+import { IsInItemsPipe } from '../../../shared/pipes/is-favorite/is-in-items.pipe';
 
 @Component({
   selector: 'app-product',
@@ -26,7 +26,7 @@ import * as CartActions from '../../../stores/cart/cart.actions';
     ObjectToArrayPipe,
     MatIconModule,
     FavoriteIconComponent,
-    IsFavoritePipe,
+    IsInItemsPipe,
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss',
@@ -36,6 +36,7 @@ export class ProductComponent {
   productId = signal<string>(this.route.snapshot.paramMap.get('id') ?? '');
   vm$: Observable<{
     product: ProductInterface | undefined;
+    isInCart: boolean;
     isFavorite: boolean;
   }> = combineLatest([
     this.store
@@ -45,12 +46,14 @@ export class ProductComponent {
           products?.find(product => product.id === this.productId())
         )
       ),
+    this.store.select(CartSelectors.selectIsInTheCart(this.productId())),
     this.store.select(
       FavoritesSelectors.selectIsSelectedAsFavorite(this.productId())
     ),
   ]).pipe(
-    map(([product, isFavorite]) => ({
+    map(([product, isInCart, isFavorite]) => ({
       product,
+      isInCart,
       isFavorite,
     }))
   );
@@ -84,15 +87,23 @@ export class ProductComponent {
     }
   }
 
-  addToCart(item: SelectedProductInterface) {
-    this.store.dispatch(
-      CartActions.addToCart({
-        product: {
-          ...item,
-          quantity: item.quantity ?? 1,
-          selectedOption: item.options?.[this.selectedOption()],
-        },
-      })
-    );
+  handleCart(item: SelectedProductInterface, isInCart: boolean) {
+    if (isInCart) {
+      this.store.dispatch(
+        CartActions.removeFromCart({
+          id: item.id,
+        })
+      );
+    } else {
+      this.store.dispatch(
+        CartActions.addToCart({
+          product: {
+            ...item,
+            quantity: item.quantity ?? 1,
+            selectedOption: item.options?.[this.selectedOption()],
+          },
+        })
+      );
+    }
   }
 }
