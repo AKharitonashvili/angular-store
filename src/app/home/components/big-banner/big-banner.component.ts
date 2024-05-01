@@ -15,11 +15,18 @@ import { SafeHtmlPipe } from '../../../shared/pipes/safe-html/safe-html.pipe';
 import * as BannerProductsSelectors from '../../../stores/home/banner-products/banner-products.selectors';
 import { Store } from '@ngrx/store';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-big-banner',
   standalone: true,
-  imports: [CommonModule, RadioGroupComponent, SafeHtmlPipe, MatIconModule],
+  imports: [
+    CommonModule,
+    RadioGroupComponent,
+    SafeHtmlPipe,
+    MatIconModule,
+    RouterModule,
+  ],
   templateUrl: './big-banner.component.html',
   styleUrl: './big-banner.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -37,7 +44,8 @@ export class BigBannerComponent {
 
   constructor(
     private fb: FormBuilder,
-    private store: Store
+    private store: Store,
+    private router: Router
   ) {
     this.form.controls.selectedOption.valueChanges
       .pipe(takeUntilDestroyed())
@@ -63,5 +71,9 @@ export class BigBannerComponent {
           }
         })
       );
+  }
+
+  navigateTo(id: string) {
+    this.router.navigateByUrl(`home/product/${id}`);
   }
 }

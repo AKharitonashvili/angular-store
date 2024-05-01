@@ -6,11 +6,18 @@ import * as FavoritesActions from '../../stores/favorites/favorites.actions';
 import { Store } from '@ngrx/store';
 import { AsyncPipe } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
+import { CartAndFavoritesComponent } from '../../shared/ui/wrappers/cart-and-favorites/cart-and-favorites.component';
+import { CartCardComponent } from '../../shared/ui/cards/cart-card/cart-card.component';
 
 @Component({
   selector: 'app-favorites',
   standalone: true,
-  imports: [AsyncPipe, MatIconModule],
+  imports: [
+    AsyncPipe,
+    MatIconModule,
+    CartAndFavoritesComponent,
+    CartCardComponent,
+  ],
   templateUrl: './favorites.component.html',
   styleUrl: './favorites.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

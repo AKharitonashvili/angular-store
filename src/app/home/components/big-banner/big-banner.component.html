@@ -12,8 +12,14 @@
           {{ currentProduct.header }}
         </div>
         <div
-          class="h-[12.5rem] lg:max-w-[35rem]"
+          class="h-[5rem] lg:max-w-[35rem]"
           [innerHTML]="currentProduct.description | safeHtml"></div>
+        <button
+          class="rounded-md border-[.0938rem] border-black px-14 py-4"
+          aria-label="shop-now"
+          (click)="navigateTo(currentProduct.id)">
+          Shop Now
+        </button>
       </div>
     }
     <app-radio-group [products]="products" [form]="form"></app-radio-group>

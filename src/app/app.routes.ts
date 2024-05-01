@@ -20,6 +20,11 @@ export const routes: Routes = [
         m => m.FavoritesComponent
       ),
   },
+  {
+    path: 'cart',
+    loadComponent: () =>
+      import('./pages/cart/cart.component').then(m => m.CartComponent),
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' },
 ];

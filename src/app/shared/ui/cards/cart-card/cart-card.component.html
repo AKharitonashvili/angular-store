@@ -1,0 +1,21 @@
+<div class="flex items-center gap-4 border-b border-b-optional-2 py-8">
+  <div class="flex size-[5rem] items-center justify-center bg-optional-2">
+    <mat-icon>image_not_supported</mat-icon>
+  </div>
+  <section class="flex flex-1 flex-col items-stretch justify-between gap-2">
+    <div>{{ item.header }}</div>
+    <div class="text-end font-semibold">
+      $ {{ item.price }}
+      @if (item.oldPrice) {
+        <span class="text-optional-2">
+          <del>$ {{ item.oldPrice }}</del>
+        </span>
+      }
+    </div>
+    <div class="flex justify-end">
+      <button aria-label="remove-from-favorites" (click)="remove.emit()">
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+    </div>
+  </section>
+</div>
