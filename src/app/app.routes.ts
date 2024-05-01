@@ -4,7 +4,7 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () =>
-      import('./home/home.component').then(m => m.HomeComponent),
+      import('./home/pages/home/home.component').then(m => m.HomeComponent),
   },
   {
     path: 'home/product/:id',

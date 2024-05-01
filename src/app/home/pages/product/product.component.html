@@ -76,7 +76,9 @@
 
         <section class="flex flex-col gap-4">
           <button
-            class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white">
+            class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white"
+            aria-label="add-to-cart"
+            (click)="addToCart(product)">
             Add to Card
           </button>
         </section>

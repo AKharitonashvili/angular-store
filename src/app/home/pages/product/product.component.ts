@@ -1,7 +1,10 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable, combineLatest, map } from 'rxjs';
-import { ProductInterface } from '../../../shared/interfaces/interfaces';
+import {
+  ProductInterface,
+  SelectedProductInterface,
+} from '../../../shared/interfaces/interfaces';
 import * as ProductsSelectors from '../../../stores/home/products/products.selectors';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -12,6 +15,8 @@ import { FavoriteIconComponent } from '../../../shared/ui/buttons/favorite-icon/
 import { IsFavoritePipe } from '../../../shared/pipes/is-favorite/isFavorite.pipe';
 import * as FavoritesSelectors from '../../../stores/favorites/favorites.selectors';
 import * as FavoritesActions from '../../../stores/favorites/favorites.actions';
+import * as CartSelectors from '../../../stores/cart/cart.selectors';
+import * as CartActions from '../../../stores/cart/cart.actions';
 
 @Component({
   selector: 'app-product',
@@ -28,6 +33,7 @@ import * as FavoritesActions from '../../../stores/favorites/favorites.actions';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductComponent {
+  productId = signal<string>(this.route.snapshot.paramMap.get('id') ?? '');
   vm$: Observable<{
     product: ProductInterface | undefined;
     isFavorite: boolean;
@@ -36,15 +42,11 @@ export class ProductComponent {
       .select(ProductsSelectors.selectProducts)
       .pipe(
         map(products =>
-          products?.find(
-            product => product.id === this.route.snapshot.paramMap.get('id')
-          )
+          products?.find(product => product.id === this.productId())
         )
       ),
     this.store.select(
-      FavoritesSelectors.selectIsSelectedAsFavorite(
-        this.route.snapshot.paramMap.get('id') ?? ''
-      )
+      FavoritesSelectors.selectIsSelectedAsFavorite(this.productId())
     ),
   ]).pipe(
     map(([product, isFavorite]) => ({
@@ -80,5 +82,17 @@ export class ProductComponent {
         })
       );
     }
+  }
+
+  addToCart(item: SelectedProductInterface) {
+    this.store.dispatch(
+      CartActions.addToCart({
+        product: {
+          ...item,
+          quantity: item.quantity ?? 1,
+          selectedOption: item.options?.[this.selectedOption()],
+        },
+      })
+    );
   }
 }
