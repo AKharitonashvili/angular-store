@@ -4,16 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#211C24',
-        'priamary-2': '#353535',
-        'primary-3': '#4E4E4E',
-        black: '#181313',
-        secondary: '#656565',
-        optional: '#909090',
-        'optional-2': '#EDEDED',
-        'optional-3': '#CFCFCF',
-        'optional-3': '#A7A7A7',
-        'light-1': '#F5F5F5',
+        primary: 'var(--primary)',
+        'primary-2': 'var(--primary-2)',
+        'primary-3': 'var(--primary-3)',
+        black: 'var(--black)',
+        secondary: 'var(--secondary)',
+        optional: 'var(--optional)',
+        'optional-2': 'var(--optional-2)',
+        'optional-3': 'var(--optional-3)',
+        'optional-4': 'var(--optional-4)',
+        'light-1': 'var(--light-1)',
       },
       backgroundSize: {
         'auto-200': 'auto 200px',

@@ -31,3 +31,17 @@ a,
 input[type='radio'] {
   @apply cursor-pointer;
 }
+
+:root {
+  --black: #181313;
+  --primary: #211c24;
+  --primary-2: #353535;
+  --primary-3: #4e4e4e;
+  --secondary: #656565;
+  --optional: #909090;
+  --optional-2: #ededed;
+  --optional-3: #cfcfcf;
+  --optional-4: #a7a7a7;
+  --light-1: #f5f5f5;
+  --mat-badge-background-color: var(--primary);
+}

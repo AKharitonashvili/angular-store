@@ -14,6 +14,8 @@
     "@angular/platform-server": "^17.1.0",
     "@angular/router": "^17.1.0",
     "@angular/ssr": "^17.3.5",
+    "@ngrx/effects": "^17.2.0",
+    "@ngrx/store": "^17.2.0",
     "express": "^4.18.2",
     "express-minify": "^1.0.0",
     "primeicons": "^7.0.0",
@@ -32,6 +34,7 @@
     "@angular-eslint/template-parser": "^17.3.0",
     "@angular/cli": "^17.1.3",
     "@angular/compiler-cli": "^17.1.0",
+    "@ngrx/eslint-plugin": "^17.2.0",
     "@ngtools/webpack": "^17.3.6",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
@@ -76,7 +79,7 @@
       },
       {
         "file": ".eslintrc.json",
-        "hash": "7277647699693977783"
+        "hash": "2569212213174668660"
       },
       {
         "file": ".gitignore",
@@ -120,11 +123,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "10420294361378991547"
+        "hash": "3517814974174028236"
       },
       {
         "file": "package.json",
-        "hash": "13780494835685271280"
+        "hash": "12876873892849171555"
       },
       {
         "file": "server.ts",
@@ -152,43 +155,63 @@
       },
       {
         "file": "src/app/app.config.ts",
-        "hash": "16633033544860698824"
+        "hash": "17227998790416290681"
       },
       {
         "file": "src/app/app.routes.ts",
-        "hash": "1588458359998425615"
+        "hash": "3095860409986969472"
       },
       {
-        "file": "src/app/home/big-banner/big-banner.component.html",
-        "hash": "8149266455994981363"
+        "file": "src/app/fake-api/fake-api.ts",
+        "hash": "7494986895752700772"
       },
       {
-        "file": "src/app/home/big-banner/big-banner.component.scss",
+        "file": "src/app/home/components/big-banner/big-banner.component.html",
+        "hash": "815971225578102503"
+      },
+      {
+        "file": "src/app/home/components/big-banner/big-banner.component.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/home/big-banner/big-banner.component.spec.ts",
+        "file": "src/app/home/components/big-banner/big-banner.component.spec.ts",
         "hash": "11192225616680347134"
       },
       {
-        "file": "src/app/home/big-banner/big-banner.component.ts",
-        "hash": "16500163909517234446"
+        "file": "src/app/home/components/big-banner/big-banner.component.ts",
+        "hash": "11917199410996983262"
       },
       {
-        "file": "src/app/home/browse-by-category/browse-by-category.component.html",
-        "hash": "6419344877313901781"
+        "file": "src/app/home/components/browse-by-category/browse-by-category.component.html",
+        "hash": "14795819678279228148"
       },
       {
-        "file": "src/app/home/browse-by-category/browse-by-category.component.scss",
+        "file": "src/app/home/components/browse-by-category/browse-by-category.component.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/home/browse-by-category/browse-by-category.component.spec.ts",
+        "file": "src/app/home/components/browse-by-category/browse-by-category.component.spec.ts",
         "hash": "2115169041378808395"
       },
       {
-        "file": "src/app/home/browse-by-category/browse-by-category.component.ts",
-        "hash": "3805005888717225759"
+        "file": "src/app/home/components/browse-by-category/browse-by-category.component.ts",
+        "hash": "1930714661867455542"
+      },
+      {
+        "file": "src/app/home/components/homepage-products/homepage-products.component.html",
+        "hash": "3038993297938930999"
+      },
+      {
+        "file": "src/app/home/components/homepage-products/homepage-products.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/home/components/homepage-products/homepage-products.component.spec.ts",
+        "hash": "84246452927333055"
+      },
+      {
+        "file": "src/app/home/components/homepage-products/homepage-products.component.ts",
+        "hash": "11976950644433720571"
       },
       {
         "file": "src/app/home/home.component.html",
@@ -204,23 +227,23 @@
       },
       {
         "file": "src/app/home/home.component.ts",
-        "hash": "2561346100588429230"
+        "hash": "10737851284443943371"
       },
       {
-        "file": "src/app/home/homepage-products/homepage-products.component.html",
-        "hash": "7425277666268485086"
+        "file": "src/app/home/pages/product/product.component.html",
+        "hash": "5035885231829703936"
       },
       {
-        "file": "src/app/home/homepage-products/homepage-products.component.scss",
+        "file": "src/app/home/pages/product/product.component.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/home/homepage-products/homepage-products.component.spec.ts",
-        "hash": "84246452927333055"
+        "file": "src/app/home/pages/product/product.component.spec.ts",
+        "hash": "2252845158441882859"
       },
       {
-        "file": "src/app/home/homepage-products/homepage-products.component.ts",
-        "hash": "7469253932877253907"
+        "file": "src/app/home/pages/product/product.component.ts",
+        "hash": "4475445321166427627"
       },
       {
         "file": "src/app/layout/footer/footer.component.html",
@@ -240,7 +263,7 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.html",
-        "hash": "2905836573380633139"
+        "hash": "13387855113198380975"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.scss",
@@ -252,15 +275,11 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.ts",
-        "hash": "13255114965530062950"
-      },
-      {
-        "file": "src/app/shared/fake-api/fake-api.ts",
-        "hash": "10866866292485442295"
+        "hash": "5179931780857116712"
       },
       {
         "file": "src/app/shared/interfaces/interfaces.ts",
-        "hash": "8826777321540467834"
+        "hash": "14137701300654184162"
       },
       {
         "file": "src/app/shared/pipes/minimize-text/minimize-text.pipe.spec.ts",
@@ -271,12 +290,28 @@
         "hash": "16192598723987229109"
       },
       {
+        "file": "src/app/shared/pipes/object-to-array/object-to-array.pipe.spec.ts",
+        "hash": "2382803505293508470"
+      },
+      {
+        "file": "src/app/shared/pipes/object-to-array/object-to-array.pipe.ts",
+        "hash": "18246550826261054751"
+      },
+      {
         "file": "src/app/shared/pipes/safe-html/safe-html.pipe.spec.ts",
         "hash": "7893256134237555779"
       },
       {
         "file": "src/app/shared/pipes/safe-html/safe-html.pipe.ts",
         "hash": "17978124300470640686"
+      },
+      {
+        "file": "src/app/shared/pipes/slice-by-index/slice-by-index.pipe.spec.ts",
+        "hash": "7026506917956805578"
+      },
+      {
+        "file": "src/app/shared/pipes/slice-by-index/slice-by-index.pipe.ts",
+        "hash": "17107257187674676209"
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.html",
@@ -292,7 +327,7 @@
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.ts",
-        "hash": "8189003330442725813"
+        "hash": "17314799019384090242"
       },
       {
         "file": "src/app/shared/ui/search-input/search-input.component.html",
@@ -309,6 +344,58 @@
       {
         "file": "src/app/shared/ui/search-input/search-input.component.ts",
         "hash": "14426185281447622451"
+      },
+      {
+        "file": "src/app/stores/home/banner-products/banner-products.actions.ts",
+        "hash": "6605981082030338876"
+      },
+      {
+        "file": "src/app/stores/home/banner-products/banner-products.effects.ts",
+        "hash": "1076441561682533042"
+      },
+      {
+        "file": "src/app/stores/home/banner-products/banner-products.reducer.ts",
+        "hash": "7876273688002658994"
+      },
+      {
+        "file": "src/app/stores/home/banner-products/banner-products.selectors.ts",
+        "hash": "10868835384323046077"
+      },
+      {
+        "file": "src/app/stores/home/categories/categories.actions.ts",
+        "hash": "817084366877136911"
+      },
+      {
+        "file": "src/app/stores/home/categories/categories.effects.ts",
+        "hash": "7690677443981390662"
+      },
+      {
+        "file": "src/app/stores/home/categories/categories.reducer.ts",
+        "hash": "17706573493177949329"
+      },
+      {
+        "file": "src/app/stores/home/categories/categories.selectors.ts",
+        "hash": "853924330257572364"
+      },
+      {
+        "file": "src/app/stores/home/home.actions.ts",
+        "hash": "15168981006117598621"
+      },
+      {
+        "file": "src/app/stores/home/products/products.actions.ts",
+        "hash": "16490281009285320893"
+      },
+      {
+        "file": "src/app/stores/home/products/products.effects.ts",
+        "hash": "8235363972619609861"
+      },
+      {
+        "file": "src/app/stores/home/products/products.reducer.ts",
+        "hash": "13853642534690037311"
+      },
+      {
+        "file": "src/app/stores/home/products/products.selectors.ts",
+        "hash": "6240001299958428870"
       },
       {
         "file": "src/assets/.gitkeep",
@@ -392,7 +479,7 @@
       },
       {
         "file": "tailwind.config.js",
-        "hash": "7401640137410060182"
+        "hash": "1087509316242304284"
       },
       {
         "file": "tsconfig.app.json",

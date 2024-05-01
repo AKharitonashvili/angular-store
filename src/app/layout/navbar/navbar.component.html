@@ -29,25 +29,28 @@
         <li>
           <ul class="flex items-center gap-6">
             <li>
-              <a href="">
+              <button
+                aria-label="favorites"
+                [matBadge]="favoriteItemsCount$ | async"
+                matBadgeSize="small">
                 <img
                   src="assets/icons/favorites.svg"
                   alt="favorites"
                   class="size-8" />
-              </a>
+              </button>
             </li>
             <li>
-              <a href="">
+              <button aria-label="cart">
                 <img src="assets/icons/cart.svg" alt="cart" class="size-8" />
-              </a>
+              </button>
             </li>
             <li>
-              <a href="">
+              <button aria-label="account">
                 <img
                   src="assets/icons/account.svg"
                   alt="account"
                   class="size-8" />
-              </a>
+              </button>
             </li>
           </ul>
         </li>
