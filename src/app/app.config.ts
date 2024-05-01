@@ -14,6 +14,8 @@ import { bannerProductsReducer } from './stores/home/banner-products/banner-prod
 import { BannerProductsEffects } from './stores/home/banner-products/banner-products.effects';
 import { FavoritesEffects } from './stores/favorites/favorites.effects';
 import { favoritesReducer } from './stores/favorites/favorites.reducer';
+import { cartReducer } from './stores/cart/cart.reducer';
+import { CartEffects } from './stores/cart/cart.effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -25,11 +27,13 @@ export const appConfig: ApplicationConfig = {
       ProductsEffects,
       BannerProductsEffects,
       FavoritesEffects,
+      CartEffects,
     ]),
     provideStore({ categories: categoriesReducer }),
     provideState({ name: 'categories', reducer: categoriesReducer }),
     provideState({ name: 'products', reducer: productsReducer }),
     provideState({ name: 'banner-products', reducer: bannerProductsReducer }),
     provideState({ name: 'favorites', reducer: favoritesReducer }),
+    provideState({ name: 'cart', reducer: cartReducer }),
   ],
 };

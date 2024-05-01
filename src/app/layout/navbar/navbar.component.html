@@ -1,61 +1,69 @@
-<header class="relative flex justify-center border-b">
-  <section
-    class="container flex flex-col justify-between px-4 py-8 lg:flex-row">
-    <div class="flex w-full items-center justify-between lg:w-auto">
-      <button aria-label="logo">
-        <img
-          src="assets/icons/logo.svg"
-          alt="logo"
-          class="h-[1.5rem] w-[4.125rem]"
-          routerLink="home" />
-      </button>
-      <button aria-label="menu">
-        <mat-icon class="lg:!hidden" (click)="toggleShowMenu()">menu</mat-icon>
-      </button>
-    </div>
-    <nav
-      class="absolute left-0 right-0 top-[5.5rem] hidden w-full bg-white lg:static lg:flex lg:w-auto lg:bg-transparent"
-      [ngClass]="{ '!flex ': showMenu() }">
-      <ul
-        class="flex w-full flex-col items-center gap-14 border-b border-t p-4 lg:flex-row lg:border-0 lg:p-0">
-        <li>
-          <app-search-input />
-        </li>
-        <li>
-          <a routerLink="home"> Home </a>
-        </li>
-        <li><a routerLink="about">About</a></li>
-        <li><a routerLink="contact">Contact</a></li>
-        <li>
-          <ul class="flex items-center gap-6">
-            <li>
-              <button
-                aria-label="favorites"
-                [matBadge]="favoriteItemsCount$ | async"
-                matBadgeSize="small"
-                routerLink="favorites">
-                <img
-                  src="assets/icons/favorites.svg"
-                  alt="favorites"
-                  class="size-8" />
-              </button>
-            </li>
-            <li>
-              <button aria-label="cart">
-                <img src="assets/icons/cart.svg" alt="cart" class="size-8" />
-              </button>
-            </li>
-            <li>
-              <button aria-label="account">
-                <img
-                  src="assets/icons/account.svg"
-                  alt="account"
-                  class="size-8" />
-              </button>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </section>
-</header>
+@if (vm$ | async; as vm) {
+  <header class="relative flex justify-center border-b">
+    <section
+      class="container flex flex-col justify-between px-4 py-8 lg:flex-row">
+      <div class="flex w-full items-center justify-between lg:w-auto">
+        <button aria-label="logo">
+          <img
+            src="assets/icons/logo.svg"
+            alt="logo"
+            class="h-[1.5rem] w-[4.125rem]"
+            routerLink="home" />
+        </button>
+        <button aria-label="menu">
+          <mat-icon class="lg:!hidden" (click)="toggleShowMenu()"
+            >menu</mat-icon
+          >
+        </button>
+      </div>
+      <nav
+        class="absolute left-0 right-0 top-[5.5rem] hidden w-full bg-white lg:static lg:flex lg:w-auto lg:bg-transparent"
+        [ngClass]="{ '!flex ': showMenu() }">
+        <ul
+          class="flex w-full flex-col items-center gap-14 border-b border-t p-4 lg:flex-row lg:border-0 lg:p-0">
+          <li>
+            <app-search-input />
+          </li>
+          <li>
+            <a routerLink="home"> Home </a>
+          </li>
+          <li><a routerLink="about">About</a></li>
+          <li><a routerLink="contact">Contact</a></li>
+          <li>
+            <ul class="flex items-center gap-6">
+              <li>
+                <button
+                  aria-label="favorites"
+                  [matBadge]="vm.favoritesCount"
+                  matBadgeSize="small"
+                  routerLink="favorites">
+                  <img
+                    src="assets/icons/favorites.svg"
+                    alt="favorites"
+                    class="size-8" />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="cart"
+                  [matBadge]="vm.cartItemsCount"
+                  matBadgeSize="small"
+                  routerLink="cart">
+                  <img src="assets/icons/cart.svg" alt="cart" class="size-8" />
+                </button>
+              </li>
+              <li>
+                <button aria-label="account">
+                  <img
+                    src="assets/icons/account.svg"
+                    alt="account"
+                    class="size-8" />
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+}

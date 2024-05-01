@@ -147,7 +147,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "632091514703365705"
+        "hash": "10789204216938898150"
       },
       {
         "file": "src/app/app.config.server.ts",
@@ -155,11 +155,11 @@
       },
       {
         "file": "src/app/app.config.ts",
-        "hash": "17227998790416290681"
+        "hash": "13646297074915776566"
       },
       {
         "file": "src/app/app.routes.ts",
-        "hash": "3095860409986969472"
+        "hash": "11998634310962418638"
       },
       {
         "file": "src/app/fake-api/fake-api.ts",
@@ -199,7 +199,7 @@
       },
       {
         "file": "src/app/home/components/homepage-products/homepage-products.component.html",
-        "hash": "3038993297938930999"
+        "hash": "18321652178317165217"
       },
       {
         "file": "src/app/home/components/homepage-products/homepage-products.component.scss",
@@ -211,7 +211,7 @@
       },
       {
         "file": "src/app/home/components/homepage-products/homepage-products.component.ts",
-        "hash": "11976950644433720571"
+        "hash": "15849936639903949100"
       },
       {
         "file": "src/app/home/home.component.html",
@@ -231,7 +231,7 @@
       },
       {
         "file": "src/app/home/pages/product/product.component.html",
-        "hash": "5035885231829703936"
+        "hash": "15207462840666681852"
       },
       {
         "file": "src/app/home/pages/product/product.component.scss",
@@ -243,7 +243,7 @@
       },
       {
         "file": "src/app/home/pages/product/product.component.ts",
-        "hash": "4475445321166427627"
+        "hash": "13543440477772489286"
       },
       {
         "file": "src/app/layout/footer/footer.component.html",
@@ -263,11 +263,11 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.html",
-        "hash": "13387855113198380975"
+        "hash": "12706024981449261593"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.scss",
-        "hash": "3244421341483603138"
+        "hash": "17049486799901212831"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.spec.ts",
@@ -275,11 +275,35 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.ts",
-        "hash": "5179931780857116712"
+        "hash": "14108412611164093667"
+      },
+      {
+        "file": "src/app/pages/favorites/favorites.component.html",
+        "hash": "7393150209548315795"
+      },
+      {
+        "file": "src/app/pages/favorites/favorites.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/favorites/favorites.component.spec.ts",
+        "hash": "8117401221262184653"
+      },
+      {
+        "file": "src/app/pages/favorites/favorites.component.ts",
+        "hash": "9814033866795076623"
       },
       {
         "file": "src/app/shared/interfaces/interfaces.ts",
-        "hash": "14137701300654184162"
+        "hash": "14152027393171039248"
+      },
+      {
+        "file": "src/app/shared/pipes/is-favorite/isFavorite.pipe.spec.ts",
+        "hash": "5474724482116858960"
+      },
+      {
+        "file": "src/app/shared/pipes/is-favorite/isFavorite.pipe.ts",
+        "hash": "15998627784006435434"
       },
       {
         "file": "src/app/shared/pipes/minimize-text/minimize-text.pipe.spec.ts",
@@ -314,6 +338,22 @@
         "hash": "17107257187674676209"
       },
       {
+        "file": "src/app/shared/ui/buttons/favorite-icon/favorite-icon.component.html",
+        "hash": "14610920956683703882"
+      },
+      {
+        "file": "src/app/shared/ui/buttons/favorite-icon/favorite-icon.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/shared/ui/buttons/favorite-icon/favorite-icon.component.spec.ts",
+        "hash": "7020504522119023504"
+      },
+      {
+        "file": "src/app/shared/ui/buttons/favorite-icon/favorite-icon.component.ts",
+        "hash": "4163469979239236343"
+      },
+      {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.html",
         "hash": "9428002010629074449"
       },
@@ -344,6 +384,22 @@
       {
         "file": "src/app/shared/ui/search-input/search-input.component.ts",
         "hash": "14426185281447622451"
+      },
+      {
+        "file": "src/app/stores/favorites/favorites.actions.ts",
+        "hash": "533824085467228142"
+      },
+      {
+        "file": "src/app/stores/favorites/favorites.effects.ts",
+        "hash": "1598493500252596516"
+      },
+      {
+        "file": "src/app/stores/favorites/favorites.reducer.ts",
+        "hash": "7995100685296840309"
+      },
+      {
+        "file": "src/app/stores/favorites/favorites.selectors.ts",
+        "hash": "17956861011584583377"
       },
       {
         "file": "src/app/stores/home/banner-products/banner-products.actions.ts",
@@ -391,11 +447,15 @@
       },
       {
         "file": "src/app/stores/home/products/products.reducer.ts",
-        "hash": "13853642534690037311"
+        "hash": "14601554224749974620"
       },
       {
         "file": "src/app/stores/home/products/products.selectors.ts",
         "hash": "6240001299958428870"
+      },
+      {
+        "file": "src/app/stores/initial.actions.ts",
+        "hash": "11025821308313345374"
       },
       {
         "file": "src/assets/.gitkeep",
@@ -475,11 +535,11 @@
       },
       {
         "file": "src/styles.scss",
-        "hash": "12050273018995250016"
+        "hash": "3405853132412784457"
       },
       {
         "file": "tailwind.config.js",
-        "hash": "1087509316242304284"
+        "hash": "12142872287817300620"
       },
       {
         "file": "tsconfig.app.json",

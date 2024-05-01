@@ -6,7 +6,8 @@ import { Router, RouterModule } from '@angular/router';
 import { MatBadgeModule } from '@angular/material/badge';
 import { Store } from '@ngrx/store';
 import * as FavoritesSelectors from '../../stores/favorites/favorites.selectors';
-import { Observable } from 'rxjs';
+import * as CartSelectors from '../../stores/cart/cart.selectors';
+import { Observable, combineLatest, map } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -24,9 +25,16 @@ import { Observable } from 'rxjs';
 })
 export class NavbarComponent {
   showMenu = signal<boolean>(false);
-  favoriteItemsCount$: Observable<number> = this.store.select(
-    FavoritesSelectors.selectFavoriteItemsCount
-  );
+  vm$: Observable<{ favoritesCount: number; cartItemsCount: number }> =
+    combineLatest([
+      this.store.select(FavoritesSelectors.selectFavoriteItemsCount),
+      this.store.select(CartSelectors.selectFavoriteItemsCount),
+    ]).pipe(
+      map(([favoritesCount, cartItemsCount]) => ({
+        favoritesCount,
+        cartItemsCount,
+      }))
+    );
 
   constructor(
     public router: Router,
