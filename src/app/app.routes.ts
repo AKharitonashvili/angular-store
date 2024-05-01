@@ -13,6 +13,13 @@ export const routes: Routes = [
         m => m.ProductComponent
       ),
   },
+  {
+    path: 'favorites',
+    loadComponent: () =>
+      import('./pages/favorites/favorites.component').then(
+        m => m.FavoritesComponent
+      ),
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' },
 ];

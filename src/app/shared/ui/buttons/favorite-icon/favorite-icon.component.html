@@ -1,11 +1,11 @@
 <button
   aria-label="Favorite"
-  class="flex h-[2rem] w-full items-center justify-end">
+  class="flex h-[2rem] w-full items-center justify-end"
+  (click)="emitFavoriteClick()">
   <mat-icon
     [ngClass]="{
       '!text-red-500': isFavorite
-    }"
-    (click)="emitFavoriteClick()">
+    }">
     {{ isFavorite ? 'favorite' : 'favorite_border' }}
   </mat-icon>
 </button>

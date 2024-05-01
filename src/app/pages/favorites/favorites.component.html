@@ -1,0 +1,34 @@
+@if (vm$ | async; as vm) {
+  <section class="flex flex-col gap-10">
+    <h1 class="text-2xl font-bold">Favorites</h1>
+    <section class="min-h-[37.5rem] w-full">
+      @for (item of vm.favorites; track $index) {
+        <div class="flex items-center gap-4 border-b border-b-optional-2 py-8">
+          <div
+            class="flex size-[5rem] items-center justify-center bg-optional-2">
+            <mat-icon>image_not_supported</mat-icon>
+          </div>
+          <section
+            class="flex flex-1 flex-col items-stretch justify-between gap-2">
+            <div>{{ item.header }}</div>
+            <div class="text-end font-semibold">
+              $ {{ item.price }}
+              @if (item.oldPrice) {
+                <span class="text-optional-2">
+                  <del>$ {{ item.oldPrice }}</del>
+                </span>
+              }
+            </div>
+            <div class="flex justify-end">
+              <button
+                aria-label="remove-from-favorites"
+                (click)="removeFromFavorites(item)">
+                <mat-icon>delete_outline</mat-icon>
+              </button>
+            </div>
+          </section>
+        </div>
+      }
+    </section>
+  </section>
+}
