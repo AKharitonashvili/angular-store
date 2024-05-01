@@ -15,8 +15,10 @@ export const selectFavoriteItemsCount = createSelector(
 );
 
 export const selectIsSelectedAsFavorite = (id: string) =>
-  createSelector(selectFavoritesFeature, (state: FavoritesState) =>
-    state.favorites?.find(favorite => favorite.id === id)
+  createSelector(
+    selectFavoritesFeature,
+    (state: FavoritesState) =>
+      !!state.favorites?.find(favorite => favorite.id === id)
   );
 
 export const selectFavoritesLoading = createSelector(

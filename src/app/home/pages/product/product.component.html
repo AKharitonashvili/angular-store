@@ -1,79 +1,86 @@
-<section class="flex flex-col gap-14">
-  <div class="flex flex-col items-center justify-center gap-7">
-    <div
-      class="flex h-[22.5rem] w-[16.25rem] items-center justify-center bg-optional-2">
-      <mat-icon>image_not_supported</mat-icon>
-    </div>
-    <div class="grid grid-cols-4 gap-4">
-      <button class="flex size-16 items-center justify-center bg-optional-2">
-        <mat-icon>image_not_supported</mat-icon>
-      </button>
-      <button class="flex size-16 items-center justify-center bg-optional-2">
-        <mat-icon>image_not_supported</mat-icon>
-      </button>
-      <button class="flex size-16 items-center justify-center bg-optional-2">
-        <mat-icon>image_not_supported</mat-icon>
-      </button>
-      <button class="flex size-16 items-center justify-center bg-optional-2">
-        <mat-icon>image_not_supported</mat-icon>
-      </button>
-    </div>
-  </div>
-  @if (product$ | async; as product) {
-    <div class="flex flex-col gap-6">
-      <h1 class="text-3xl font-bold">{{ product.header }}</h1>
-      <p class="text-2xl">
-        ${{ product.price }}
+@if (vm$ | async; as vm) {
+  <section class="flex flex-col gap-14">
+    @if (vm.product; as product) {
+      <app-favorite-icon
+        class="w-full"
+        [isFavorite]="vm.isFavorite"
+        (favoriteClick)="toggleFavorite($event, product)"></app-favorite-icon>
+      <div class="flex flex-col items-center justify-center gap-7">
+        <div
+          class="flex h-[22.5rem] w-[16.25rem] items-center justify-center bg-optional-2">
+          <mat-icon>image_not_supported</mat-icon>
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+          <button
+            class="flex size-16 items-center justify-center bg-optional-2">
+            <mat-icon>image_not_supported</mat-icon>
+          </button>
+          <button
+            class="flex size-16 items-center justify-center bg-optional-2">
+            <mat-icon>image_not_supported</mat-icon>
+          </button>
+          <button
+            class="flex size-16 items-center justify-center bg-optional-2">
+            <mat-icon>image_not_supported</mat-icon>
+          </button>
+          <button
+            class="flex size-16 items-center justify-center bg-optional-2">
+            <mat-icon>image_not_supported</mat-icon>
+          </button>
+        </div>
+      </div>
 
-        @if (product.oldPrice; as oldPrice) {
-          <span class="mx-4 text-optional-3">
-            <del>${{ oldPrice }}</del>
-          </span>
+      <div class="flex flex-col gap-6">
+        <h1 class="text-3xl font-bold">{{ product.header }}</h1>
+        <p class="text-2xl">
+          ${{ product.price }}
+
+          @if (product.oldPrice; as oldPrice) {
+            <span class="mx-4 text-optional-3">
+              <del>${{ oldPrice }}</del>
+            </span>
+          }
+        </p>
+
+        @if (product.options) {
+          <section class="grid grid-cols-4 gap-2 text-center">
+            @for (option of product.options; track $index) {
+              <button
+                class="rounded-md border border-primary p-4 text-sm opacity-50"
+                [ngClass]="{ '!opacity-100': selectedOption() === $index }"
+                (click)="changeSelectedOption($index)">
+                {{ option }}
+              </button>
+            }
+          </section>
         }
-      </p>
 
-      @if (product.options) {
-        <section class="grid grid-cols-4 gap-2 text-center">
-          @for (option of product.options; track $index) {
-            <button
-              class="rounded-md border border-primary p-4 text-sm opacity-50"
-              [ngClass]="{ '!opacity-100': selectedOption() === $index }"
-              (click)="changeSelectedOption($index)">
-              {{ option }}
-            </button>
-          }
-        </section>
-      }
-
-      @if (product.parameters) {
-        <section class="grid grid-cols-2 gap-2">
-          @for (option of product.parameters; track $index) {
-            <div
-              class="flex items-center justify-center gap-2 rounded-md bg-light-1 p-4 text-xs">
-              <mat-icon>{{ option.icon }}</mat-icon>
-              <div class="flex flex-1 flex-col leading-4">
-                <p class="text-optional-3">{{ option.name }}</p>
-                <p class="font-semibold text-primary-3">{{ option.value }}</p>
+        @if (product.parameters) {
+          <section class="grid grid-cols-2 gap-2">
+            @for (option of product.parameters; track $index) {
+              <div
+                class="flex items-center justify-center gap-2 rounded-md bg-light-1 p-4 text-xs">
+                <mat-icon>{{ option.icon }}</mat-icon>
+                <div class="flex flex-1 flex-col leading-4">
+                  <p class="text-optional-3">{{ option.name }}</p>
+                  <p class="font-semibold text-primary-3">{{ option.value }}</p>
+                </div>
               </div>
-            </div>
-          }
+            }
+          </section>
+        }
+
+        <section>
+          <div class="text-sm text-optional">{{ product.details }}</div>
         </section>
-      }
 
-      <section>
-        <div class="text-sm text-optional">{{ product.details }}</div>
-      </section>
-
-      <section class="flex flex-col gap-4">
-        <button
-          class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white">
-          Add to Wishlist
-        </button>
-        <button
-          class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white">
-          Add to Card
-        </button>
-      </section>
-    </div>
-  }
-</section>
+        <section class="flex flex-col gap-4">
+          <button
+            class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white">
+            Add to Card
+          </button>
+        </section>
+      </div>
+    }
+  </section>
+}
