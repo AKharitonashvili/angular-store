@@ -5,10 +5,10 @@ import {
   ProductInterface,
   SelectedProductInterface,
 } from '../../../../shared/interfaces/interfaces';
-import * as ProductsSelectors from '../../../../stores/home/products/products.selectors';
+import * as ProductsSelectors from '../../../../stores/products/products.selectors';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import * as HomeActions from '../../../../stores/home/home.actions';
+import * as HomeActions from '../../../../stores/page.actions';
 import { ObjectToArrayPipe } from '../../../../shared/pipes/object-to-array/object-to-array.pipe';
 import { MatIconModule } from '@angular/material/icon';
 import { FavoriteIconComponent } from '../../../../shared/ui/buttons/favorite-icon/favorite-icon.component';
@@ -19,7 +19,7 @@ import * as CartActions from '../../../../stores/cart/cart.actions';
 import { IsInItemsPipe } from '../../../../shared/pipes/is-favorite/is-in-items.pipe';
 
 @Component({
-  selector: 'app-product',
+  selector: 'app-product-card',
   standalone: true,
   imports: [
     CommonModule,

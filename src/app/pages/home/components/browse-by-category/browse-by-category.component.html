@@ -22,7 +22,9 @@
       track $index
     ) {
       <button
-        class="flex h-[8rem] flex-col items-center justify-center rounded-md bg-optional-2">
+        class="flex h-[8rem] flex-col items-center justify-center rounded-md bg-optional-2"
+        aria-label="category"
+        (click)="navigateTo(item.categoryName)">
         <div>
           <mat-icon>{{ item.icon }}</mat-icon>
         </div>

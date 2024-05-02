@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatIconModule } from '@angular/material/icon';
-import { MinimizeTextPipe } from '../../../../shared/pipes/minimize-text/minimize-text.pipe';
 import {
   ProductInterface,
   ProductType,
@@ -9,24 +7,17 @@ import {
 } from '../../../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
 import { Observable, combineLatest, map, switchMap } from 'rxjs';
-import * as ProductsSelectors from '../../../../stores/home/products/products.selectors';
+import * as ProductsSelectors from '../../../../stores/products/products.selectors';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 import * as FavoritesSelector from '../../../../stores/favorites/favorites.selectors';
 import * as FavoritesActions from '../../../../stores/favorites/favorites.actions';
-import { FavoriteIconComponent } from '../../../../shared/ui/buttons/favorite-icon/favorite-icon.component';
-import { IsInItemsPipe } from '../../../../shared/pipes/is-favorite/is-in-items.pipe';
+import { ProductCardComponent } from '../../../../shared/ui/product-card/product-card.component';
 
 @Component({
   selector: 'app-homepage-products',
   standalone: true,
-  imports: [
-    CommonModule,
-    MatIconModule,
-    MinimizeTextPipe,
-    IsInItemsPipe,
-    FavoriteIconComponent,
-  ],
+  imports: [CommonModule, ProductCardComponent],
   templateUrl: './homepage-products.component.html',
   styleUrl: './homepage-products.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -54,20 +45,26 @@ export class HomepageProductsComponent {
   }
 
   navigateTo(id: string) {
-    this.router.navigateByUrl(`home/products/${id}`);
+    this.router.navigateByUrl(`products/items/${id}`);
   }
 
-  toggleFavorite(isFavorite: boolean, product: ProductInterface) {
+  toggleFavorite({
+    isFavorite,
+    item,
+  }: {
+    isFavorite: boolean;
+    item: ProductInterface;
+  }) {
     if (isFavorite) {
       this.store.dispatch(
         FavoritesActions.removeFromFavorites({
-          id: product.id,
+          id: item.id,
         })
       );
     } else {
       this.store.dispatch(
         FavoritesActions.addToFavorites({
-          product: { ...product, selectedOption: product.options?.[0] },
+          product: { ...item, selectedOption: item.options?.[0] },
         })
       );
     }

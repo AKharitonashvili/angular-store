@@ -23,26 +23,11 @@
 
     <section class="grid grid-cols-2 gap-4 lg:grid-cols-4">
       @for (item of vm.products; track $index) {
-        <div
-          class="flex h-[25.5rem] flex-col items-center justify-center gap-4 bg-optional-2 p-4 text-center">
-          <app-favorite-icon
-            class="w-full"
-            [isFavorite]="vm.favorites | isInItems: item.id"
-            (favoriteClick)="toggleFavorite($event, item)"></app-favorite-icon>
-          <div
-            class="flex h-[6.375rem] min-w-[6.375rem] items-center justify-center bg-white">
-            <mat-icon>image_not_supported</mat-icon>
-          </div>
-          <div class="h-[2.5rem] overflow-ellipsis text-sm font-semibold">
-            {{ item.header | minimizeText: 30 }}
-          </div>
-          <div class="h-[1.5rem] font-semibold">$ {{ item.price }}</div>
-          <button
-            class="flex h-[3rem] w-full items-center justify-center rounded-md border-2 border-black bg-black text-white hover:bg-white hover:text-black"
-            (click)="navigateTo(item.id)">
-            Buy Now
-          </button>
-        </div>
+        <app-product-card
+          [favorites]="vm.favorites"
+          [item]="item"
+          (navigate)="navigateTo($event)"
+          (emitToggleFavorites)="toggleFavorite($event)" />
       }
     </section>
 

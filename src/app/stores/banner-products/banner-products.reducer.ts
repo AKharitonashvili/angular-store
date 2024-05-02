@@ -2,7 +2,7 @@ import { createReducer, on } from '@ngrx/store';
 import {
   BigBannerProductsInterface,
   ProductInterface,
-} from '../../../shared/interfaces/interfaces';
+} from '../../shared/interfaces/interfaces';
 import * as BannerProductsActions from './banner-products.actions';
 
 export interface BannerProductsState {

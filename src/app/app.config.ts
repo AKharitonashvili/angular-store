@@ -6,12 +6,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideState, provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
-import { categoriesReducer } from './stores/home/categories/categories.reducer';
-import { CategoriesEffects } from './stores/home/categories/categories.effects';
-import { productsReducer } from './stores/home/products/products.reducer';
-import { ProductsEffects } from './stores/home/products/products.effects';
-import { bannerProductsReducer } from './stores/home/banner-products/banner-products.reducer';
-import { BannerProductsEffects } from './stores/home/banner-products/banner-products.effects';
+import { categoriesReducer } from './stores/categories/categories.reducer';
+import { CategoriesEffects } from './stores/categories/categories.effects';
+import { productsReducer } from './stores/products/products.reducer';
+import { ProductsEffects } from './stores/products/products.effects';
+import { bannerProductsReducer } from './stores/banner-products/banner-products.reducer';
+import { BannerProductsEffects } from './stores/banner-products/banner-products.effects';
 import { FavoritesEffects } from './stores/favorites/favorites.effects';
 import { favoritesReducer } from './stores/favorites/favorites.reducer';
 import { cartReducer } from './stores/cart/cart.reducer';

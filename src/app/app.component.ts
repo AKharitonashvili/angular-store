@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { Store } from '@ngrx/store';
-import * as AppActions from './stores/initial.actions';
+import * as AppActions from './stores/page.actions';
 
 @Component({
   selector: 'app-root',

@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { ProductInterface } from '../../../shared/interfaces/interfaces';
+import { ProductInterface } from '../../shared/interfaces/interfaces';
 import * as ProductsActions from './products.actions';
 
 export interface ProductsState {

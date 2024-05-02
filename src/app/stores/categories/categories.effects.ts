@@ -2,24 +2,26 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { map, catchError, switchMap } from 'rxjs/operators';
-import { Products } from '../../../fake-api/fake-api';
-import * as ProductsActions from './products.actions';
-import * as HomeActions from '../home.actions';
+import { Categories } from '../../fake-api/fake-api';
+import * as CategoryActions from './categories.actions';
+import * as HomeActions from '../page.actions';
 
 @Injectable()
-export class ProductsEffects {
-  loadProducts$ = createEffect(() => {
+export class CategoriesEffects {
+  loadCategories$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(
-        ProductsActions.loadProducts,
+        CategoryActions.loadCategories,
         HomeActions.loadHomePage,
         HomeActions.loadProductsPage
       ),
       switchMap(() =>
-        of(Products).pipe(
-          map(products => ProductsActions.loadProductsSuccess({ products })),
+        of(Categories).pipe(
+          map(categories =>
+            CategoryActions.loadCategoriesSuccess({ categories })
+          ),
           catchError(error =>
-            of(ProductsActions.loadProductsFailure({ error }))
+            of(CategoryActions.loadCategoriesFailure({ error }))
           )
         )
       )

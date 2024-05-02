@@ -4,7 +4,7 @@ import { of } from 'rxjs';
 import { map, catchError, switchMap } from 'rxjs/operators';
 import * as FavoritesActions from './favorites.actions';
 import * as FavoritesSelectors from './favorites.selectors';
-import * as ApplicationActions from '../initial.actions';
+import * as ApplicationActions from '../page.actions';
 import { Store } from '@ngrx/store';
 import { CookiesService } from '../../services/cookies.service';
 

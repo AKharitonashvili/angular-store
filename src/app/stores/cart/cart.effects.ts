@@ -3,7 +3,7 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { map, catchError, switchMap } from 'rxjs/operators';
 import * as CartActions from './cart.actions';
-import * as ApplicationActions from '../initial.actions';
+import * as ApplicationActions from '../page.actions';
 import { CookiesService } from '../../services/cookies.service';
 import * as CartSelectors from './cart.selectors';
 import { Store } from '@ngrx/store';

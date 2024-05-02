@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { BannerProductsState } from './banner-products.reducer';
-import { StoreFeatureKeys } from '../../feature.keys';
+import { StoreFeatureKeys } from '../feature.keys';
 
 export const selectBannerProductsFeature =
   createFeatureSelector<BannerProductsState>(StoreFeatureKeys.BANNER_PRODUCTS);

@@ -1,6 +1,7 @@
 export interface CategoryInterface {
   name: string;
   icon: string;
+  categoryName: string;
 }
 
 export interface ProductInterface {

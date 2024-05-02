@@ -12,7 +12,7 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Observable, of, take, tap } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { SafeHtmlPipe } from '../../../../shared/pipes/safe-html/safe-html.pipe';
-import * as BannerProductsSelectors from '../../../../stores/home/banner-products/banner-products.selectors';
+import * as BannerProductsSelectors from '../../../../stores/banner-products/banner-products.selectors';
 import { Store } from '@ngrx/store';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule, Router } from '@angular/router';
@@ -74,6 +74,6 @@ export class BigBannerComponent {
   }
 
   navigateTo(id: string) {
-    this.router.navigateByUrl(`home/products/${id}`);
+    this.router.navigateByUrl(`products/items/${id}`);
   }
 }

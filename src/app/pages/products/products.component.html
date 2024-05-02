@@ -1,1 +1,11 @@
-<p>products works!</p>
+@if (vm$ | async; as vm) {
+  <section class="flex flex-col gap-6">
+    <h1 class="text-3xl font-semibold">Products</h1>
+    <h2 class="text-2xl">{{ currentCategory()?.name }}</h2>
+    <section class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      @for (item of vm.products; track $index) {
+        <app-product-card [favorites]="vm.favorites" [item]="item" />
+      }
+    </section>
+  </section>
+}

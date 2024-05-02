@@ -3,9 +3,10 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { CategoryInterface } from '../../../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
-import * as CategorySelectors from '../../../../stores/home/categories/categories.selectors';
+import * as CategorySelectors from '../../../../stores/categories/categories.selectors';
 import { Observable, tap } from 'rxjs';
 import { SliceByIndexPipe } from '../../../../shared/pipes/slice-by-index/slice-by-index.pipe';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-browse-by-category',
@@ -30,7 +31,10 @@ export class BrowseByCategoryComponent {
       })
     );
 
-  constructor(private store: Store) {}
+  constructor(
+    private store: Store,
+    private router: Router
+  ) {}
 
   changeIndex(prev?: boolean) {
     if (prev) {
@@ -42,5 +46,9 @@ export class BrowseByCategoryComponent {
         this.index.set(this.index() + 1);
       }
     }
+  }
+
+  navigateTo(category: string) {
+    this.router.navigateByUrl(`products/categories/${category}`);
   }
 }

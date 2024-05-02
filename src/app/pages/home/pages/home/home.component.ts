@@ -3,7 +3,7 @@ import { BigBannerComponent } from '../../components/big-banner/big-banner.compo
 import { BrowseByCategoryComponent } from '../../components/browse-by-category/browse-by-category.component';
 import { HomepageProductsComponent } from '../../components/homepage-products/homepage-products.component';
 import { Store } from '@ngrx/store';
-import * as HomeActions from '../../../../stores/home/home.actions';
+import * as HomeActions from '../../../../stores/page.actions';
 
 @Component({
   selector: 'app-home',

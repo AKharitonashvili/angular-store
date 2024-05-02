@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { BigBannerProductsInterface } from '../../../shared/interfaces/interfaces';
+import { BigBannerProductsInterface } from '../../shared/interfaces/interfaces';
 
 export const loadBannerProducts = createAction('[Banner Products] Load');
 

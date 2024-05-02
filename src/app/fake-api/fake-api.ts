@@ -5,16 +5,17 @@ import {
 } from '../shared/interfaces/interfaces';
 
 export const Categories: CategoryInterface[] = [
-  { name: 'Phones', icon: 'smartphone' },
-  { name: 'Smart Watches', icon: 'watch' },
-  { name: 'Cameras', icon: 'local_see' },
-  { name: 'Headphones', icon: 'headphones' },
-  { name: 'Computers', icon: 'computer' },
-  { name: 'Gaming', icon: 'sports_esports' },
-  { name: 'TVs', icon: 'tv' },
-  { name: 'Tablets', icon: 'tablet' },
-  { name: 'Speakers', icon: 'speaker' },
-  { name: 'Printers', icon: 'print' },
+  { name: 'Phones', icon: 'smartphone', categoryName: 'Phones' },
+  { name: 'Smart Watches', icon: 'watch', categoryName: 'Smart Watches' },
+  { name: 'Cameras', icon: 'local_see', categoryName: 'Cameras' },
+  { name: 'Headphones', icon: 'headphones', categoryName: 'Headphones' },
+  { name: 'Computers', icon: 'computer', categoryName: 'Computers' },
+  { name: 'TVs', icon: 'tv', categoryName: 'TVs' },
+  { name: 'Tablets', icon: 'tablet', categoryName: 'Tablets' },
+  { name: 'Speakers', icon: 'speaker', categoryName: 'Speakers' },
+  { name: 'Printers', icon: 'print', categoryName: 'Printers' },
+  { name: 'Consoles', icon: 'sports_esports', categoryName: 'Consoles' },
+  { name: 'Drones', icon: 'smart_toy', categoryName: 'Drones' },
 ];
 
 export const Products: ProductInterface[] = [
@@ -26,7 +27,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '1',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Phones'],
     options: ['128GB', '256GB', '512GB', '1TB'],
     details:
       'Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras more...',
@@ -51,7 +52,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '2',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Camera'],
     options: ['6K'],
     details:
       'The Blackmagic Pocket Cinema Camera 6K features a Super 35mm sensor, 13 stops of dynamic range, and dual native ISO up to 25,600 for stunning low-light performance. It supports recording in Blackmagic RAW and ProRes, providing exceptional image quality and flexibility.',
@@ -74,7 +75,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '3',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Smart Watches'],
     options: ['GPS', 'GPS + Cellular'],
     details:
       'The Apple Watch Series 9 features an always-on Retina display, advanced emergency and fitness tracking, and water resistance up to 50 meters. Choose between GPS and GPS + Cellular models to stay connected even without your iPhone nearby.',
@@ -105,7 +106,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '4',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Headphones'],
     options: ['Silver', 'Space Gray', 'Sky Blue', 'Green', 'Pink'],
     details:
       'The AirPods Max delivers an immersive listening experience with high-fidelity audio, adaptive EQ, and spatial audio with dynamic head tracking. Choose from five stunning colors to match your style.',
@@ -134,7 +135,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '5',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Phones'],
     options: ['Classic', 'Sport', 'Titanium'],
     details:
       'The Samsung Galaxy Watch6 Classic combines timeless design with advanced emergency and fitness features. With options for Classic, Sport, and Titanium models, there is a Galaxy Watch6 for every lifestyle.',
@@ -159,7 +160,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '6',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Phones'],
     options: ['Unlocked', 'Carrier Locked'],
     details:
       'The Galaxy Z Fold5 Unlocked features a large foldable display, powerful performance, and versatile camera system. Choose between unlocked and carrier-locked versions to match your mobile network.',
@@ -185,7 +186,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '7',
     type: ['featured'],
-    categories: [],
+    categories: ['Headphones'],
     options: ['Graphite', 'Red', 'Lavender', 'White', 'Yellow'],
     details:
       'The Galaxy Buds FE offers premium sound quality, long-lasting battery life, and customizable fit. Choose from five vibrant colors to match your style and enjoy wireless freedom wherever you go.',
@@ -214,7 +215,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '8',
     type: ['featured'],
-    categories: [],
+    categories: ['Tablets'],
     options: ['64GB', '128GB', '256GB'],
     details:
       'The Apple iPad 9 10.2" features a stunning Retina display, powerful A13 Bionic chip, and support for the Smart Keyboard and Apple Pencil. With up to 256GB of storage capacity, it offers ample space for all your apps, games, and media.',
@@ -238,7 +239,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '9',
     type: ['bestSeller'],
-    categories: [],
+    categories: ['Consoles'],
     options: ['Disc Edition', 'Digital Edition'],
     details:
       'Experience lightning-fast loading, deeper immersion, and better graphics with the Sony PlayStation 5. Choose between the Disc Edition for physical games or the Digital Edition for digital downloads.',
@@ -257,7 +258,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '10',
     type: ['bestSeller'],
-    categories: [],
+    categories: ['Consoles'],
     options: ['Standard Edition', 'All-Digital Edition'],
     details:
       'The Xbox Series X delivers powerful gaming performance and speed, with support for 4K gaming at 120fps and a custom AMD Zen 2 CPU. Choose between the Standard Edition for physical games or the All-Digital Edition for digital-only gaming.',
@@ -276,7 +277,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '11',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Consoles'],
     options: ['Black', 'White'],
     details:
       'The Nintendo Switch OLED features a vibrant OLED screen, enhanced audio, and a wide range of compatible games. With its versatile design, you can play in handheld, tabletop, or TV mode.',
@@ -295,7 +296,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '12',
     type: ['featured'],
-    categories: [],
+    categories: ['Drones'],
     options: ['Standard Edition', 'Fly More Combo'],
     details:
       "The DJI Mavic Air 2 Fly is a compact and powerful drone capable of capturing stunning aerial footage. With intelligent shooting modes, 4K video recording, and up to 34 minutes of flight time, it's perfect for both beginners and experienced pilots.",
@@ -318,7 +319,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '13',
     type: ['featured'],
-    categories: [],
+    categories: ['Cameras'],
     options: ['Standard Edition', 'Bundle with Accessories'],
     details:
       'The GoPro HERO10 is the ultimate action camera, with stunning 5.3K video recording, HyperSmooth 4.0 stabilization, and TimeWarp 4.0 for mesmerizing time-lapse footage. Take your adventures to the next level with this versatile camera.',
@@ -345,7 +346,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '14',
     type: ['newArrival'],
-    categories: [],
+    categories: ['Cameras'],
     options: ['Body Only', 'Kit with Lens'],
     details:
       'The Canon EOS R5 Mirrorless Camera sets new standards for photography and videography, with 45MP resolution, 8K video recording, and advanced autofocus capabilities. Capture stunning images and cinematic videos with this professional-grade camera.',
@@ -376,7 +377,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '15',
     type: ['bestSeller'],
-    categories: [],
+    categories: ['Headphones'],
     options: ['Black', 'Silver'],
     details:
       'The Bose QuietComfort 45 Wireless Headphones deliver industry-leading noise cancellation, immersive sound quality, and up to 24 hours of battery life. Stay focused and relaxed with these premium headphones, perfect for travel, work, or relaxation.',
@@ -395,7 +396,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '16',
     type: ['featured'],
-    categories: [],
+    categories: ['TVs'],
     options: ['Standard Edition', 'Bundle with Soundbar'],
     details: `The Samsung 85" QN90A Neo QLED 4K Smart TV offers stunning picture quality, immersive sound, and advanced smart features. With Quantum Matrix Technology, Object Tracking Sound, and built-in voice assistants, it's the ultimate entertainment hub for your home.`,
     parameters: [
@@ -421,7 +422,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '17',
     type: ['bestSeller'],
-    categories: [],
+    categories: ['Headphones'],
     options: ['Black', 'Silver'],
     details:
       'The Sony WH-1000XM4 Wireless Headphones offer industry-leading noise cancellation, exceptional sound quality, and long-lasting comfort. With advanced features like Adaptive Sound Control and Speak-to-Chat, they provide a personalized listening experience.',
@@ -440,7 +441,7 @@ export const Products: ProductInterface[] = [
     image: '',
     id: '18',
     type: ['featured'],
-    categories: [],
+    categories: ['TVs'],
     options: ['55"', '65"', '77"'],
     details:
       'The LG CX 55" 4K Smart OLED TV delivers stunning picture quality, vibrant colors, and deep blacks. With AI ThinQ technology, Dolby Vision IQ, and built-in voice assistants, it offers a cinematic viewing experience in the comfort of your home.',

@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { CategoryInterface } from '../../../shared/interfaces/interfaces';
+import { CategoryInterface } from '../../shared/interfaces/interfaces';
 
 export const loadCategories = createAction('[Categories] Load');
 
