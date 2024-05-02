@@ -1,8 +1,10 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { FavoritesState } from './favorites.reducer';
+import { StoreFeatureKeys } from '../feature.keys';
 
-export const selectFavoritesFeature =
-  createFeatureSelector<FavoritesState>('favorites');
+export const selectFavoritesFeature = createFeatureSelector<FavoritesState>(
+  StoreFeatureKeys.FAVORITES
+);
 
 export const selectFavorites = createSelector(
   selectFavoritesFeature,

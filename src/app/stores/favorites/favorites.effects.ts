@@ -3,7 +3,10 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { map, catchError, switchMap } from 'rxjs/operators';
 import * as FavoritesActions from './favorites.actions';
+import * as FavoritesSelectors from './favorites.selectors';
 import * as ApplicationActions from '../initial.actions';
+import { Store } from '@ngrx/store';
+import { CookiesService } from '../../services/cookies.service';
 
 @Injectable()
 export class FavoritesEffects {
@@ -14,7 +17,7 @@ export class FavoritesEffects {
         ApplicationActions.loadApplication
       ),
       switchMap(() =>
-        of([]).pipe(
+        of(this.cookieService.getCookie('favorites')).pipe(
           map(favorites =>
             FavoritesActions.loadFavoritesSuccess({ favorites })
           ),
@@ -26,5 +29,26 @@ export class FavoritesEffects {
     );
   });
 
-  constructor(private actions$: Actions) {}
+  listenToFavoritesUpdates$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(
+        FavoritesActions.addToFavorites,
+        FavoritesActions.removeFromFavorites
+      ),
+      switchMap(() =>
+        this.store.select(FavoritesSelectors.selectFavorites).pipe(
+          map(favorites => {
+            this.cookieService.setCookie('favorites', favorites);
+            return FavoritesActions.updateFavoritesSuccess();
+          })
+        )
+      )
+    );
+  });
+
+  constructor(
+    private actions$: Actions,
+    private cookieService: CookiesService,
+    private store: Store
+  ) {}
 }

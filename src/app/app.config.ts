@@ -1,5 +1,5 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -16,10 +16,14 @@ import { FavoritesEffects } from './stores/favorites/favorites.effects';
 import { favoritesReducer } from './stores/favorites/favorites.reducer';
 import { cartReducer } from './stores/cart/cart.reducer';
 import { CartEffects } from './stores/cart/cart.effects';
+import { StoreFeatureKeys } from './stores/feature.keys';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({ scrollPositionRestoration: 'enabled' })
+    ),
     provideAnimationsAsync(),
     provideClientHydration(),
     provideEffects([
@@ -30,10 +34,19 @@ export const appConfig: ApplicationConfig = {
       CartEffects,
     ]),
     provideStore({ categories: categoriesReducer }),
-    provideState({ name: 'categories', reducer: categoriesReducer }),
-    provideState({ name: 'products', reducer: productsReducer }),
-    provideState({ name: 'banner-products', reducer: bannerProductsReducer }),
-    provideState({ name: 'favorites', reducer: favoritesReducer }),
-    provideState({ name: 'cart', reducer: cartReducer }),
+    provideState({
+      name: StoreFeatureKeys.CATEGORIES,
+      reducer: categoriesReducer,
+    }),
+    provideState({ name: StoreFeatureKeys.PRODUCTS, reducer: productsReducer }),
+    provideState({
+      name: StoreFeatureKeys.BANNER_PRODUCTS,
+      reducer: bannerProductsReducer,
+    }),
+    provideState({
+      name: StoreFeatureKeys.FAVORITES,
+      reducer: favoritesReducer,
+    }),
+    provideState({ name: StoreFeatureKeys.CART, reducer: cartReducer }),
   ],
 };

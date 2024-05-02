@@ -1,7 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import { SelectedProductInterface } from '../../shared/interfaces/interfaces';
 import * as FavoritesActions from './favorites.actions';
-import { ProductsState } from '../home/products/products.reducer';
 
 export interface FavoritesState {
   loading: boolean;

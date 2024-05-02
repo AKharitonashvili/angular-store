@@ -22,3 +22,5 @@ export const removeFromFavorites = createAction(
   '[Favorites] Remove From Favorites',
   props<{ id: string }>()
 );
+
+export const updateFavoritesSuccess = createAction('[Favorites] Update');
