@@ -13,11 +13,12 @@ import { AsyncPipe } from '@angular/common';
 import * as PageActions from '../../stores/page.actions';
 import { ProductCardComponent } from '../../shared/ui/product-card/product-card.component';
 import { ActivatedRoute } from '@angular/router';
+import { NotFoundComponent } from '../../shared/ui/error/not-found/not-found.component';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [AsyncPipe, ProductCardComponent],
+  imports: [AsyncPipe, ProductCardComponent, NotFoundComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
