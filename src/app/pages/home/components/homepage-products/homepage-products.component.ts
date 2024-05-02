@@ -1,21 +1,21 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { MinimizeTextPipe } from '../../../shared/pipes/minimize-text/minimize-text.pipe';
+import { MinimizeTextPipe } from '../../../../shared/pipes/minimize-text/minimize-text.pipe';
 import {
   ProductInterface,
   ProductType,
   SelectedProductInterface,
-} from '../../../shared/interfaces/interfaces';
+} from '../../../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
 import { Observable, combineLatest, map, switchMap } from 'rxjs';
-import * as ProductsSelectors from '../../../stores/home/products/products.selectors';
+import * as ProductsSelectors from '../../../../stores/home/products/products.selectors';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
-import * as FavoritesSelector from '../../../stores/favorites/favorites.selectors';
-import * as FavoritesActions from '../../../stores/favorites/favorites.actions';
-import { FavoriteIconComponent } from '../../../shared/ui/buttons/favorite-icon/favorite-icon.component';
-import { IsInItemsPipe } from '../../../shared/pipes/is-favorite/is-in-items.pipe';
+import * as FavoritesSelector from '../../../../stores/favorites/favorites.selectors';
+import * as FavoritesActions from '../../../../stores/favorites/favorites.actions';
+import { FavoriteIconComponent } from '../../../../shared/ui/buttons/favorite-icon/favorite-icon.component';
+import { IsInItemsPipe } from '../../../../shared/pipes/is-favorite/is-in-items.pipe';
 
 @Component({
   selector: 'app-homepage-products',
@@ -54,7 +54,7 @@ export class HomepageProductsComponent {
   }
 
   navigateTo(id: string) {
-    this.router.navigateByUrl(`home/product/${id}`);
+    this.router.navigateByUrl(`home/products/${id}`);
   }
 
   toggleFavorite(isFavorite: boolean, product: ProductInterface) {

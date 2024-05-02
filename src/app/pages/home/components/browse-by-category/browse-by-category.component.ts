@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { CategoryInterface } from '../../../shared/interfaces/interfaces';
+import { CategoryInterface } from '../../../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
-import * as CategorySelectors from '../../../stores/home/categories/categories.selectors';
+import * as CategorySelectors from '../../../../stores/home/categories/categories.selectors';
 import { Observable, tap } from 'rxjs';
-import { SliceByIndexPipe } from '../../../shared/pipes/slice-by-index/slice-by-index.pipe';
+import { SliceByIndexPipe } from '../../../../shared/pipes/slice-by-index/slice-by-index.pipe';
 
 @Component({
   selector: 'app-browse-by-category',

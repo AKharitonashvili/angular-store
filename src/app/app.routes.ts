@@ -4,12 +4,19 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () =>
-      import('./home/pages/home/home.component').then(m => m.HomeComponent),
+      import('./pages/home/pages/home/home.component').then(
+        m => m.HomeComponent
+      ),
   },
   {
-    path: 'home/product/:id',
+    path: 'cart',
     loadComponent: () =>
-      import('./home/pages/product/product.component').then(
+      import('./pages/cart/cart.component').then(m => m.CartComponent),
+  },
+  {
+    path: 'home/products/:id',
+    loadComponent: () =>
+      import('./pages/home/pages/product/product.component').then(
         m => m.ProductComponent
       ),
   },
