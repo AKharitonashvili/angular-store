@@ -18,6 +18,7 @@
     "@ngrx/store": "^17.2.0",
     "express": "^4.18.2",
     "express-minify": "^1.0.0",
+    "ngx-cookie-service": "^17.1.0",
     "primeicons": "^7.0.0",
     "primeng": "^17.13.0",
     "rxjs": "~7.8.0",
@@ -123,11 +124,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "3517814974174028236"
+        "hash": "15601023975253247514"
       },
       {
         "file": "package.json",
-        "hash": "12876873892849171555"
+        "hash": "3787704300732776155"
       },
       {
         "file": "server.ts",
@@ -155,19 +156,19 @@
       },
       {
         "file": "src/app/app.config.ts",
-        "hash": "13646297074915776566"
+        "hash": "6456227887127984386"
       },
       {
         "file": "src/app/app.routes.ts",
-        "hash": "11998634310962418638"
+        "hash": "11837629103732484605"
       },
       {
         "file": "src/app/fake-api/fake-api.ts",
-        "hash": "7494986895752700772"
+        "hash": "12476506546090387142"
       },
       {
         "file": "src/app/home/components/big-banner/big-banner.component.html",
-        "hash": "815971225578102503"
+        "hash": "17639531661650441010"
       },
       {
         "file": "src/app/home/components/big-banner/big-banner.component.scss",
@@ -179,7 +180,7 @@
       },
       {
         "file": "src/app/home/components/big-banner/big-banner.component.ts",
-        "hash": "11917199410996983262"
+        "hash": "13496209706752621491"
       },
       {
         "file": "src/app/home/components/browse-by-category/browse-by-category.component.html",
@@ -199,7 +200,7 @@
       },
       {
         "file": "src/app/home/components/homepage-products/homepage-products.component.html",
-        "hash": "18321652178317165217"
+        "hash": "16066352534030566853"
       },
       {
         "file": "src/app/home/components/homepage-products/homepage-products.component.scss",
@@ -211,27 +212,27 @@
       },
       {
         "file": "src/app/home/components/homepage-products/homepage-products.component.ts",
-        "hash": "15849936639903949100"
+        "hash": "9754094381123916296"
       },
       {
-        "file": "src/app/home/home.component.html",
+        "file": "src/app/home/pages/home/home.component.html",
         "hash": "9050055283007883748"
       },
       {
-        "file": "src/app/home/home.component.scss",
+        "file": "src/app/home/pages/home/home.component.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/home/home.component.spec.ts",
+        "file": "src/app/home/pages/home/home.component.spec.ts",
         "hash": "15313914607240537942"
       },
       {
-        "file": "src/app/home/home.component.ts",
-        "hash": "10737851284443943371"
+        "file": "src/app/home/pages/home/home.component.ts",
+        "hash": "2777200872291068078"
       },
       {
         "file": "src/app/home/pages/product/product.component.html",
-        "hash": "15207462840666681852"
+        "hash": "4025709930690489239"
       },
       {
         "file": "src/app/home/pages/product/product.component.scss",
@@ -243,7 +244,7 @@
       },
       {
         "file": "src/app/home/pages/product/product.component.ts",
-        "hash": "13543440477772489286"
+        "hash": "16575436766169205771"
       },
       {
         "file": "src/app/layout/footer/footer.component.html",
@@ -263,7 +264,7 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.html",
-        "hash": "12706024981449261593"
+        "hash": "5134314912355504379"
       },
       {
         "file": "src/app/layout/navbar/navbar.component.scss",
@@ -275,11 +276,27 @@
       },
       {
         "file": "src/app/layout/navbar/navbar.component.ts",
-        "hash": "14108412611164093667"
+        "hash": "15694989698653067452"
+      },
+      {
+        "file": "src/app/pages/cart/cart.component.html",
+        "hash": "6198549835668186789"
+      },
+      {
+        "file": "src/app/pages/cart/cart.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/cart/cart.component.spec.ts",
+        "hash": "11756555651712772933"
+      },
+      {
+        "file": "src/app/pages/cart/cart.component.ts",
+        "hash": "1628781146086173293"
       },
       {
         "file": "src/app/pages/favorites/favorites.component.html",
-        "hash": "7393150209548315795"
+        "hash": "10532578860562372293"
       },
       {
         "file": "src/app/pages/favorites/favorites.component.scss",
@@ -291,19 +308,23 @@
       },
       {
         "file": "src/app/pages/favorites/favorites.component.ts",
-        "hash": "9814033866795076623"
+        "hash": "11313941569522496852"
+      },
+      {
+        "file": "src/app/services/cookie.service.spec.ts",
+        "hash": "10619348769059707312"
+      },
+      {
+        "file": "src/app/services/cookies.service.ts",
+        "hash": "9388483727209968257"
       },
       {
         "file": "src/app/shared/interfaces/interfaces.ts",
         "hash": "14152027393171039248"
       },
       {
-        "file": "src/app/shared/pipes/is-favorite/isFavorite.pipe.spec.ts",
-        "hash": "5474724482116858960"
-      },
-      {
-        "file": "src/app/shared/pipes/is-favorite/isFavorite.pipe.ts",
-        "hash": "15998627784006435434"
+        "file": "src/app/shared/pipes/is-favorite/is-in-items.pipe.ts",
+        "hash": "14516432121127237855"
       },
       {
         "file": "src/app/shared/pipes/minimize-text/minimize-text.pipe.spec.ts",
@@ -351,15 +372,31 @@
       },
       {
         "file": "src/app/shared/ui/buttons/favorite-icon/favorite-icon.component.ts",
-        "hash": "4163469979239236343"
+        "hash": "16373460606944285669"
+      },
+      {
+        "file": "src/app/shared/ui/cards/cart-card/cart-card.component.html",
+        "hash": "13441180479337655748"
+      },
+      {
+        "file": "src/app/shared/ui/cards/cart-card/cart-card.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/shared/ui/cards/cart-card/cart-card.component.spec.ts",
+        "hash": "17958985344131652350"
+      },
+      {
+        "file": "src/app/shared/ui/cards/cart-card/cart-card.component.ts",
+        "hash": "7672022006682820202"
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.html",
-        "hash": "9428002010629074449"
+        "hash": "13158626900749114845"
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.scss",
-        "hash": "13196750271194226578"
+        "hash": "4828823700907035085"
       },
       {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.spec.ts",
@@ -384,6 +421,38 @@
       {
         "file": "src/app/shared/ui/search-input/search-input.component.ts",
         "hash": "14426185281447622451"
+      },
+      {
+        "file": "src/app/shared/ui/wrappers/cart-and-favorites/cart-and-favorites.component.html",
+        "hash": "14411305457723812143"
+      },
+      {
+        "file": "src/app/shared/ui/wrappers/cart-and-favorites/cart-and-favorites.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/shared/ui/wrappers/cart-and-favorites/cart-and-favorites.component.spec.ts",
+        "hash": "2616168724360421229"
+      },
+      {
+        "file": "src/app/shared/ui/wrappers/cart-and-favorites/cart-and-favorites.component.ts",
+        "hash": "6870601353079981628"
+      },
+      {
+        "file": "src/app/stores/cart/cart.actions.ts",
+        "hash": "753296187753135859"
+      },
+      {
+        "file": "src/app/stores/cart/cart.effects.ts",
+        "hash": "2061111123492164030"
+      },
+      {
+        "file": "src/app/stores/cart/cart.reducer.ts",
+        "hash": "3041635030905250374"
+      },
+      {
+        "file": "src/app/stores/cart/cart.selectors.ts",
+        "hash": "663195223018735608"
       },
       {
         "file": "src/app/stores/favorites/favorites.actions.ts",

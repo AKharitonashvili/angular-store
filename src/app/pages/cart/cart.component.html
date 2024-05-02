@@ -1,1 +1,23 @@
-<app-cart-and-favorites [title]="'Shopping Cart'"> </app-cart-and-favorites>
+@if (vm$ | async; as vm) {
+  <app-cart-and-favorites [title]="'Shopping Cart'">
+    @for (item of vm.cart; track $index) {
+      <app-cart-card [item]="item" (remove)="removeFromFavorites(item)">
+        <div class="flex items-center gap-2">
+          <button
+            class="flex items-center justify-center"
+            aria-label="decrease-count">
+            <mat-icon>remove</mat-icon>
+          </button>
+          <div class="rounded-md border border-primary px-4 py-1">
+            {{ item.quantity }}
+          </div>
+          <button
+            class="flex items-center justify-center"
+            aria-label="increase-count">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+      </app-cart-card>
+    }
+  </app-cart-and-favorites>
+}

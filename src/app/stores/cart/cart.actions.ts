@@ -22,3 +22,5 @@ export const removeFromCart = createAction(
   '[Cart] Remove From Cart',
   props<{ id: string }>()
 );
+
+export const updateCartSuccess = createAction('[Cart] Update');

@@ -8704,6 +8704,15 @@
         "hash": "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
       }
     },
+    "npm:ngx-cookie-service": {
+      "type": "npm",
+      "name": "npm:ngx-cookie-service",
+      "data": {
+        "version": "17.1.0",
+        "packageName": "ngx-cookie-service",
+        "hash": "sha512-m4YI9IEgTaEBDMCz7oeVsO6UX14EmCzg29cTL6yxW8f7oye9wv56egi+3C4wAVSRPkI+cWlqnIOr+XyHwYQYmg=="
+      }
+    },
     "npm:nice-napi": {
       "type": "npm",
       "name": "npm:nice-napi",
@@ -22937,6 +22946,23 @@
       {
         "source": "npm:needle",
         "target": "npm:sax",
+        "type": "static"
+      }
+    ],
+    "npm:ngx-cookie-service": [
+      {
+        "source": "npm:ngx-cookie-service",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:ngx-cookie-service",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:ngx-cookie-service",
+        "target": "npm:tslib",
         "type": "static"
       }
     ],

@@ -7,13 +7,19 @@
     <div class="text-end font-semibold">
       $ {{ item.price }}
       @if (item.oldPrice) {
-        <span class="text-optional-2">
+        <span class="ml-2 text-optional-3">
           <del>$ {{ item.oldPrice }}</del>
         </span>
       }
     </div>
-    <div class="flex justify-end">
-      <button aria-label="remove-from-favorites" (click)="remove.emit()">
+    <div class="flex items-center justify-between">
+      <div>
+        <ng-content></ng-content>
+      </div>
+      <button
+        class="flex items-center justify-center"
+        aria-label="remove-from-favorites"
+        (click)="remove.emit()">
         <mat-icon>delete_outline</mat-icon>
       </button>
     </div>

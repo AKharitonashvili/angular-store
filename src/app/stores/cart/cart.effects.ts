@@ -4,6 +4,9 @@ import { of } from 'rxjs';
 import { map, catchError, switchMap } from 'rxjs/operators';
 import * as CartActions from './cart.actions';
 import * as ApplicationActions from '../initial.actions';
+import { CookiesService } from '../../services/cookies.service';
+import * as CartSelectors from './cart.selectors';
+import { Store } from '@ngrx/store';
 
 @Injectable()
 export class CartEffects {
@@ -11,7 +14,7 @@ export class CartEffects {
     return this.actions$.pipe(
       ofType(CartActions.loadCart, ApplicationActions.loadApplication),
       switchMap(() =>
-        of([]).pipe(
+        of(this.cookieService.getCookie('cart') ?? []).pipe(
           map(cart => CartActions.loadCartSuccess({ cart })),
           catchError(error => of(CartActions.loadCartFailure({ error })))
         )
@@ -19,5 +22,23 @@ export class CartEffects {
     );
   });
 
-  constructor(private actions$: Actions) {}
+  listenToCartUpdates$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(CartActions.addToCart, CartActions.removeFromCart),
+      switchMap(() =>
+        this.store.select(CartSelectors.selectCart).pipe(
+          map(cart => {
+            this.cookieService.setCookie('cart', cart);
+            return CartActions.updateCartSuccess();
+          })
+        )
+      )
+    );
+  });
+
+  constructor(
+    private actions$: Actions,
+    private cookieService: CookiesService,
+    private store: Store
+  ) {}
 }
