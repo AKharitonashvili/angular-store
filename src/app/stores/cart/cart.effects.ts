@@ -24,7 +24,12 @@ export class CartEffects {
 
   listenToCartUpdates$ = createEffect(() => {
     return this.actions$.pipe(
-      ofType(CartActions.addToCart, CartActions.removeFromCart),
+      ofType(
+        CartActions.addToCart,
+        CartActions.removeFromCart,
+        CartActions.incrementQuantity,
+        CartActions.decrementQuantity
+      ),
       switchMap(() =>
         this.store.select(CartSelectors.selectCart).pipe(
           map(cart => {

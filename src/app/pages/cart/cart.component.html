@@ -2,24 +2,34 @@
   <app-cart-and-favorites [title]="'Shopping Cart'">
     @for (item of vm.cart; track $index) {
       <app-cart-card [item]="item" (remove)="removeFromFavorites(item)">
-        <div class="flex items-center gap-2">
-          <button
-            class="flex items-center justify-center"
-            aria-label="decrease-count"
-            (click)="decrement(item.id)"
-            [disabled]="item.quantity <= 1">
-            <mat-icon>remove</mat-icon>
-          </button>
-          <div class="rounded-md border border-primary px-4 py-1">
-            {{ item.quantity }}
+        <section class="flex items-center gap-2">
+          <div class="flex items-center gap-2">
+            <button
+              class="flex items-center justify-center"
+              aria-label="decrease-count"
+              (click)="decrement(item.id)"
+              [disabled]="item.quantity <= 1">
+              <mat-icon>remove</mat-icon>
+            </button>
+            <div class="rounded-md border border-primary px-4 py-1">
+              {{ item.quantity }}
+            </div>
+            <button
+              class="flex items-center justify-center"
+              aria-label="increase-count"
+              (click)="increment(item.id)">
+              <mat-icon>add</mat-icon>
+            </button>
           </div>
-          <button
-            class="flex items-center justify-center"
-            aria-label="increase-count"
-            (click)="increment(item.id)">
-            <mat-icon>add</mat-icon>
-          </button>
-        </div>
+          <div class="text-end font-semibold">
+            $ {{ item.price * item.quantity }}
+            @if (item.oldPrice) {
+              <span class="ml-2 text-optional-3">
+                <del>$ {{ item.oldPrice * item.quantity }}</del>
+              </span>
+            }
+          </div>
+        </section>
       </app-cart-card>
     }
   </app-cart-and-favorites>
