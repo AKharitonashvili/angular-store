@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CartAndFavoritesComponent } from '../../shared/ui/wrappers/cart-and-favorites/cart-and-favorites.component';
-import { Observable, combineLatest, map } from 'rxjs';
+import { Observable, combineLatest, map, tap } from 'rxjs';
 import { SelectedProductInterface } from '../../shared/interfaces/interfaces';
 import { Store } from '@ngrx/store';
 import * as CartSelectors from '../../stores/cart/cart.selectors';
@@ -25,7 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
 export class CartComponent {
   vm$: Observable<{ cart: SelectedProductInterface[] | undefined }> =
     combineLatest([this.store.select(CartSelectors.selectCart)]).pipe(
-      map(([cart]) => ({ cart }))
+      map(([cart]) => ({ cart })),
+      tap(v => console.log(v))
     );
 
   constructor(private store: Store) {}
@@ -34,6 +35,22 @@ export class CartComponent {
     this.store.dispatch(
       CartActions.removeFromCart({
         id: item.id,
+      })
+    );
+  }
+
+  increment(id: string) {
+    this.store.dispatch(
+      CartActions.incrementQuantity({
+        id,
+      })
+    );
+  }
+
+  decrement(id: string) {
+    this.store.dispatch(
+      CartActions.decrementQuantity({
+        id,
       })
     );
   }

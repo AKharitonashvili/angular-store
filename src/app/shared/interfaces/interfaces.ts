@@ -26,5 +26,5 @@ export type ProductType = 'featured' | 'bestSeller' | 'newArrival';
 
 export interface SelectedProductInterface extends ProductInterface {
   selectedOption?: string;
-  quantity?: number;
+  quantity: number;
 }

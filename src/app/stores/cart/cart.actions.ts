@@ -24,3 +24,16 @@ export const removeFromCart = createAction(
 );
 
 export const updateCartSuccess = createAction('[Cart] Update');
+
+export const incrementQuantity = createAction(
+  '[Cart] Increase Quantity',
+  props<{ id: string }>()
+);
+export const decrementQuantity = createAction(
+  '[Cart] Decrement Quantity',
+  props<{ id: string }>()
+);
+export const setQuantity = createAction(
+  '[Cart] Decrement Quantity',
+  props<{ id: string; quantity: number }>()
+);

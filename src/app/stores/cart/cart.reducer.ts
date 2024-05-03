@@ -43,5 +43,39 @@ export const cartReducer = createReducer(
       ...state,
       cart: state.cart?.filter(f => f.id !== id),
     })
-  )
+  ),
+  on(CartActions.incrementQuantity, (state, { id }): CartState => {
+    const item = state.cart.find(item => item.id === id);
+    if (item) {
+      const index = state.cart.indexOf(item);
+      const quantity = item.quantity ?? 1;
+      return {
+        ...state,
+        cart: [
+          ...state.cart.slice(0, index),
+          { ...state.cart[index], quantity: quantity + 1 },
+          ...state.cart.slice(index + 1),
+        ],
+      };
+    }
+
+    return state;
+  }),
+  on(CartActions.decrementQuantity, (state, { id }): CartState => {
+    const item = state.cart.find(item => item.id === id);
+    if (item) {
+      const index = state.cart.indexOf(item);
+      const quantity = item.quantity ?? 1;
+      return {
+        ...state,
+        cart: [
+          ...state.cart.slice(0, index),
+          { ...state.cart[index], quantity: quantity - 1 },
+          ...state.cart.slice(index + 1),
+        ],
+      };
+    }
+
+    return state;
+  })
 );

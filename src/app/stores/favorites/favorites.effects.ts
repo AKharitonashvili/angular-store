@@ -17,7 +17,7 @@ export class FavoritesEffects {
         ApplicationActions.loadApplication
       ),
       switchMap(() =>
-        of(this.cookieService.getCookie('favorites')).pipe(
+        of(this.cookieService.getCookie('favorites') ?? []).pipe(
           map(favorites =>
             FavoritesActions.loadFavoritesSuccess({ favorites })
           ),

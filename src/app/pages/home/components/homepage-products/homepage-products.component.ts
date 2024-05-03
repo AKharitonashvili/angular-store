@@ -64,7 +64,7 @@ export class HomepageProductsComponent {
     } else {
       this.store.dispatch(
         FavoritesActions.addToFavorites({
-          product: { ...item, selectedOption: item.options?.[0] },
+          product: { ...item, selectedOption: item.options?.[0], quantity: 1 },
         })
       );
     }

@@ -148,7 +148,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "10789204216938898150"
+        "hash": "17664764433226715228"
       },
       {
         "file": "src/app/app.config.server.ts",
@@ -156,15 +156,15 @@
       },
       {
         "file": "src/app/app.config.ts",
-        "hash": "4063178747568444415"
+        "hash": "7502696079833723068"
       },
       {
         "file": "src/app/app.routes.ts",
-        "hash": "11837629103732484605"
+        "hash": "6811409910069995156"
       },
       {
         "file": "src/app/fake-api/fake-api.ts",
-        "hash": "12476506546090387142"
+        "hash": "8550880368745616333"
       },
       {
         "file": "src/app/layout/footer/footer.component.html",
@@ -244,11 +244,11 @@
       },
       {
         "file": "src/app/pages/home/components/big-banner/big-banner.component.ts",
-        "hash": "13496209706752621491"
+        "hash": "9757261879625550881"
       },
       {
         "file": "src/app/pages/home/components/browse-by-category/browse-by-category.component.html",
-        "hash": "14795819678279228148"
+        "hash": "12071403233172897402"
       },
       {
         "file": "src/app/pages/home/components/browse-by-category/browse-by-category.component.scss",
@@ -260,11 +260,11 @@
       },
       {
         "file": "src/app/pages/home/components/browse-by-category/browse-by-category.component.ts",
-        "hash": "1930714661867455542"
+        "hash": "14358136502575879927"
       },
       {
         "file": "src/app/pages/home/components/homepage-products/homepage-products.component.html",
-        "hash": "16066352534030566853"
+        "hash": "15010966388361254864"
       },
       {
         "file": "src/app/pages/home/components/homepage-products/homepage-products.component.scss",
@@ -276,7 +276,7 @@
       },
       {
         "file": "src/app/pages/home/components/homepage-products/homepage-products.component.ts",
-        "hash": "9754094381123916296"
+        "hash": "8521981581695073282"
       },
       {
         "file": "src/app/pages/home/pages/home/home.component.html",
@@ -292,7 +292,7 @@
       },
       {
         "file": "src/app/pages/home/pages/home/home.component.ts",
-        "hash": "2777200872291068078"
+        "hash": "16091119430073199083"
       },
       {
         "file": "src/app/pages/home/pages/product/product.component.html",
@@ -308,11 +308,11 @@
       },
       {
         "file": "src/app/pages/home/pages/product/product.component.ts",
-        "hash": "16575436766169205771"
+        "hash": "2505768274011296526"
       },
       {
         "file": "src/app/pages/products/products.component.html",
-        "hash": "3128678379944353001"
+        "hash": "12773551813757275135"
       },
       {
         "file": "src/app/pages/products/products.component.scss",
@@ -324,7 +324,7 @@
       },
       {
         "file": "src/app/pages/products/products.component.ts",
-        "hash": "7500520398571215886"
+        "hash": "465895531464211150"
       },
       {
         "file": "src/app/services/cookie.service.spec.ts",
@@ -336,7 +336,7 @@
       },
       {
         "file": "src/app/shared/interfaces/interfaces.ts",
-        "hash": "14152027393171039248"
+        "hash": "11115493110632639477"
       },
       {
         "file": "src/app/shared/pipes/is-favorite/is-in-items.pipe.ts",
@@ -407,6 +407,38 @@
         "hash": "7672022006682820202"
       },
       {
+        "file": "src/app/shared/ui/error/not-found/not-found.component.html",
+        "hash": "14854043631147359654"
+      },
+      {
+        "file": "src/app/shared/ui/error/not-found/not-found.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/shared/ui/error/not-found/not-found.component.spec.ts",
+        "hash": "16401668775893890203"
+      },
+      {
+        "file": "src/app/shared/ui/error/not-found/not-found.component.ts",
+        "hash": "11039205991997796448"
+      },
+      {
+        "file": "src/app/shared/ui/product-card/product-card.component.html",
+        "hash": "14250973305825693699"
+      },
+      {
+        "file": "src/app/shared/ui/product-card/product-card.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/shared/ui/product-card/product-card.component.spec.ts",
+        "hash": "2460774030082217496"
+      },
+      {
+        "file": "src/app/shared/ui/product-card/product-card.component.ts",
+        "hash": "1312391443585036854"
+      },
+      {
         "file": "src/app/shared/ui/radio/radio-group/radio-group.component.html",
         "hash": "13158626900749114845"
       },
@@ -455,12 +487,28 @@
         "hash": "6870601353079981628"
       },
       {
+        "file": "src/app/stores/banner-products/banner-products.actions.ts",
+        "hash": "16621543931944251538"
+      },
+      {
+        "file": "src/app/stores/banner-products/banner-products.effects.ts",
+        "hash": "7798857264682563327"
+      },
+      {
+        "file": "src/app/stores/banner-products/banner-products.reducer.ts",
+        "hash": "16570417446022653096"
+      },
+      {
+        "file": "src/app/stores/banner-products/banner-products.selectors.ts",
+        "hash": "16122318715484456175"
+      },
+      {
         "file": "src/app/stores/cart/cart.actions.ts",
         "hash": "3411876988206492636"
       },
       {
         "file": "src/app/stores/cart/cart.effects.ts",
-        "hash": "14741046793155344121"
+        "hash": "8785264120136092420"
       },
       {
         "file": "src/app/stores/cart/cart.reducer.ts",
@@ -471,12 +519,28 @@
         "hash": "2906510674614496534"
       },
       {
+        "file": "src/app/stores/categories/categories.actions.ts",
+        "hash": "2424449596835672863"
+      },
+      {
+        "file": "src/app/stores/categories/categories.effects.ts",
+        "hash": "1798426220652575355"
+      },
+      {
+        "file": "src/app/stores/categories/categories.reducer.ts",
+        "hash": "6497656639482613645"
+      },
+      {
+        "file": "src/app/stores/categories/categories.selectors.ts",
+        "hash": "8373951699553981386"
+      },
+      {
         "file": "src/app/stores/favorites/favorites.actions.ts",
         "hash": "17013233763438412290"
       },
       {
         "file": "src/app/stores/favorites/favorites.effects.ts",
-        "hash": "15391800819980733469"
+        "hash": "4747208525588611821"
       },
       {
         "file": "src/app/stores/favorites/favorites.reducer.ts",
@@ -491,60 +555,24 @@
         "hash": "488463263702602970"
       },
       {
-        "file": "src/app/stores/home/banner-products/banner-products.actions.ts",
-        "hash": "6605981082030338876"
+        "file": "src/app/stores/page.actions.ts",
+        "hash": "7095962898274980241"
       },
       {
-        "file": "src/app/stores/home/banner-products/banner-products.effects.ts",
-        "hash": "1076441561682533042"
+        "file": "src/app/stores/products/products.actions.ts",
+        "hash": "12872378733003188904"
       },
       {
-        "file": "src/app/stores/home/banner-products/banner-products.reducer.ts",
-        "hash": "7876273688002658994"
+        "file": "src/app/stores/products/products.effects.ts",
+        "hash": "10858073989993996894"
       },
       {
-        "file": "src/app/stores/home/banner-products/banner-products.selectors.ts",
-        "hash": "9685564061329278140"
+        "file": "src/app/stores/products/products.reducer.ts",
+        "hash": "9714738336522270842"
       },
       {
-        "file": "src/app/stores/home/categories/categories.actions.ts",
-        "hash": "817084366877136911"
-      },
-      {
-        "file": "src/app/stores/home/categories/categories.effects.ts",
-        "hash": "7690677443981390662"
-      },
-      {
-        "file": "src/app/stores/home/categories/categories.reducer.ts",
-        "hash": "17706573493177949329"
-      },
-      {
-        "file": "src/app/stores/home/categories/categories.selectors.ts",
-        "hash": "7788297326870835539"
-      },
-      {
-        "file": "src/app/stores/home/home.actions.ts",
-        "hash": "15168981006117598621"
-      },
-      {
-        "file": "src/app/stores/home/products/products.actions.ts",
-        "hash": "16490281009285320893"
-      },
-      {
-        "file": "src/app/stores/home/products/products.effects.ts",
-        "hash": "8235363972619609861"
-      },
-      {
-        "file": "src/app/stores/home/products/products.reducer.ts",
-        "hash": "14601554224749974620"
-      },
-      {
-        "file": "src/app/stores/home/products/products.selectors.ts",
-        "hash": "4242863039302814488"
-      },
-      {
-        "file": "src/app/stores/initial.actions.ts",
-        "hash": "11025821308313345374"
+        "file": "src/app/stores/products/products.selectors.ts",
+        "hash": "15909588364607472068"
       },
       {
         "file": "src/assets/.gitkeep",

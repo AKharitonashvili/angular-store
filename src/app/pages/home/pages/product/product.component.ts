@@ -81,13 +81,17 @@ export class ProductComponent {
     } else {
       this.store.dispatch(
         FavoritesActions.addToFavorites({
-          product: { ...product, selectedOption: product.options?.[0] },
+          product: {
+            ...product,
+            selectedOption: product.options?.[0],
+            quantity: 1,
+          },
         })
       );
     }
   }
 
-  handleCart(item: SelectedProductInterface, isInCart: boolean) {
+  handleCart(item: ProductInterface, isInCart: boolean) {
     if (isInCart) {
       this.store.dispatch(
         CartActions.removeFromCart({
@@ -99,7 +103,7 @@ export class ProductComponent {
         CartActions.addToCart({
           product: {
             ...item,
-            quantity: item.quantity ?? 1,
+            quantity: 1,
             selectedOption: item.options?.[this.selectedOption()],
           },
         })

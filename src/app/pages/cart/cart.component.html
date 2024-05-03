@@ -5,7 +5,9 @@
         <div class="flex items-center gap-2">
           <button
             class="flex items-center justify-center"
-            aria-label="decrease-count">
+            aria-label="decrease-count"
+            (click)="decrement(item.id)"
+            [disabled]="item.quantity <= 1">
             <mat-icon>remove</mat-icon>
           </button>
           <div class="rounded-md border border-primary px-4 py-1">
@@ -13,7 +15,8 @@
           </div>
           <button
             class="flex items-center justify-center"
-            aria-label="increase-count">
+            aria-label="increase-count"
+            (click)="increment(item.id)">
             <mat-icon>add</mat-icon>
           </button>
         </div>

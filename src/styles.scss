@@ -45,3 +45,7 @@ input[type='radio'] {
   --light-1: #f5f5f5;
   --mat-badge-background-color: var(--primary);
 }
+
+*:disabled {
+  @apply opacity-50;
+}
