@@ -23,7 +23,7 @@ export const favoritesReducer = createReducer(
     FavoritesActions.loadFavoritesSuccess,
     (state, { favorites }): FavoritesState => ({
       ...state,
-      loading: true,
+      loading: false,
       favorites,
     })
   ),

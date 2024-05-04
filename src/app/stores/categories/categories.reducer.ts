@@ -22,7 +22,7 @@ export const categoriesReducer = createReducer(
     CategoryActions.loadCategoriesSuccess,
     (state, { categories }): CategoriesState => ({
       ...state,
-      loading: true,
+      loading: false,
       categories,
     })
   ),

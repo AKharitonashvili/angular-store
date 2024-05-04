@@ -22,7 +22,7 @@ export const productsReducer = createReducer(
     ProductsActions.loadProductsSuccess,
     (state, { products }): ProductsState => ({
       ...state,
-      loading: true,
+      loading: false,
       products,
     })
   ),

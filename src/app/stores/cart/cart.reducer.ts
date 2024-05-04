@@ -20,7 +20,7 @@ export const cartReducer = createReducer(
     CartActions.loadCartSuccess,
     (state, { cart }): CartState => ({
       ...state,
-      loading: true,
+      loading: false,
       cart,
     })
   ),

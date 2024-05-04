@@ -13,11 +13,12 @@ import { Router } from '@angular/router';
 import * as FavoritesSelector from '../../../../stores/favorites/favorites.selectors';
 import * as FavoritesActions from '../../../../stores/favorites/favorites.actions';
 import { ProductCardComponent } from '../../../../shared/ui/product-card/product-card.component';
+import { SkeletonModule } from 'primeng/skeleton';
 
 @Component({
   selector: 'app-homepage-products',
   standalone: true,
-  imports: [CommonModule, ProductCardComponent],
+  imports: [CommonModule, ProductCardComponent, SkeletonModule],
   templateUrl: './homepage-products.component.html',
   styleUrl: './homepage-products.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,13 +28,21 @@ export class HomepageProductsComponent {
   vm$: Observable<{
     products: ProductInterface[] | undefined;
     favorites: SelectedProductInterface[] | undefined;
+    productsLoading: boolean;
   }> = combineLatest([
     toObservable(this.filter).pipe(
       switchMap(() => this.store.select(ProductsSelectors.selectProducts)),
       map(products => products?.filter(p => p.type?.includes(this.filter())))
     ),
     this.store.select(FavoritesSelector.selectFavorites),
-  ]).pipe(map(([products, favorites]) => ({ products, favorites })));
+    this.store.select(ProductsSelectors.selectProductsLoading),
+  ]).pipe(
+    map(([products, favorites, productsLoading]) => ({
+      products,
+      favorites,
+      productsLoading,
+    }))
+  );
 
   constructor(
     private store: Store,
