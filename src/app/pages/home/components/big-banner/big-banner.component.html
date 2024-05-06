@@ -1,5 +1,5 @@
 @if (vm$ | async; as vm) {
-  @if (vm.bigBannerProducts) {
+  @if (vm.bigBannerProductsLoading) {
     <p-skeleton width="100%" height="41.25rem"></p-skeleton>
   } @else {
     <section
