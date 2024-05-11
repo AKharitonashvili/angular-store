@@ -1,5 +1,5 @@
 {
-  "name": "angular-store-project",
+  "name": "angular-storet",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "postbuild": "gulp compress",
-    "serve:ssr:Angular_Store_Project": "node dist/angular-store-project/server/server.mjs",
+    "serve:ssr:Angular_Store_Project": "node dist/angular-storet/server/server.mjs",
     "explore": "source-map-explorer dist/**/*.js"
   },
   "private": true,
