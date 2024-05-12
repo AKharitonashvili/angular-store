@@ -12,6 +12,8 @@ jobs:
     strategy:
       matrix:
         node-version: [14.17]
+
+    name: Build
     
     steps:
       - name: Checkout
