@@ -8,7 +8,7 @@ import { SelectedProductInterface } from '../../interfaces/interfaces';
 export class IsInItemsPipe implements PipeTransform {
   transform(
     favorites: SelectedProductInterface[] | undefined,
-    id: string
+    id: string | undefined
   ): boolean {
     return !!favorites?.find(f => f.id === id);
   }

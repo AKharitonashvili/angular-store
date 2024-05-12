@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BigBannerComponent } from './big-banner.component';
+import { provideMockStore } from '@ngrx/store/testing';
 
 describe('BigBannerComponent', () => {
   let component: BigBannerComponent;
@@ -8,10 +9,10 @@ describe('BigBannerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BigBannerComponent]
-    })
-    .compileComponents();
-    
+      imports: [BigBannerComponent],
+      providers: [provideMockStore({})],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(BigBannerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

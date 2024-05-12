@@ -8,12 +8,19 @@ describe('ProductCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProductCardComponent]
-    })
-    .compileComponents();
-    
+      imports: [ProductCardComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ProductCardComponent);
     component = fixture.componentInstance;
+    component.item = {
+      id: '1',
+      header: 'header',
+      isFavorite: true,
+      price: 0,
+      image: '',
+      categories: [],
+    };
     fixture.detectChanges();
   });
 

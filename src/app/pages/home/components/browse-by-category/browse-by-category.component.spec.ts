@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BrowseByCategoryComponent } from './browse-by-category.component';
+import { provideMockStore } from '@ngrx/store/testing';
 
 describe('BrowseByCategoryComponent', () => {
   let component: BrowseByCategoryComponent;
@@ -9,6 +10,7 @@ describe('BrowseByCategoryComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [BrowseByCategoryComponent],
+      providers: [provideMockStore({})],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BrowseByCategoryComponent);

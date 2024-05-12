@@ -1,16 +1,18 @@
-<form [formGroup]="form" class="flex gap-4">
-  @for (item of products; track $index) {
-    <div class="flex items-center">
-      <div
-        class="relative flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full dark:bg-optional-3 dark:bg-opacity-10">
-        <input
-          type="radio"
-          [formControl]="form.controls.selectedOption"
-          [value]="item.id"
-          [attr.aria-label]="item.header"
-          class="checkbox absolute h-full w-full cursor-pointer appearance-none rounded-full border-0 checked:border-none focus:opacity-100 focus:outline-none" />
-        <div class="check-icon z-1 hidden h-full w-full rounded-full"></div>
+@if (form) {
+  <form [formGroup]="form" class="flex gap-4">
+    @for (item of products; track $index) {
+      <div class="flex items-center">
+        <div
+          class="relative flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full dark:bg-optional-3 dark:bg-opacity-10">
+          <input
+            type="radio"
+            [formControl]="form.controls.selectedOption"
+            [value]="item.id"
+            [attr.aria-label]="item.header"
+            class="checkbox absolute h-full w-full cursor-pointer appearance-none rounded-full border-0 checked:border-none focus:opacity-100 focus:outline-none" />
+          <div class="check-icon z-1 hidden h-full w-full rounded-full"></div>
+        </div>
       </div>
-    </div>
-  }
-</form>
+    }
+  </form>
+}
