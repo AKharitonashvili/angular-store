@@ -12,17 +12,17 @@ jobs:
     strategy:
       matrix:
         node-version: [14.17]
-
+    
     steps:
       - name: Checkout
-        uses: action/checkout@v3
+        uses: actions/checkout@v1
 
-      - name: Install and Build
-        working-directory: ./angular_store
-        run: npm install && npm run build && cp dist/angular_store/index.html dist/angular_store/404.html
-
+      - name: Install and build
+        working-directory: ./angular-store
+        run: npm install && npm run buid:pro && cp dist/angular-store/index.html dist/angular-store/404.html
+      
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: gh-pages
-          folder: dist/angular_store
+          branch: gh-pages 
+          folder: dist/angular-store    
