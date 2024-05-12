@@ -39,6 +39,9 @@
             }
           },
           "configurations": {
+            "github-pages": {
+              "baseHref": "/angular_store/"
+            },
             "production": {
               "budgets": [
                 {
