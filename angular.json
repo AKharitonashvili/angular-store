@@ -40,7 +40,7 @@
           },
           "configurations": {
             "github-pages": {
-              "baseHref": "/"
+              "baseHref": "dist/angular_store"
             },
             "production": {
               "budgets": [
