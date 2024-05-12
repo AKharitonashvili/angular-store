@@ -15,6 +15,7 @@ describe('HomepageProductsComponent', () => {
 
     fixture = TestBed.createComponent(HomepageProductsComponent);
     component = fixture.componentInstance;
+
     fixture.detectChanges();
   });
 
