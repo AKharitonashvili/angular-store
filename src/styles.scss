@@ -18,14 +18,6 @@ body {
 
 @layer reset, primeng;
 
-/* Reset CSS */
-@layer reset {
-  button,
-  input {
-    /* CSS to Reset */
-  }
-}
-
 button,
 a,
 input[type='radio'] {
