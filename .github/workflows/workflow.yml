@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install and build
-        working-directory: ./angular-store
+        working-directory: angular-store
         run: npm install && npm run buid:pro && cp dist/angular-store/index.html dist/angular-store/404.html
       
       - name: Deploy
