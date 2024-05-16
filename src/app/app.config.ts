@@ -3,6 +3,7 @@ import {
   provideRouter,
   withHashLocation,
   withInMemoryScrolling,
+  withViewTransitions,
 } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -27,7 +28,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withInMemoryScrolling({ scrollPositionRestoration: 'enabled' }),
-      withHashLocation()
+      withHashLocation(),
+      withViewTransitions()
     ),
     provideAnimationsAsync(),
     provideClientHydration(),
