@@ -4,5 +4,5 @@ export enum StoreFeatureKeys {
   CATEGORIES = 'categories',
   PRODUCTS = 'products',
   BANNER_PRODUCTS = 'banner-products',
-  TEST = 'test',
+  TEST = 'test ',
 }
