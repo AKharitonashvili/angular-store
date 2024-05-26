@@ -1,0 +1,18 @@
+@if (imageContainer?.length ?? 0 > 0) {
+  <div class="flex flex-col items-center justify-center gap-7">
+    <div
+      class="flex h-[22.5rem] w-[16.25rem] items-center justify-center bg-optional-2">
+      <img class="max-h-full w-[14.0rem]" [src]="selectedImage()" />
+    </div>
+    <div class="grid grid-cols-4 gap-4">
+      @for (item of imageContainer; track $index) {
+        <button
+          class="flex size-16 items-center justify-center bg-optional-2 p-2"
+          (click)="selectImage(item)">
+          <img class="size-12" [src]="item" />
+          <!-- <mat-icon>image_not_supported</mat-icon> -->
+        </button>
+      }
+    </div>
+  </div>
+}

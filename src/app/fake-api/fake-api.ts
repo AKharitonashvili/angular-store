@@ -43,6 +43,10 @@ export const Products: ProductInterface[] = [
         icon: 'battery_charging_full',
       },
     ],
+    images: [
+      'https://www.themobileshop.ca/static/513b738226293900a9de7d87ef3d8d20/35418/iPhone_14_Pro_Max_Space_Black_Pure_Front.webp',
+      'https://www.themobileshop.ca/static/2273b28414176a9c101082e54b12d9b2/1f8e9/iPhone_14_Pro_Max_Space_Black_Pure_Double.webp',
+    ],
   },
   {
     header: 'Blackmagic Pocket Cinema Camera 6k',
@@ -65,6 +69,12 @@ export const Products: ProductInterface[] = [
         value: 'Blackmagic RAW, ProRes',
         icon: 'graphic_eq',
       },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/61+JV4ag9dL._AC_SY300_SX300_.jpg',
+      'https://m.media-amazon.com/images/I/61KRM59JCIL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/61eU3Fm+P6L._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/61LixWlibZL._AC_SL1200_.jpg',
     ],
   },
   {
@@ -97,6 +107,11 @@ export const Products: ProductInterface[] = [
         icon: 'gps_fixed',
       },
     ],
+    images: [
+      'https://m.media-amazon.com/images/I/81q7NndDVuL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71BzDzqt3ML._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81gvMJseRjL._AC_SX522_.jpg',
+    ],
   },
   {
     header: 'AirPods Max Silver',
@@ -127,6 +142,11 @@ export const Products: ProductInterface[] = [
         icon: 'palette',
       },
     ],
+    images: [
+      'https://m.media-amazon.com/images/I/81thV7SoLZL._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/81IfN-Rw8uL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/718DYLueB-L._AC_SX522_.jpg',
+    ],
   },
   {
     header: 'Samsung Galaxy Watch6 Classic',
@@ -151,6 +171,11 @@ export const Products: ProductInterface[] = [
         value: 'Classic, Sport, Titanium',
         icon: 'model_options',
       },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/81Dm65eja8L._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/71PHI8UfPzL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/61rhgjQ-a3L._AC_SX679_.jpg',
     ],
   },
   {
@@ -177,6 +202,10 @@ export const Products: ProductInterface[] = [
         value: 'Unlocked, Carrier Locked',
         icon: 'wifi',
       },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/61A1RYHuSHL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+      'https://m.media-amazon.com/images/I/61sQ6wi9SmL._AC_SX679_.jpg',
     ],
   },
   {
@@ -207,6 +236,11 @@ export const Products: ProductInterface[] = [
         icon: 'palette',
       },
     ],
+    images: [
+      'https://m.media-amazon.com/images/I/613cPuOz5OL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/612LsseGIkL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/61csnGgeGOL._AC_SX679_.jpg',
+    ],
   },
   {
     header: 'Apple iPad 9 10.2"',
@@ -231,6 +265,10 @@ export const Products: ProductInterface[] = [
         icon: 'battery_charging_full',
       },
     ],
+    images: [
+      'https://s3.zoommer.ge/site/19abb7f4-c68d-4495-b55b-f2c12d1288a4_Thumb.jpeg',
+      'https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fa0aa4e33-fcbd-4933-9791-d4a2e214628e_Thumb.jpeg&w=384&q=100',
+    ],
   },
   {
     header: 'Sony PlayStation 5',
@@ -249,6 +287,10 @@ export const Products: ProductInterface[] = [
       { name: 'RAM', value: '16GB GDDR6', icon: 'memory' },
       { name: 'Storage', value: '825GB SSD', icon: 'storage' },
       { name: 'Resolution', value: 'Up to 8K', icon: 'hd' },
+    ],
+    images: [
+      'https://s3.zoommer.ge/site/636bbf2b-6a8d-4fc1-8043-ee2db0454112_Thumb.jpeg',
+      'https://s3.zoommer.ge/site/4b1c181c-b2e6-44c9-a904-52fb1273f3ff_Thumb.jpeg',
     ],
   },
   {
@@ -269,6 +311,10 @@ export const Products: ProductInterface[] = [
       { name: 'Storage', value: '1TB NVMe SSD', icon: 'storage' },
       { name: 'Resolution', value: 'Up to 4K', icon: 'hd' },
     ],
+    images: [
+      'https://s3.zoommer.ge/site/d3a8acf3-f2ec-4043-955c-c1d90bcfd1e7_Thumb.png',
+      'https://s3.zoommer.ge/site/5382dbf2-4800-43d9-9869-d4f7dc2c8df8_Thumb.png',
+    ],
   },
   {
     header: 'Nintendo Switch OLED',
@@ -287,6 +333,11 @@ export const Products: ProductInterface[] = [
       { name: 'Storage', value: '32GB', icon: 'storage' },
       { name: 'Battery life', value: 'Up to 9 hours', icon: 'battery_full' },
       { name: 'Color', value: 'Black', icon: 'palette' },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/61E4b5drxzS._SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/6106vjwmtIS._SX522_.jpg',
+      'https://m.media-amazon.com/images/I/719EZAc9WHS._SX522_.jpg',
     ],
   },
   {
@@ -310,6 +361,11 @@ export const Products: ProductInterface[] = [
       },
       { name: 'Max speed', value: '68.4 km/h', icon: 'speed' },
       { name: 'fitness_center', value: '570g', icon: 'fitness_center' },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/71C2W+bBW6L._AC_SY300_SX300_.jpg',
+      'https://m.media-amazon.com/images/I/71FhxDduX+L._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/717ou-hTGAL._AC_SX466_.jpg',
     ],
   },
   {
@@ -337,6 +393,13 @@ export const Products: ProductInterface[] = [
       { name: 'Time-lapse', value: 'TimeWarp 4.0', icon: 'timelapse' },
       { name: 'Waterproof', value: 'Up to 33ft (10m)', icon: 'water_damage' },
       { name: 'Weight', value: '153g', icon: 'fitness_center' },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/51mcDVUBaxL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+      'https://m.media-amazon.com/images/I/51X60rM49VL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/51pOwot3sKL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/41KhO0Dq6lL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/51ztBG2xjdL._AC_SX466_.jpg',
     ],
   },
   {
@@ -369,6 +432,11 @@ export const Products: ProductInterface[] = [
         icon: 'fitness_center',
       },
     ],
+    images: [
+      'https://m.media-amazon.com/images/I/71hpUUcC5uL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+      'https://m.media-amazon.com/images/I/71kHYhqWyHL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/71-zKY-dTXL._AC_SX466_.jpg',
+    ],
   },
   {
     header: 'Bose QuietComfort 45 Wireless Noise Cancelling Headphones',
@@ -387,6 +455,12 @@ export const Products: ProductInterface[] = [
       { name: 'Bluetooth range', value: 'Up to 10m', icon: 'bluetooth' },
       { name: 'Weight', value: '223g', icon: 'fitness_center' },
       { name: 'Color', value: 'Black', icon: 'palette' },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/51Ltm3tbH2L.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+      'https://m.media-amazon.com/images/I/61lGWbYI8fL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/51VAKA+kGVL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/61uLTkces-L._AC_SX466_.jpg',
     ],
   },
   {
@@ -414,6 +488,11 @@ export const Products: ProductInterface[] = [
         icon: 'fitness_center',
       },
     ],
+    images: [
+      'https://m.media-amazon.com/images/I/913+l9CB6cL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/71Xwnx1IABL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/71w3zvV3pDL._AC_SX466_.jpg',
+    ],
   },
   {
     header: 'Sony WH-1000XM4 Wireless Noise Cancelling Headphones',
@@ -432,6 +511,11 @@ export const Products: ProductInterface[] = [
       { name: 'Bluetooth range', value: 'Up to 10m', icon: 'bluetooth' },
       { name: 'Weight', value: '254g', icon: 'fitness_center' },
       { name: 'Color', value: 'Black', icon: 'palette' },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/51DkbWZIg+L._AC_SX300_SY300_.jpg',
+      'https://m.media-amazon.com/images/I/61Jl6XHrIqL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/81nAlEERmNL._AC_SX466_.jpg',
     ],
   },
   {
@@ -459,6 +543,11 @@ export const Products: ProductInterface[] = [
         value: '17.9kg (with stand)',
         icon: 'fitness_center',
       },
+    ],
+    images: [
+      'https://m.media-amazon.com/images/I/A1XUyEzt9BL.__AC_SY300_SX300_QL70_FMwebp_.jpg',
+      'https://m.media-amazon.com/images/I/819e79GW+JL._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/71QgxYJgCFL._AC_SX466_.jpg',
     ],
   },
 ];

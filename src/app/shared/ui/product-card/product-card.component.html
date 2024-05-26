@@ -7,8 +7,8 @@
       emitToggleFavorites.emit({ isFavorite: $event, item })
     "></app-favorite-icon>
   <div
-    class="flex h-[6.375rem] min-w-[6.375rem] items-center justify-center bg-white">
-    <mat-icon>image_not_supported</mat-icon>
+    class="flex h-[6.375rem] w-[6.375rem] items-center justify-center bg-white p-4">
+    <img class="size-full" [src]="item.images?.[0]" />
   </div>
   <div class="h-[2.5rem] overflow-ellipsis text-sm font-semibold">
     {{ item.header | minimizeText: 30 }}

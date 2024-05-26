@@ -16,6 +16,7 @@ export interface ProductInterface {
   options?: string[];
   parameters?: { name: string; value: string; icon: string }[];
   details?: string;
+  images?: string[];
 }
 
 export interface BigBannerProductsInterface extends ProductInterface {
