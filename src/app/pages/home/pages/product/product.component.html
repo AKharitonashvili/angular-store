@@ -5,30 +5,18 @@
         class="w-full"
         [isFavorite]="vm.isFavorite"
         (favoriteClick)="toggleFavorite($event, product)"></app-favorite-icon>
-      <div class="flex flex-col items-center justify-center gap-7">
-        <div
-          class="flex h-[22.5rem] w-[16.25rem] items-center justify-center bg-optional-2">
-          <mat-icon>image_not_supported</mat-icon>
-        </div>
-        <div class="grid grid-cols-4 gap-4">
-          <button
-            class="flex size-16 items-center justify-center bg-optional-2">
-            <mat-icon>image_not_supported</mat-icon>
-          </button>
-          <button
-            class="flex size-16 items-center justify-center bg-optional-2">
-            <mat-icon>image_not_supported</mat-icon>
-          </button>
-          <button
-            class="flex size-16 items-center justify-center bg-optional-2">
-            <mat-icon>image_not_supported</mat-icon>
-          </button>
-          <button
-            class="flex size-16 items-center justify-center bg-optional-2">
-            <mat-icon>image_not_supported</mat-icon>
-          </button>
-        </div>
-      </div>
+
+      <app-image-preview [imageContainer]="product.images"></app-image-preview>
+
+      <section class="flex flex-col gap-4 md:items-end">
+        <button
+          class="w-full rounded-md border border-primary p-4 hover:bg-primary-2 hover:text-white md:max-w-sm"
+          aria-label="add-to-cart"
+          [ngClass]="{ 'bg-primary text-white': !vm.isInCart }"
+          (click)="handleCart(product, vm.isInCart)">
+          {{ vm.isInCart ? 'Remove From Cart' : 'Add To Cart' }}
+        </button>
+      </section>
 
       <div class="flex flex-col gap-6">
         <h1 class="text-3xl font-bold">{{ product.header }}</h1>
@@ -72,15 +60,6 @@
 
         <section>
           <div class="text-sm text-optional">{{ product.details }}</div>
-        </section>
-
-        <section class="flex flex-col gap-4">
-          <button
-            class="w-full rounded-md border border-primary p-4 hover:bg-primary hover:text-white"
-            aria-label="add-to-cart"
-            (click)="handleCart(product, vm.isInCart)">
-            {{ vm.isInCart ? 'Remove From Cart' : 'Add To Cart' }}
-          </button>
         </section>
       </div>
     }

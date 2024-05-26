@@ -12,7 +12,7 @@ import * as CategoriesSelectors from '../../stores/categories/categories.selecto
 import { AsyncPipe } from '@angular/common';
 import * as PageActions from '../../stores/page.actions';
 import { ProductCardComponent } from '../../shared/ui/product-card/product-card.component';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NotFoundComponent } from '../../shared/ui/error/not-found/not-found.component';
 
 @Component({
@@ -54,8 +54,13 @@ export class ProductsComponent {
 
   constructor(
     private store: Store,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {
     this.store.dispatch(PageActions.loadProductsPage());
+  }
+
+  navigate(id: string) {
+    this.router.navigateByUrl(`products/items/${id}`);
   }
 }
