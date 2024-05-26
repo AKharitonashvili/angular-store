@@ -17,6 +17,7 @@ import * as FavoritesActions from '../../../../stores/favorites/favorites.action
 import * as CartSelectors from '../../../../stores/cart/cart.selectors';
 import * as CartActions from '../../../../stores/cart/cart.actions';
 import { IsInItemsPipe } from '../../../../shared/pipes/is-favorite/is-in-items.pipe';
+import { ImagePreviewComponent } from '../../../../shared/ui/image-preview/image-preview.component';
 
 @Component({
   selector: 'app-product-card',
@@ -27,6 +28,7 @@ import { IsInItemsPipe } from '../../../../shared/pipes/is-favorite/is-in-items.
     MatIconModule,
     FavoriteIconComponent,
     IsInItemsPipe,
+    ImagePreviewComponent,
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss',

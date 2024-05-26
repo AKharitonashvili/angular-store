@@ -6,7 +6,10 @@
     @if (vm.products?.length ?? 0 > 0) {
       <section class="grid grid-cols-2 gap-4 lg:grid-cols-4">
         @for (item of vm.products; track $index) {
-          <app-product-card [favorites]="vm.favorites" [item]="item" />
+          <app-product-card
+            [favorites]="vm.favorites"
+            [item]="item"
+            (navigate)="navigate($event)" />
         }
       </section>
     } @else {

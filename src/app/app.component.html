@@ -1,6 +1,19 @@
 <div class="flex min-h-screen flex-col justify-center">
   <app-navbar />
   <main class="container flex flex-col self-center">
+    <div class="flex p-4">
+      @if (!isHomeRoute()) {
+        <button
+          (click)="goBack()"
+          class="flex items-center justify-center text-sm">
+          <mat-icon class="!flex !items-center !justify-center !text-base">
+            arrow_back_ios
+          </mat-icon>
+          <div>Go Back</div>
+        </button>
+      }
+    </div>
+
     <div class="px-4 py-20">
       <router-outlet />
     </div>
