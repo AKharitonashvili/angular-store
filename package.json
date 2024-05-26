@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
-    "lint": "ng lint",
+    "lint": "ng lint ",
     "postbuild": "gulp compress",
     "serve:ssr:Angular_Store_Project": "node dist/angular-storet/server/server.mjs",
     "explore": "source-map-explorer dist/**/*.js"
