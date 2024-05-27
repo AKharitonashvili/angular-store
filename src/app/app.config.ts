@@ -1,7 +1,4 @@
-import {
-  ApplicationConfig,
-  provideExperimentalZonelessChangeDetection,
-} from '@angular/core';
+import { ApplicationConfig } from '@angular/core';
 import {
   provideRouter,
   withHashLocation,
@@ -58,7 +55,6 @@ export const appConfig: ApplicationConfig = {
       reducer: favoritesReducer,
     }),
     provideState({ name: StoreFeatureKeys.CART, reducer: cartReducer }),
-    provideExperimentalZonelessChangeDetection(),
   ],
 };
 

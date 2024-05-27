@@ -5,8 +5,5 @@ module.exports = {
     new MomentLocalesPlugin({
       localesToKeep: ['en-gb'],
     }),
-    new MomentLocalesPlugin({
-      localesToKeep: ['en-gb'],
-    }),
   ],
 };
