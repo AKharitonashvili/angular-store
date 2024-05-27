@@ -1,0 +1,1 @@
+import{h as o,i as e}from"./chunk-OO7FAUGF.js";var r=o("[Favorites] Load"),s=o("[Favorites] Load Success",e()),a=o("[Favorites] Load Failure",e()),i=o("[Favorites] Add To Favorites",e()),F=o("[Favorites] Remove From Favorites",e()),v=o("[Favorites] Update");export{r as a,s as b,a as c,i as d,F as e,v as f};
